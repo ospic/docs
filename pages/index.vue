@@ -1,149 +1,89 @@
 <template>
-  <v-container fluid>
-    <div class="posts">
-      <v-row no-gutters>
-        <v-col cols="12" sm="6" md="6">
-          <v-card class="pa-2" flat tile>
-            <h1>Home</h1>
-          </v-card>
-        </v-col>
-        <v-col cols="12" sm="6" md="6">
-          <v-card class="pa-2" flat tile>
-            <v-text-field
-              ref="message"
-              v-model="message"
-              prepend-icon="mdi-magnify"
-              dense
-              background-color="gray"
-              placeholder="Enter search text ..."
-              hide-details
-              single-line
-              solo-inverted
-              clearable
-              counter="10"
-              @change="filterContents()"
-              @click:append-outer="filterContents()"
-            ></v-text-field>
-          </v-card>
-        </v-col>
-      </v-row>
-      <br />
-      <v-alert prominent :value="alert" type="error" elevetion="2">
-        <v-row align="center">
-          <v-col class="grow">
-            <strong>
-              No blog post with text:
-              <i>{{ message }}</i>
-            </strong>
-          </v-col>
-          <v-col class="shrink">
-            <v-btn
-              class="mx-2"
-              fab
-              dark
-              small
-              color="pink"
-              @click="alert = !alert"
+  <v-row justify="center" align="center">
+    <v-col cols="12" sm="8" md="6">
+      <div class="text-center">
+        <logo />
+        <vuetify-logo />
+      </div>
+      <v-card>
+        <v-card-title class="headline">
+          Welcome to the Vuetify + Nuxt.js template
+        </v-card-title>
+        <v-card-text>
+          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
+          <p>
+            For more information on Vuetify, check out the <a
+              href="https://vuetifyjs.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <v-icon dark>mdi-close</v-icon>
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-alert>
-      <v-container fluid class="ma-0 pa-0">
-        <v-row>
-          <v-col
-            v-for="post in posts"
-            :key="post.dir"
-            cols="4"
-            class="hidden-sm-and-down"
+              documentation
+            </a>.
+          </p>
+          <p>
+            If you have questions, please join the official <a
+              href="https://chat.vuetifyjs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="chat"
+            >
+              discord
+            </a>.
+          </p>
+          <p>
+            Find a bug? Report it on the github <a
+              href="https://github.com/vuetifyjs/vuetify/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="contribute"
+            >
+              issue board
+            </a>.
+          </p>
+          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
+          <div class="text-xs-right">
+            <em><small>&mdash; John Leider</small></em>
+          </div>
+          <hr class="my-3">
+          <a
+            href="https://nuxtjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <!-- <post-card
-              :key="pos.dir"
-              class="hidden-sm-and-down"
-              :post="pos"
-            ></post-card>-->
-            <post-card
-              :key="post.dir"
-              class="hidden-md-and-down"
-              :post="post"
-            ></post-card>
-          </v-col>
-        </v-row>
-        <sim-card
-          v-for="post in posts"
-          :key="post.dir"
-          class="hidden-md-and-up"
-          :post="post"
-        ></sim-card>
-      </v-container>
-    </div>
-  </v-container>
+            Nuxt Documentation
+          </a>
+          <br>
+          <a
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Nuxt GitHub
+          </a>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer />
+          <v-btn
+            color="primary"
+            nuxt
+            to="/inspire"
+          >
+            Continue
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-col>
+  </v-row>
 </template>
+
 <script>
-import PostCard from "~/components/PostCard";
+import Logo from '~/components/Logo.vue'
+import VuetifyLogo from '~/components/VuetifyLogo.vue'
+
 export default {
   components: {
-    PostCard,
-  },
-  async asyncData({ params, error, $content }) {
-    try {
-      const posts = await $content("posts", { deep: true }).fetch();
-      return { posts };
-    } catch (err) {
-      error({
-        statusCode: 404,
-        message: "Page could not be found",
-      });
-    }
-  },
-  data() {
-    return {
-      clipped: false,
-      alert: false,
-      fixed: false,
-      message: null,
-    };
-  },
-  methods: {
-    async filterContents() {
-      try {
-        const array = await this.$content("posts", { deep: true })
-          .search(this.message)
-          .fetch();
-        if (array === undefined || array.length === 0) {
-          this.alert = true;
-        } else {
-          this.alert = false;
-          this.posts = array;
-        }
-        return;
-      } catch (err) {
-        // eslint-disable-next-line no-console
-        console.log({
-          statusCode: 404,
-          message: "Page could not be found",
-        });
-      }
-    },
-  },
-  head() {
-    return {
-      title: "Nuxt blog",
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: "Cool nuxt blog",
-        },
-      ],
-      link: [
-        {
-          rel: "canonical",
-          href: "https://nuxt-blog.com/",
-        },
-      ],
-    };
-  },
-};
+    Logo,
+    VuetifyLogo
+  }
+}
 </script>

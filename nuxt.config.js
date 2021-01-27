@@ -1,88 +1,59 @@
-import colors from "vuetify/es5/util/colors";
+import colors from 'vuetify/es5/util/colors'
 
 export default {
-  /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  //mode: "universal", Deprecated
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
   router: {
     base: process.env.NODE_ENV === "production" ? "/docs/" : "/",
     routerNameSplitter: "/",
   },
-  /*
-   ** Nuxt target
-   ** See https://nuxtjs.org/api/configuration-target
-   */
-  target: "static",
-  /*
-   ** Headers of the page
-   ** See https://nuxtjs.org/api/configuration-head
-   */
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
+
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - " + process.env.npm_package_name,
-    title: process.env.npm_package_name || "",
+    titleTemplate: '%s - docs',
+    title: 'docs',
+    htmlAttrs: {
+      lang: 'en'
+    },
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: process.env.npm_package_description || "",
-      },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href:
-          'https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet',
-      },
-    ],
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
   },
-  /*
-   ** Global CSS
-   */
-  css: [],
-  /*
-   ** Plugins to load before mounting the App
-   ** https://nuxtjs.org/guide/plugins
-   */
-  plugins: ["~/plugins/prism.js", "~/plugins/globalComponents.js"],
-  /*
-   ** Auto import components
-   ** See https://nuxtjs.org/api/configuration-components
-   */
-  components: true,
-  /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: [
-    "@nuxtjs/eslint-module",
-    "@nuxt/typescript-build",
-    "@nuxtjs/vuetify",
+
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
   ],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: ["@nuxt/content"],
-  content: {
-    apiPrefix: "post",
-    dir: "content",
-    markdown: {
-      prism: {
-        theme: false,
-      },
-    },
-  },
-  /*
-   ** vuetify module configuration
-   ** https://github.com/nuxt-community/vuetify-module
-   */
+
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  plugins: [
+  ],
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [
+    // https://go.nuxtjs.dev/vuetify
+    '@nuxtjs/vuetify',
+  ],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    '@nuxt/content'
+  ],
+
+  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ["~/assets/variables.scss"],
+    customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: false,
+      dark: true,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -91,32 +62,18 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-        },
-      },
-    },
-  },
-  /*
-   ** Build configuration
-   ** See https://nuxtjs.org/api/configuration-build/
-   */
-  build: {
-    extend(config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/,
-          options: {
-            fix: true,
-          },
-        });
+          success: colors.green.accent3
+        }
       }
-    },
+    }
   },
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
+  },
+
   server: {
     port: process.env.NODE_ENV === "production" ? 8000 : 4000, // default: 3000
     host: "0.0.0.0", // default: localhost
   },
-};
+}
