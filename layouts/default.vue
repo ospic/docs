@@ -2,7 +2,7 @@
   <v-app class="app">
     <v-app-bar dense flat absolute hide-on-scroll app>
       <v-toolbar-title>
-        <strong class="text--primary">Ospic Documentation</strong>
+        <strong class="text--primary">Ospic Documentation (Under development)</strong>
       </v-toolbar-title>
       <v-spacer />
       <v-spacer />
