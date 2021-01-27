@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build && nuxt generate",
+    "build": "nuxt build && nuxt export",
     "start": "nuxt-ts start",
     "export": "nuxt-ts export",
     "serve": "nuxt-ts serve",
@@ -14,22 +14,22 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
-    "@nuxt/content": "^1.11.1",
+    "@nuxt/content": "^1.4.1",
     "@nuxt/typescript-runtime": "^0.4.10",
-    "autoprefixer": "^9.8.6",
-    "nuxt": "^2.14.12",
-    "prismjs": "^1.23.0"
+    "autoprefixer": "^9.8.0",
+    "nuxt": "^2.13.0",
+    "prismjs": "^1.20.0"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^1.0.3",
-    "@nuxtjs/vuetify": "^1.11.3",
+    "@nuxtjs/vuetify": "^1.11.2",
     "@nuxtjs/eslint-config": "^3.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "^2.2.1"
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
   }
 }
