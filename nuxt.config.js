@@ -7,7 +7,7 @@ export default {
    */
   mode: "universal",
   router: {
-    base: process.env.NODE_ENV === "production" ? "/nuxt_content/" : "/",
+    base: process.env.NODE_ENV === "production" ? "/docs/" : "/",
     routerNameSplitter: "/",
   },
   /*

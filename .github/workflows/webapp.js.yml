@@ -24,7 +24,7 @@ jobs:
         uses: srggrs/assign-one-project-github-action@1.2.0
         if: github.event.action == 'opened'
         with:
-          project: "https://github.com/ospic/documentation/projects/1"
+          project: "https://github.com/ospic/docs/projects/1"
 
       - name: Assign issues and pull requests with `enhancement` label to CHILD project
         uses: srggrs/assign-one-project-github-action@1.2.0
@@ -32,7 +32,7 @@ jobs:
           contains(github.event.issue.labels.*.name, 'enhancement') ||
           contains(github.event.pull_request.labels.*.name, 'enhancement')
         with:
-          project: "https://github.com/ospic/documentation/projects/1"
+          project: "https://github.com/ospic/docs/projects/1"
           column_name: "To do"
       - name: Assign NEW issues and NEW pull requests to HEADER project
         uses: srggrs/assign-one-project-github-action@1.2.0
