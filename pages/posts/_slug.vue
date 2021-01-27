@@ -14,8 +14,8 @@
   </v-container>
 </template>
 <script>
-import VImg from "~/components/VImg";
 import prism from "@/plugins/prism";
+import VImg from "~/components/VImg";
 export default {
   components: {
     VImg,
