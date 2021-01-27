@@ -5,7 +5,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: "universal",
+  //mode: "universal", Deprecated
   router: {
     base: process.env.NODE_ENV === "production" ? "/docs/" : "/",
     routerNameSplitter: "/",
