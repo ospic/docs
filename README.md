@@ -1,4 +1,4 @@
-# nuxtblog
+# docs
 
 ## Build Setup
 
