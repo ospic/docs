@@ -1,6 +1,6 @@
 <template>
   <div class="posts">
-    <h1>Posts</h1>
+    <h1>Tags: {{ $route.params.slug }}</h1>
     <div v-for="post in posts" :key="post.dir">
       <h3 class="heading">{{ post.title }}</h3>
       <p>{{ post.description }}</p>
@@ -18,7 +18,9 @@
 export default {
   async asyncData({ params, error, $content }) {
     try {
-      const posts = await $content("posts", { deep: true }).fetch();
+      const posts = await $content("posts", { deep: true })
+        .where({ tags: { $contains: params.slug } })
+        .fetch();
       return { posts };
     } catch (err) {
       error({
@@ -29,18 +31,18 @@ export default {
   },
   head() {
     return {
-      title: "Nuxt blog",
+      title: "Tags",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Cool nuxt blog",
+          content: "Cool nuxt blog tags",
         },
       ],
       link: [
         {
           rel: "canonical",
-          href: "https://nuxt-blog.com/",
+          href: "https://nuxt-blog.com/tags",
         },
       ],
     };

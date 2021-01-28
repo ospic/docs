@@ -32,7 +32,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [ "~/plugins/vuetify.js"],
+  plugins: [ "~/plugins/vuetify.js", "~/plugins/prism.js", "~/plugins/components.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -47,6 +47,13 @@ export default {
   modules: [
     '@nuxt/content'
   ],
+  content: {
+    markdown: {
+      prism: {
+        theme: false,
+      },
+    },
+  },
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
