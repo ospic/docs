@@ -5,7 +5,7 @@ date: 2020-10-10
 image: index.jpg
 tags:
   - test
-  - another
+  - documentation
 ---
 
 Ut ut justo arcu. Praesent sed neque efficitur,
