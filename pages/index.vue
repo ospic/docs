@@ -1,15 +1,10 @@
 <template>
   <div class="posts">
-    <h1>Posts</h1>
     <div v-for="post in posts" :key="post.dir">
       <h3 class="heading">{{ post.title }}</h3>
       <p>{{ post.description }}</p>
-      <p class="tags">
-        <span v-for="tag in post.tags" :key="tag" class="tag">
-          <nuxt-link :to="`/tags/${tag}`">{{ tag }}</nuxt-link>
-          &nbsp;
-        </span>
-      </p>
+     
+       <v-tags :tags="post.tags" />
       <nuxt-link :to="post.dir">Read more</nuxt-link>
     </div>
   </div>

@@ -1,4 +1,40 @@
-a:tag {
+.tag {
+  -webkit-box-shadow: -8px 15px 26px -14px #3dc21b;
+          box-shadow: -8px 15px 26px -14px #3dc21b;
+}
+
+.tag a {
+  background-color: #00a756;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 5px;
   text-decoration: none;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 0px 9px;
+  -webkit-text-decoration-color: #ffffff;
+          text-decoration-color: #ffffff;
+  color: white;
+}
+
+.tag a.link {
+  color: #1520a6;
+  text-decoration: none;
+}
+
+.tag a.link.nuxt-link-exact-active.nuxt-link-active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.image img {
+  border-radius: 0.1%;
+}
+
+.image.post-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=styles.css.map */
