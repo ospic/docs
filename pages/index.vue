@@ -29,7 +29,7 @@ export default {
   },
   head() {
     return {
-      title: "Nuxt blog",
+      title: "Home",
       meta: [
         {
           hid: "description",
@@ -47,3 +47,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.tag{
+  text-decoration: none;
+}
+</style>
