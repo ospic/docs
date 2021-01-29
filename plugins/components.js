@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VImg from "~/components/VImg.vue";
 import VTags from "~/components/VTags.vue";
-import PostCard from "~/components/PostCard";
+import VNav from "~/components/VNav";
 
 Vue.component("VImg", VImg);
 Vue.component("VTags", VTags);
-Vue.component("PostCard", PostCard);
+Vue.component("VNav", VNav);
