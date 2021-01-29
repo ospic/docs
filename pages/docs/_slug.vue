@@ -1,23 +1,27 @@
 <template>
-  <div>
-    <div class="post-header">
-      <h1 class="h1 post-h1">{{ post.title }}</h1>
-      <p v-if="post.description" class="excerpt">
-        {{ post.description }}
-      </p>
-      <div class="post-details">
-       <v-tags :tags="post.tags" />
-        <div class="date">Post last updated: {{ formatDate(post.updatedAt) }}</div>
-      </div>
-      <v-img
-        v-if="post.image"
-        class="post-img"
-        :src="post.image"
-        :alt="post.title"
-      ></v-img>
-    </div>
-    <nuxt-content :document="post" />
-  </div>
+  <v-container fluid>
+    <v-row no-gutters>
+      <v-col md="3" v-if="post.toc.length > 0">
+        <v-nav :post="post"></v-nav>
+        
+      </v-col>
+      <v-col md="9">
+        <div>
+          <h1 class="h1 post-h1">{{ post.title }}</h1>
+          <p v-if="post.description" class="excerpt">
+            {{ post.description }}
+          </p>
+          <div class="post-details">
+            <v-tags :tags="post.tags" />
+            <div class="date">
+              Post last updated: {{ formatDate(post.updatedAt) }}
+            </div>
+          </div>
+        </div>
+        <nuxt-content :document="post" />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <script>
 import VImg from "~/components/VImg";
