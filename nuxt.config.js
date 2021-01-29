@@ -7,12 +7,18 @@ export default {
     base: process.env.NODE_ENV === "production" ? "/docs/" : "/",
     routerNameSplitter: "/",
   },
+
+  loadingIndicator: {
+    name: 'pulse',
+    color: ' #00A756',
+    background: '#FAFAFA'
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - docs',
+    titleTemplate: 'Ospic documentation',
     title: 'docs',
     htmlAttrs: {
       lang: 'en'
