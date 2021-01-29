@@ -6,12 +6,8 @@
         {{ post.description }}
       </p>
       <div class="post-details">
-        <div class="tags">
-          <span v-for="(tag, i) in post.tags" :key="i" class="tag">
-            <nuxt-link :to="'/tags/' + tag">#{{ tag }}</nuxt-link>
-          </span>
-        </div>
-        <div class="date">{{ post.date | date }}</div>
+       <v-tags :tags="post.tags" />
+        <div class="date">Post last updated: {{ formatDate(post.updatedAt) }}</div>
       </div>
       <v-img
         v-if="post.image"
