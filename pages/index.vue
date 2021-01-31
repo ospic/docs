@@ -177,21 +177,6 @@
         </v-container>
      </section>
 
-    
-
-
-      <!--<v-footer class="blue darken-2">
-        <v-layout row wrap align-center>
-          <div xs12 class="d-flex align-center justify-end  flex-column">
-            <div class="white--text ml-3">
-              Made with
-              <v-icon class="red--text">mdi-heart</v-icon>
-              using <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-            </div>
-          </div>
-        </v-layout>
-      </v-footer>-->
-
     </v-content>
 </v-container>
 
@@ -207,7 +192,7 @@ export default {
         main:
           "https://cdn2.hubspot.net/hubfs/3790014/hospital-data.jpg",
         sub_main:
-          "https://cdn2.hubspot.net/hubfs/3790014/hospital-data.jpg",
+          "https://futurehealthcaretoday.com/wp-content/uploads/2017/10/shutterstock_561360403.jpg",
         logo:
           "@/static/cherry.png",
         social_cover:
