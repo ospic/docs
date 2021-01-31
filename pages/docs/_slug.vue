@@ -1,6 +1,48 @@
 <template>
-  <v-container fluid>
-    <v-row no-gutters>
+  <v-card flat>
+    <v-toolbar
+      color="primary"
+    
+      extended
+      flat
+    >
+       <v-avatar size="36" class="mb-4">
+      <img 
+        src="@/assets/images/icon.png"
+        alt="John"
+      >
+    </v-avatar>
+    </v-toolbar>
+
+    <v-card
+      class="mx-auto "
+      style="margin-top: -64px; overflow-y: scroll;" :height="screen"
+    >
+      <v-toolbar flat>
+        <v-toolbar-title class="grey--text">
+          Ospic documentation
+        </v-toolbar-title>
+
+        <v-spacer></v-spacer>
+
+        <v-btn icon>
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+
+        <v-btn icon>
+          <v-icon>mdi-apps</v-icon>
+        </v-btn>
+
+        <v-btn icon>
+          <v-icon>mdi-dots-vertical</v-icon>
+        </v-btn>
+      </v-toolbar>
+
+      <v-divider></v-divider>
+
+      <v-card-text >
+
+        <v-row no-gutters>
       <v-col md="2" v-if="post.toc.length > 0">
         <v-nav :post="post"></v-nav>
       </v-col>
@@ -20,7 +62,9 @@
         <nuxt-content :document="post" />
       </v-col>
     </v-row>
-  </v-container>
+      </v-card-text>
+    </v-card>
+  </v-card>
 </template>
 <script>
 import VImg from "~/components/VImg";
@@ -43,6 +87,7 @@ export default {
       });
     }
   },
+
   mounted() {
     Prism.highlightAll();
   },
@@ -63,6 +108,12 @@ export default {
         }
       ]
     };
+  },
+  computed:{
+    screen(){
+      console.log(window.screen.height)
+      return window.screen.height - 150;
+    }
   }
 };
 </script>

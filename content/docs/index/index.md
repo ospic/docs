@@ -9,7 +9,7 @@ tags:
   - page
 ---
 
-## This is a heading
+## Getting started
 
 Now on our page we can see we have an object with a variable property which is an empty array and a body variable which has our h1 and p tag as well as some other info that we will look at later. If we scroll down you will see we have all the other variables that we have access to.
 

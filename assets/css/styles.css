@@ -3,6 +3,12 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
 .app {
   font-family: 'Fira Sans', sans-serif;
 }
