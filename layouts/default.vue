@@ -1,15 +1,26 @@
 <template>
   <v-app class="app">
-    <v-toolbar flat class="primary">
-      <v-toolbar-side-icon
-        ><img src="@/static/logo.png" alt="Vuetify.js" height="100%"
-      /></v-toolbar-side-icon>
-      <v-toolbar-title class="mx-0 title" v-text="title"></v-toolbar-title>
+   <v-app-bar flat dense fixed app>
+      <img src="@/static/logo.png" alt="Vuetify.js" height="100%"/>
+      <nuxt-link to="/">
+      <v-toolbar-title class="mx-0 title plain-link" v-text="title"></v-toolbar-title></nuxt-link>
       <p>Beta</p>
       <v-spacer></v-spacer>
-    </v-toolbar>
+          <v-text-field 
+            hide-details 
+            label="Search text" 
+            placeholder="Search" 
+            filled 
+            clearable
+            rounded 
+            dense
+            single-line 
+            append-icon="mdi-magnify" class="shrink">
+      </v-text-field>
+    
+   </v-app-bar>
     <v-main>
-      <v-container fluid class="ma-0 pa-0">
+      <v-container fluid class="ma-0 pa-0" >
         <nuxt style="background-color: #EAEAEA" />
       </v-container>
     </v-main>
