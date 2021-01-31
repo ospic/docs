@@ -3,9 +3,15 @@
 
 body{
     font-family: 'Fira Sans', sans-serif;
+    &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+    }
 }
 .app{
     font-family: 'Fira Sans', sans-serif;
+  
+  
 }
 .v-footer {
     span{
@@ -15,3 +21,5 @@ body{
     }
    
 }
+
+
