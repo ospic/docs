@@ -50,4 +50,8 @@ body {
   width: 200px;
   border-radius: 50%;
 }
+
+a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=styles.css.map */

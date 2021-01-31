@@ -1,11 +1,10 @@
 <template>
   <v-container fluid>
     <v-row no-gutters>
-      <v-col md="3" v-if="post.toc.length > 0">
+      <v-col md="2" v-if="post.toc.length > 0">
         <v-nav :post="post"></v-nav>
-        
       </v-col>
-      <v-col md="9">
+      <v-col md="10">
         <div>
           <h1 class="h1 post-h1">{{ post.title }}</h1>
           <p v-if="post.description" class="excerpt">
@@ -32,8 +31,8 @@ export default {
   },
   async asyncData({ params, error, $content }) {
     try {
-      const postPath = `/posts/${params.slug}`;
-      const [post] = await $content("posts", { deep: true })
+      const postPath = `/docs/${params.slug}`;
+      const [post] = await $content("docs", { deep: true })
         .where({ dir: postPath })
         .fetch();
       return { post };
