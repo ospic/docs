@@ -25,16 +25,16 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
+        <v-btn medium icon>
+          <v-icon small>mdi-magnify</v-icon>
         </v-btn>
 
-        <v-btn icon>
-          <v-icon>mdi-apps</v-icon>
+        <v-btn medium icon href="https://app.ospicx.com" target="_blank">
+          <v-icon color="black"  small>mdi-application</v-icon>
         </v-btn>
 
-        <v-btn icon>
-          <v-icon>mdi-dots-vertical</v-icon>
+        <v-btn medium icon href="https://github.com/ospic/docs" target="_blank">
+          <v-icon small color="black" >mdi-github</v-icon>
         </v-btn>
       </v-toolbar>
 
