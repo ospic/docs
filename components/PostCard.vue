@@ -6,7 +6,7 @@
       <h3 class="heading">{{ post.title.slice(0, 40) }}</h3>
       <v-divider class="ma-1"></v-divider>
       <p>{{ post.description.slice(0, 200) }} ...</p>
-
+      {{ post.dir }}
       <nuxt-link :to="post.dir">Read more</nuxt-link>
     </div>
   </div>
