@@ -26,6 +26,9 @@
      
         <v-row no-gutters>
           <v-col v-for="doc in docs" :key="doc.dir" md="4" sm="12" xs="12">
+             <v-col md="2" v-if="doc.toc.length > 0" >
+        <v-nav :post="doc"></v-nav>
+      </v-col>
             <post-card :key="doc.dir" :post="doc"></post-card>
           </v-col>
         </v-row>
@@ -42,6 +45,7 @@ export default {
   async asyncData({ params, error, $content }) {
     try {
       const docs = await $content("docs", { deep: true }).fetch();
+      console.log(docs)
       return { docs };
     } catch (err) {
       error({
