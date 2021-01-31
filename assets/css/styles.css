@@ -3,6 +3,10 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+.app {
+  font-family: 'Fira Sans', sans-serif;
+}
+
 .v-footer span {
   -webkit-box-align: center;
       -ms-flex-align: center;
