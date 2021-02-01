@@ -28,7 +28,7 @@
             <v-container grid-list-xl>
               <v-layout row wrap align-center>
                 <v-flex xs12 md4>
-                  <v-card class="elevation-0 transparent ">
+                  <v-card class="elevation-1 transparent " height="320">
                     <v-card-text class="d-flex align-center justify-end  flex-column">
                       <v-icon x-large class="blue--text text--lighten-2">mdi-earth</v-icon>
                     </v-card-text>
@@ -41,7 +41,7 @@
                   </v-card>
                 </v-flex>
                 <v-flex xs12 md4>
-                  <v-card class="elevation-0 transparent">
+                  <v-card class="elevation-1 transparent" height="320">
                     <v-card-text class="d-flex align-center justify-end  flex-column">
                       <v-icon x-large class="blue--text text--lighten-2">mdi-flash</v-icon>
                     </v-card-text>
@@ -54,7 +54,7 @@
                   </v-card>
                 </v-flex>
                 <v-flex xs12 md4>
-                  <v-card class="elevation-0 transparent">
+                  <v-card class="elevation-1 transparent" height="320">
                     <v-card-text class="d-flex align-center justify-end  flex-column">
                       <v-icon x-large class="blue--text text--lighten-2">mdi-share-variant</v-icon>
                     </v-card-text>
@@ -75,9 +75,9 @@
       <section>
         <v-parallax :src="imageLink.main" height="380">
           <v-layout column align-center justify-center>
-            <div class="headline white--text mb-3 d-flex align-center justify-end  flex-column">Endorfine is a social network that allows everyone to reach a huge audience with a tap </div>
-            <em>With the power of Endorfine you don't need to be famous or post pics of cute cats in order to get visibility</em>
-            <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
+            <div class="headline primary--text mb-3 d-flex align-center justify-end  flex-column">Endorfine is a social network that allows everyone to reach a huge audience with a tap </div>
+            <em class="primary--text">With the power of Endorfine you don't need to be famous or post pics of cute cats in order to get visibility</em>
+            <v-btn class="primary  mt-5" dark large href="/pre-made-themes">
               Get more info
             </v-btn>
           </v-layout>
@@ -127,15 +127,15 @@
           </v-layout>
           <v-layout justify-space-around justify-center>
 
-              <v-icon x-large dark>mdi-facebook</v-icon>
+              <v-icon x-large color="blue" dark>mdi-facebook</v-icon>
 
-              <v-icon x-large dark>mdi-twitter</v-icon>
+              <v-icon x-large color="blue" dark>mdi-twitter</v-icon>
 
-              <v-icon x-large dark>mdi-reddit</v-icon>
+              <v-icon x-large color="orange" dark>mdi-reddit</v-icon>
 
-              <v-icon x-large dark>mdi-instagram</v-icon>
+              <v-icon x-large  color="red" dark>mdi-instagram</v-icon>
 
-              <v-icon x-large dark>mdi-discord</v-icon>
+              <v-icon x-large color="indigo darken-2" dark>mdi-discord</v-icon>
             </v-layout>
         </v-parallax>
       </section>
