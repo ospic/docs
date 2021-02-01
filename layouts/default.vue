@@ -1,31 +1,19 @@
 <template>
 <v-app class="app">
-   <!--  <v-app-bar flat dense fixed app>
+    <v-app-bar class="primary" flat dense fixed app>
       <img src="@/static/logo.png" alt="Vuetify.js" height="100%"/>
       <nuxt-link to="/">
-      <v-toolbar-title class="mx-0 title plain-link" v-text="title"></v-toolbar-title></nuxt-link>
+      <v-toolbar-title class="mx-0 title white--text plain-link" v-text="title"></v-toolbar-title></nuxt-link>
       <p>Beta</p>
       <v-spacer></v-spacer>
-          <v-text-field 
-            hide-details 
-            label="Search text" 
-            placeholder="Search" 
-            filled 
-            clearable
-            rounded 
-            dense
-            single-line 
-            append-icon="mdi-magnify" class="shrink">
-      </v-text-field>
-    
-   </v-app-bar>-->
-    <v-main>
-      <v-container fluid class="primary lighten-4" >
+   </v-app-bar>
+    <v-main class="ma-0 pa-0" >
+      <v-container class=" pa-0" fluid>
         <nuxt />
       </v-container>
     </v-main>
 
-  <!--  <v-footer :absolute="!fixed" class="primary" app>
+  <v-footer :absolute="!fixed" class="primary" app>
       <v-flex xs12 class="d-flex align-center justify-end  flex-column">
         <div  style="color: white" >
           Copyright &copy; {{ new Date().getFullYear() }} The Apache Software
@@ -39,7 +27,7 @@
           >
         </div>
       </v-flex>
-    </v-footer>-->
+    </v-footer>
   </v-app>
 </template>
 
