@@ -1,14 +1,15 @@
 <template>
-<v-app class="app">
-    <v-app-bar class="primary" flat dense fixed app>
+<v-app class="app" :oncontextmenu="domain ? 'return true' : 'return false' ">
+    <v-app-bar class="primary"  flat dense fixed app="true">
       <img src="@/static/logo.png" alt="Vuetify.js" height="100%"/>
       <nuxt-link to="/">
       <v-toolbar-title class="mx-0 title white--text plain-link" v-text="title"></v-toolbar-title></nuxt-link>
       <p>Beta</p>
       <v-spacer></v-spacer>
    </v-app-bar>
-    <v-main class="ma-0 pa-0" >
+    <v-main class="ma-0 " >
       <v-container class=" pa-0" fluid>
+        
         <nuxt />
       </v-container>
     </v-main>
@@ -65,6 +66,11 @@ export default {
           "https://firebasestorage.googleapis.com/v0/b/endorfinevue.appspot.com/o/assets%2Fo-NIGHTCLUB-facebook.jpg?alt=media&token=cefc5c4c-9714-41da-9c22-f63caf5e89a4"
       }
     };
+  },
+  computed:{
+     domain() {
+      return window.location.hostname === "localhost";
+    }
   }
 
 };
