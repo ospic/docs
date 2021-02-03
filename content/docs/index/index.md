@@ -65,5 +65,5 @@ Ospic deals with human confidential information. With this understanding we have
 
 ### Language selection
 
-### Page footer
+### Footer 
 The footer page is in green colored strip with texts just at the bottom of this page if not below this texts. Footer page contains the page copyright, System licence of which the ospic platform is licenced under it and licence version number.
