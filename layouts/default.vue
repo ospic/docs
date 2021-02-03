@@ -1,6 +1,6 @@
 <template>
 <v-app class="app" :oncontextmenu="domain ? 'return true' : 'return false' ">
-    <v-app-bar class="primary"  flat dense fixed app="true">
+    <v-app-bar class="primary"  flat dense fixed app>
       <img src="@/static/logo.png" alt="Vuetify.js" height="100%"/>
       <nuxt-link to="/">
       <v-toolbar-title class="mx-0 title white--text plain-link" v-text="title"></v-toolbar-title></nuxt-link>

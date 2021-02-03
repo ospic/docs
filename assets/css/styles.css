@@ -14,10 +14,10 @@
   font-family: 'ProductSans';
   font-style: normal;
   font-weight: 400;
-  src: local("Product Sans"), url(../fonts/productsans/Product-Sans-Regular.ttf) format("truetype");
+  src: local("Product Sans"), url(../fonts/productsans/ProductSans-Regular.ttf) format("truetype");
 }
 
-.v-application--wrap {
+html .app {
   font-family: "ProductSans";
 }
 
