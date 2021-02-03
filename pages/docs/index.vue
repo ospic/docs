@@ -1,52 +1,42 @@
 <template>
   <v-container fluid>
-    <div class="posts">
-      <v-alert prominent :value="alert" type="error" elevetion="2">
-        <v-row align="center">
-          <v-col class="grow">
-            <strong>
-              No blog post with text:
-              <i>{{ message }}</i>
-            </strong>
-          </v-col>
-          <v-col class="shrink">
-            <v-btn
-              class="mx-2"
-              fab
-              dark
-              small
-              color="pink"
-              @click="alert = !alert"
-            >
-              <v-icon dark>mdi-close</v-icon>
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-alert>
-     
-        <v-row no-gutters>
-          <v-col v-for="doc in docs" :key="doc.dir" md="4" sm="12" xs="12">
-             <v-col md="2" v-if="doc.toc.length > 0" >
-        <v-nav :post="doc"></v-nav>
+    <v-row no-gutters>
+      <v-col md="2" v-if="post.toc.length > 0">
+        <v-nav :post="post"></v-nav>
       </v-col>
-            <post-card :key="doc.dir" :post="doc"></post-card>
-          </v-col>
-        </v-row>
-   
-    </div>
+      <v-col md="10">
+        <div>
+          <h1 class="h1 post-h1">{{ post.title }}</h1>
+          <p v-if="post.description" class="excerpt">
+            {{ post.description }}
+          </p>
+          <div class="post-details">
+            <v-tags :tags="post.tags" />
+            <div class="date">
+              Post last updated: {{ formatDate(post.updatedAt) }}
+            </div>
+          </div>
+        </div>
+        <nuxt-content :document="post" />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 <script>
-import PostCard from "~/components/PostCard";
+import VImg from "~/components/VImg";
+
 export default {
   components: {
-    PostCard
+    VImg
   },
   async asyncData({ params, error, $content }) {
     try {
-      const docs = await $content("docs", { deep: true }).fetch();
-      console.log(docs)
-      return { docs };
+      const postPath = `/docs/index`;
+      const [post] = await $content("docs", { deep: true })
+        .where({ dir: postPath })
+        .fetch();
+        console.log(post)
+      return { post };
     } catch (err) {
       error({
         statusCode: 404,
@@ -54,53 +44,33 @@ export default {
       });
     }
   },
-  data() {
-    return {
-      clipped: false,
-      alert: false,
-      fixed: false,
-      message: null
-    };
-  },
-  methods: {
-    async filterContents() {
-      try {
-        const array = await this.$content("posts", { deep: true })
-          .search(this.message)
-          .fetch();
-        if (array === undefined || array.length === 0) {
-          this.alert = true;
-        } else {
-          this.alert = false;
-          this.posts = array;
-        }
-        return;
-      } catch (err) {
-        // eslint-disable-next-line no-console
-        console.log({
-          statusCode: 404,
-          message: "Page could not be found"
-        });
-      }
-    }
+
+  mounted() {
+    Prism.highlightAll();
   },
   head() {
     return {
-      title: "Nuxt blog",
+      title: this.post.title,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Cool nuxt blog"
+          content: this.post.description
         }
       ],
       link: [
         {
           rel: "canonical",
-          href: "https://nuxt-blog.com/"
+          href: "https://matthewblewitt.com/posts/" + this.post.slug
         }
       ]
     };
+  },
+  computed: {
+    screen() {
+      console.log(window.screen.height);
+      return window.screen.height - 150;
+    }
   }
 };
 </script>
