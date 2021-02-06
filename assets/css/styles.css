@@ -17,8 +17,15 @@
   src: local("Product Sans"), url(../fonts/productsans/ProductSans-Regular.ttf) format("truetype");
 }
 
-html .app {
-  font-family: "ProductSans";
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url(../fonts/roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+#__nuxt .app {
+  font-family: "FiraSans";
 }
 
 .v-footer span {
@@ -28,6 +35,11 @@ html .app {
   vertical-align: middle;
   line-height: 90%;
   /* The same as your div height */
+}
+
+body {
+  background-color: #FFFFFF;
+  zoom: 80%;
 }
 
 .tag {

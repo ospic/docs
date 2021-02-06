@@ -1,10 +1,10 @@
 <template>
   <v-container fluid>
     <v-row no-gutters>
-      <v-col md="2" v-if="post.toc.length > 0">
+      <v-col md="2" sm="12" v-if="post.toc.length > 0">
         <v-nav :post="post"></v-nav>
       </v-col>
-      <v-col md="10">
+      <v-col md="10" sm="12">
         <div>
           <h1 class="h1 post-h1">{{ post.title }}</h1>
           <p v-if="post.description" class="excerpt">
