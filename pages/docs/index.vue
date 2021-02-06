@@ -1,10 +1,10 @@
 <template>
   <v-container fluid>
     <v-row no-gutters>
-      <v-col md="2" sm="12" v-if="post.toc.length > 0">
+      <v-col cols="12" md="12" lg="2" sm="12" v-if="post.toc.length > 0">
         <v-nav :post="post"></v-nav>
       </v-col>
-      <v-col md="10" sm="12">
+      <v-col cols="12" md="12" lg="10" sm="12">
         <div>
           <h1 class="h1 post-h1">{{ post.title }}</h1>
           <p v-if="post.description" class="excerpt">
@@ -13,7 +13,7 @@
           <div class="post-details">
             <v-tags :tags="post.tags" />
             <div class="date">
-              Post last updated: {{ formatDate(post.updatedAt) }}
+              Las updated: {{ formatDate(post.updatedAt) }}
             </div>
           </div>
         </div>
