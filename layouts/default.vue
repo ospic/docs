@@ -18,12 +18,12 @@
       <v-flex xs12 class="d-flex align-center justify-end  flex-column">
         <div  style="color: white" >
           Copyright &copy; {{ new Date().getFullYear() }} The Apache Software
-          Foundation, Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" style="color: white" target="_blank"> Apache License, Version 2.0.</a>
+          Foundation, Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" style="color: blue;  text-decoration: underline;" target="_blank"> Apache License, Version 2.0.</a>
         </div>
         <div class="white--text ml-3">
           Made by <a href="https://github.com/ospic" style="color: white"   target="_blank">Ospic </a>
           as official documentation for 
-          <a class="white--text" href="http://ospic.github.io/webapp/" target="_blank"
+          <a style="color: blue; text-decoration: underline;" href="http://ospic.github.io/webapp/" target="_blank"
             >Ospic HMS</a
           >
         </div>
