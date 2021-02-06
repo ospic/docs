@@ -1,36 +1,4 @@
-@font-face {
-    font-family: "Oxygen";
-    src: local("Oxygen"),
-     url(../fonts/oxygen/Oxygen-Regular.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: 'FiraSans';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Fira Sans"),
-     url(../fonts/fira/FiraSans-Regular.ttf) format("truetype");
+body {
+    background-color: #FFFFFF;
+    zoom: 80%;
   }
-  
-@font-face {
-    font-family: 'ProductSans';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Product Sans"),
-     url(../fonts/productsans/ProductSans-Regular.ttf) format("truetype");
-  }
-html .app{
-    font-family: "ProductSans";
-}
-
-
-.v-footer {
-    span{
-    align-items: center;
-     vertical-align: middle;
-     line-height: 90%;       /* The same as your div height */
-    }
-   
-}
-
-
