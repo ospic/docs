@@ -36,7 +36,7 @@
                       <div class="headline d-flex align-center justify-end  flex-column">Reach the world</div>
                     </v-card-title>
                     <v-card-text>
-                      Show your stuff to the whole community of Endorfine not only to your mum or your friends. We love making good content viral. In this moment Endorfine is used by artists who are not famous but that want to share their works to the world. Unfortunately with other social networks this is hard, slow and sometime expensive.
+                      Show your stuff to the whole community of CompanyName not only to your mum or your friends. We love making good content viral. In this moment CompanyName is used by artists who are not famous but that want to share their works to the world. Unfortunately with other social networks this is hard, slow and sometime expensive.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -49,7 +49,7 @@
                       <div class="headline">Fast feedback</div>
                     </v-card-title>
                     <v-card-text>
-                      Time is important, we don't want you to waste it. Here you can get a massive feedback from real users in minutes. And if your stuff is appreciated you won't only get positive feedback but also lovely and sincere fans <3 
+                      Time is important, we don't want you to waste it. Here you can get a massive feedback from real users in minutes. And if your stuff is appreciated you won't only get positive feedback but also lovely and sincere fans 
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -62,7 +62,7 @@
                       <div class="headline d-flex align-center justify-end  flex-column">Create new connections</div>
                     </v-card-title>
                     <v-card-text>
-                      Imagine if you can directly speak with the world's population. Don't you think it would be easier to find nice people to interact with? Endorfine is both local and global and help you to connect without limitations with people from your city, your state and your universe! 
+                      Imagine if you can directly speak with the world's population. Don't you think it would be easier to find nice people to interact with? CompanyName is both local and global and help you to connect without limitations with people from your city, your state and your universe! 
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -75,9 +75,9 @@
       <section>
         <v-parallax :src="imageLink.main" height="380">
           <v-layout column align-center justify-center>
-            <div class="headline primary--text mb-3 d-flex align-center justify-end  flex-column">Endorfine is a social network that allows everyone to reach a huge audience with a tap </div>
-            <em class="primary--text">With the power of Endorfine you don't need to be famous or post pics of cute cats in order to get visibility</em>
-            <v-btn class="primary  mt-5" dark large href="/pre-made-themes">
+            <div class="headline primary--text mb-3 d-flex align-center justify-end  flex-column">CompanyName is a social network that allows everyone to reach a huge audience with a tap </div>
+            <em class="primary--text">With the power of CompanyName you don't need to be famous or post pics of cute cats in order to get visibility</em>
+            <v-btn class="primary  mt-5" dark large href="/docs">
               Get more info
             </v-btn>
           </v-layout>
@@ -92,7 +92,7 @@
           <v-flex xs12 d-flex align-center justify-end  flex-column class="mt-5">
            <div class="headline">Are you amazed? Stay tuned!</div>
            <br>
-          <div>We are lunching the beta in a few time. If you want to be one of the first Endorfine users we will email you as soon as we're ready. In the beginning only few people will test before the launch. Let us know how Endorfine will help you!</div>
+          <div>We are lunching the beta in a few time. If you want to be one of the first CompanyName users we will email you as soon as we're ready. In the beginning only few people will test before the launch. Let us know how CompanyName will help you!</div>
           </v-flex>
           <v-flex xs8 offset-xs2>
 
@@ -185,6 +185,7 @@
 <script>
 export default {
   name: "App",
+  layout:"home",
   data: function() {
     return {
       title: "Ospic documentation",
