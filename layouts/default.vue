@@ -28,7 +28,7 @@
       </v-container>
     </v-main>
 
-    <v-footer :absolute="!fixed" class="primary" app>
+    <v-footer fixed class="primary" app>
       <v-flex xs12 class="d-flex align-center justify-end  flex-column">
         <div style="color: white">
           Copyright &copy; {{ new Date().getFullYear() }} The Apache Software
