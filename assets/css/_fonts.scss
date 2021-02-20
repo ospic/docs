@@ -1,35 +1,27 @@
-@font-face {
-    font-family: "Oxygen";
-    src: local("Oxygen"),
-     url(../fonts/oxygen/Oxygen-Regular.ttf) format("truetype");
-}
 
-@font-face {
-    font-family: 'FiraSans';
+
+  @font-face {
+    font-family: "WolfFont";
     font-style: normal;
     font-weight: 400;
-    src: local("Fira Sans"),
-     url(../fonts/fira/FiraSans-Regular.ttf) format("truetype");
-  }
-  
-@font-face {
-    font-family: 'ProductSans';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Product Sans"),
-     url(../fonts/productsans/ProductSans-Regular.ttf) format("truetype");
+    src: local("WolfFont"),
+      url(../fonts/content/content.woff2) format("woff2");
   }
 
   @font-face {
-    font-family: "Roboto";
+    font-family: "ActorV10";
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),
-      url(../fonts/roboto/Roboto-Regular.ttf) format("truetype");
+    src: local("ActorV10"),
+      url(../fonts/actor-v10-latin/actor-v10-latin-regular.woff2) format("woff2");
   }
 
 #__nuxt .app{
-    font-family: "FiraSans";
+    font-family: "WolfFont";
+    color: #37474F;
+    h1, h2, h3, h4{
+      color: #263238;
+    }
 }
 
 
