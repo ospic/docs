@@ -46,19 +46,16 @@
               rounded="lg"
               min-height="268"
             >
-              <!--  -->
+              <v-pages :pages="pages"></v-pages>
             </v-sheet>
           </v-col>
       </v-row>
   </v-container>
 </template>
 <script>
-import VImg from "~/components/VImg";
 
 export default {
-  components: {
-    VImg
-  },
+
   async asyncData({ params, error, $content }) {
     try {
       const postPath = `/docs/index`;
@@ -66,10 +63,10 @@ export default {
         .where({ dir: postPath })
         .fetch();
 
-    const articles = await $content("articles")
+    const pages = await $content("articles")
     .only(['title','description','img','slug','author']).fetch();
-    console.log(articles);
-      return { post };
+    console.log(pages);
+      return { post, pages };
     } catch (err) {
       error({
         statusCode: 404,
