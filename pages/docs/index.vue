@@ -1,6 +1,5 @@
 <template>
   <v-container fluid>
-
       <v-row>
           <v-col
             cols="12"
@@ -51,27 +50,6 @@
             </v-sheet>
           </v-col>
       </v-row>
-   <!-- <v-row no-gutters>
-      <v-col cols="12" md="12" lg="2" sm="12" v-if="post.toc.length > 0">
-        <v-nav :post="post"></v-nav>
-      </v-col>
-      <v-col cols="12" md="12" lg="10" sm="12">
-        <div>
-          
-          <h1 class="h1 post-h1">{{ post.title }}</h1>
-          <p v-if="post.description" class="excerpt">
-            {{ post.description }}
-          </p>
-          <div class="post-details">
-            <v-tags :tags="post.tags" />
-            <div class="date">
-              Las updated: {{ formatDate(post.updatedAt) }}
-            </div>
-          </div>
-        </div>
-        <nuxt-content :document="post" />
-      </v-col>
-    </v-row>-->
   </v-container>
 </template>
 <script>
