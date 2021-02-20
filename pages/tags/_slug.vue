@@ -13,9 +13,10 @@
 export default {
   async asyncData({ params, error, $content }) {
     try {
-      const posts = await $content("posts", { deep: true })
-        .where({ tags: { $contains: params.slug } })
+      const posts = await $content("doc", { deep: true })
+        .where({ tags: { contains: params.slug } })
         .fetch();
+        console.log(posts);
       return { posts };
     } catch (err) {
       error({

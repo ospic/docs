@@ -2,7 +2,7 @@
    <nav>
       <ul>
             <li v-for="page of pages" :key="page.slug" style="list-style-type: square;" >
-               <NuxtLink :to="{ name: 'doc-slug', params: { slug: page.slug } }">{{page.title}}</NuxtLink>
+               <NuxtLink :to="{ name: 'docs-slug', params: { slug: page.slug } }">{{page.title}}</NuxtLink>
             </li>
           </ul>
         </nav>
