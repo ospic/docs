@@ -67,7 +67,11 @@ export default {
       const [post] = await $content("docs", { deep: true })
         .where({ dir: postPath })
         .fetch();
-        console.log(post)
+
+      const articles = await $content("articles")
+        .only(['title','description','img','slug','author']).fetch();
+        console.log(articles);
+      
       return { post };
     } catch (err) {
       error({
