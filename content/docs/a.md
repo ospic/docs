@@ -6,7 +6,6 @@ image: index.png
 tags:
   - documentation
   - ospic
-  - page
 ---
 
 ## Getting started
