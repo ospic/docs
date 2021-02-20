@@ -1,11 +1,29 @@
 <template>
   <v-container fluid>
-    <v-row no-gutters>
-      <v-col md="2" v-if="post.toc.length > 0">
-        <v-nav :post="post"></v-nav>
-      </v-col>
-      <v-col md="10">
-        <div>
+
+      <v-row>
+          <v-col
+            cols="12"
+            sm="2"
+          >
+            <v-sheet
+              rounded="lg"
+              min-height="268" class="pa-3"
+            >
+           <v-nav :post="post"></v-nav>
+            </v-sheet>
+          </v-col>
+
+          <v-col
+            cols="12"
+            sm="8"
+          >
+            <v-sheet
+              min-height="70vh"
+              class="pa-5"
+            >
+              <div>
+          
           <h1 class="h1 post-h1">{{ post.title }}</h1>
           <p v-if="post.description" class="excerpt">
             {{ post.description }}
@@ -13,13 +31,27 @@
           <div class="post-details">
             <v-tags :tags="post.tags" />
             <div class="date">
-              Post last updated: {{ formatDate(post.updatedAt) }}
+              Las updated: {{ formatDate(post.updatedAt) }}
             </div>
           </div>
         </div>
         <nuxt-content :document="post" />
-      </v-col>
-    </v-row>
+            </v-sheet>
+          </v-col>
+        
+          <v-col
+            cols="12"
+            sm="2"
+          >
+            <v-sheet
+              rounded="lg"
+              min-height="268"
+            >
+              <!--  -->
+            </v-sheet>
+          </v-col>
+      </v-row>
+
   </v-container>
 </template>
 <script>
@@ -31,10 +63,11 @@ export default {
   },
   async asyncData({ params, error, $content }) {
     try {
-      const postPath = `/docs/${params.slug}`;
+      const postPath = `/docs/index`;
       const [post] = await $content("docs", { deep: true })
         .where({ dir: postPath })
         .fetch();
+        console.log(post)
       return { post };
     } catch (err) {
       error({
