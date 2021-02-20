@@ -6,6 +6,7 @@
       </v-col>
       <v-col cols="12" md="12" lg="10" sm="12">
         <div>
+          
           <h1 class="h1 post-h1">{{ post.title }}</h1>
           <p v-if="post.description" class="excerpt">
             {{ post.description }}
