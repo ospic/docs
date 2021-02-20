@@ -41,7 +41,6 @@ export default {
   plugins: [
     "~/plugins/vuetify.js", 
     "~/plugins/prism.js", 
-    "~/plugins/components.js",
     "~/mixins/mixins.js"
   ],
 
@@ -63,6 +62,7 @@ export default {
       prism: {
         theme: false,
       },
+      tocDepth: 4
     },
   },
 
