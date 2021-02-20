@@ -38,9 +38,14 @@ body {
 }
 
 .post-tags {
-  background-color: #EEEEEE;
+  background-color: white;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.tag {
+  -webkit-box-shadow: -8px 15px 26px -14px #3dc21b;
+          box-shadow: -8px 15px 26px -14px #3dc21b;
 }
 
 .tag a {
@@ -52,14 +57,14 @@ body {
   text-decoration: none;
   font-family: Arial;
   font-size: 12px;
-  padding: 0px 0px;
+  padding: 1px 9px;
   -webkit-text-decoration-color: #ffffff;
           text-decoration-color: #ffffff;
   color: white;
 }
 
 .tag a.link {
-  color: #1520a6;
+  color: #2196f3;
   text-decoration: none;
 }
 
