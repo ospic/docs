@@ -53,56 +53,13 @@
   </v-container>
 </template>
 <script>
-
 export default {
-
-  async asyncData({ params, error, $content }) {
-    try {
-      const postPath = `/docs/index`;
-      const [post] = await $content("docs", { deep: true })
-        .where({ dir: postPath })
-        .fetch();
+  async asyncData({ $content, params }) {
+    const post = await $content("doc", params.slug).fetch();
 
     const pages = await $content("doc")
-    .only(['title','description','img','slug','author'])
-     .sortBy('createdAt', 'asc')
-    .fetch();
-    console.log(pages);
-      return { post, pages };
-    } catch (err) {
-      error({
-        statusCode: 404,
-        message: "Page could not be found"
-      });
-    }
-  },
-
-  mounted() {
-    Prism.highlightAll();
-  },
-  head() {
-    return {
-      title: this.post.title,
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: this.post.description
-        }
-      ],
-      link: [
-        {
-          rel: "canonical",
-          href: "https://matthewblewitt.com/posts/" + this.post.slug
-        }
-      ]
-    };
-  },
-  computed: {
-    screen() {
-      console.log(window.screen.height);
-      return window.screen.height - 150;
-    }
+        .only(['title','description','img','slug','author']).fetch();
+    return { post, pages };
   }
 };
 </script>
