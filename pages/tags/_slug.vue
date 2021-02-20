@@ -1,12 +1,6 @@
 <template>
   <div class="posts">
-   <!-- <h1>Tags: {{ $route.params.slug }}</h1>
-    <div v-for="post in posts" :key="post.dir">
-      <h3 class="heading">{{ post.title }}</h3>
-      <p>{{ post.description }}</p>
-       <v-tags :tags="post.tags" />
-      <nuxt-link :to="post.dir">Read more</nuxt-link>
-    </div>-->
+ 
 
       <v-container fluid>
     <v-row>
