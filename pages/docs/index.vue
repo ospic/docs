@@ -42,7 +42,7 @@ export default {
         .where({ dir: postPath })
         .fetch();
 
-      const pages = await $content("doc")
+      const pages = await $content("docs")
         .only(["title", "description", "img", "slug", "author"])
         .sortBy("createdAt", "asc")
         .fetch();
