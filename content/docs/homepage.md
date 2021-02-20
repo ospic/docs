@@ -55,7 +55,8 @@ Documenting ...
 ### Stations
   Under development
 ### Calendar
-  Under development
+  For sharing organization calendar with other members.
 ### Reports
-  Under development
+  Display the list of business reports.
 ### Settings and configurations
+ This is nothing but link to  [Settings and configurations](/docs/a/#settings-and-configurations)  for system and Admin configurations
