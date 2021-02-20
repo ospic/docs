@@ -1,12 +1,46 @@
 <template>
   <div class="posts">
-    <h1>Tags: {{ $route.params.slug }}</h1>
+   <!-- <h1>Tags: {{ $route.params.slug }}</h1>
     <div v-for="post in posts" :key="post.dir">
       <h3 class="heading">{{ post.title }}</h3>
       <p>{{ post.description }}</p>
        <v-tags :tags="post.tags" />
       <nuxt-link :to="post.dir">Read more</nuxt-link>
-    </div>
+    </div>-->
+
+      <v-container fluid>
+    <v-row>
+      <v-col cols="12" sm="2">
+        
+      </v-col>
+
+      <v-col cols="12" sm="8">
+        <v-sheet min-height="120vh" class="pa-5">
+          <h1 class="ma-2">Searches for Tag: {{ $route.params.slug }}</h1>
+          <v-divider></v-divider>
+          <div  v-for="(post,index) in posts" :key="post.dir">
+            <h1 class="h1 post-h1">
+              <nuxt-link :to="post.dir"> {{index}}.&nbsp;{{ post.title }}</nuxt-link></h1> 
+            <p v-if="post.description" class="excerpt">
+              {{ post.description }}
+            </p>
+            <div class="post-details">
+              <v-row>
+                 <v-col cols="12" md="6" sm="12">Last updated: {{ formatDate(post.updatedAt) }}</v-col>
+                <v-col cols="12" md="6" sm="12"><v-tags :tags="post.tags" /></v-col>
+              </v-row>
+            </div>
+
+          <v-divider></v-divider>
+          </div>
+        </v-sheet>
+      </v-col>
+
+      <v-col cols="12" sm="2">
+       
+      </v-col>
+    </v-row>
+  </v-container>
   </div>
 </template>
 <script>
@@ -41,5 +75,10 @@ export default {
       ],
     };
   },
+  methods:{
+    handletagclick(tag){
+      
+    }
+  }
 };
 </script>
