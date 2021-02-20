@@ -38,15 +38,11 @@ export default {
   async asyncData({ params, error, $content }) {
     try {
       const postPath = `/docs/index`;
-      const [post] = await $content("docs", { deep: true })
-        .where({ dir: postPath })
-        .fetch();
-
+      const [post] = await $content("docs", { deep: true }).fetch();
       const pages = await $content("docs")
         .only(["title", "description", "img", "slug", "author"])
         .sortBy("createdAt", "asc")
         .fetch();
-      console.log(pages);
       return { post, pages };
     } catch (err) {
       error({
