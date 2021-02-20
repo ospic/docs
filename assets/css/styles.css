@@ -37,6 +37,10 @@ body {
   zoom: 80%;
 }
 
+.app {
+  background-color: "grey lighten-3";
+}
+
 .tag {
   -webkit-box-shadow: -8px 15px 26px -14px #3dc21b;
           box-shadow: -8px 15px 26px -14px #3dc21b;
