@@ -1,29 +1,59 @@
 <template>
-<v-app class="app" :oncontextmenu="domain ? 'return true' : 'return false' ">
-    <v-app-bar class="primary"  flat dense fixed app>
-      <img src="@/static/logo.png" alt="Vuetify.js" height="100%"/>
+  <v-app class="app" :oncontextmenu="domain ? 'return true' : 'return false'">
+    <v-app-bar class="primary" flat dense fixed app>
+      <img src="@/static/logo.png" alt="Vuetify.js" height="100%" />
       <nuxt-link to="/">
-      <v-toolbar-title class="mx-0 title white--text plain-link" v-text="title"></v-toolbar-title></nuxt-link>
+        <v-toolbar-title
+          class="mx-0 title white--text plain-link"
+          v-text="title"
+        ></v-toolbar-title
+      ></nuxt-link>
       <p>Beta</p>
       <v-spacer></v-spacer>
-   </v-app-bar>
-    <v-main class="ma-0 " >
+
+      <a href="https://github.com/ospic/docs" target="_blank">
+        <v-btn text fab x-small target="_blank">
+          <v-icon>mdi-github</v-icon>
+        </v-btn>
+      </a>
+      <a href="https://app.ospicx.com/" target="_blank">
+        <v-btn text fab x-small>
+          <v-icon>mdi-web</v-icon>
+        </v-btn></a
+      >
+    </v-app-bar>
+    <v-main class="grey lighten-3">
       <v-container class=" pa-0" fluid>
-        
         <nuxt />
       </v-container>
     </v-main>
 
-  <v-footer :absolute="!fixed" class="primary" app>
+    <v-footer :absolute="!fixed" class="primary" app>
       <v-flex xs12 class="d-flex align-center justify-end  flex-column">
-        <div  style="color: white" >
+        <div style="color: white">
           Copyright &copy; {{ new Date().getFullYear() }} The Apache Software
-          Foundation, Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" style="color: blue;  text-decoration: underline;" target="_blank"> Apache License, Version 2.0.</a>
+          Foundation, Licensed under the
+          <a
+            href="https://www.apache.org/licenses/LICENSE-2.0"
+            style="color: blue;  text-decoration: underline;"
+            target="_blank"
+          >
+            Apache License, Version 2.0.</a
+          >
         </div>
         <div class="white--text ml-3">
-          Made by <a href="https://github.com/ospic" style="color: white"   target="_blank">Ospic </a>
-          as official documentation for 
-          <a style="color: blue; text-decoration: underline;" href="http://ospic.github.io/webapp/" target="_blank"
+          Made by
+          <a
+            href="https://github.com/ospic"
+            style="color: white"
+            target="_blank"
+            >Ospic
+          </a>
+          as official documentation for
+          <a
+            style="color: blue; text-decoration: underline;"
+            href="http://ospic.github.io/webapp/"
+            target="_blank"
             >Ospic HMS</a
           >
         </div>
@@ -67,11 +97,10 @@ export default {
       }
     };
   },
-  computed:{
-     domain() {
+  computed: {
+    domain() {
       return window.location.hostname === "localhost";
     }
   }
-
 };
 </script>
