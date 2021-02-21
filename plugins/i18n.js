@@ -1,5 +1,5 @@
 import en from "../locales/en.json";
-import sw from "../locales/sw.json";
+import sw from "../locales/sw-sw.json";
 import fr from "../locales/fr.json";
 import es from "../locales/es.json";
 
