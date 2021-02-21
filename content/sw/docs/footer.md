@@ -1,11 +1,11 @@
 ---
-title: Page footer
+title: Kijachini cha ukurasa
 description:  Page footer
 createdAt: '2021-10-10'
 image: index.png
 tags:
-  - documentation
-  - footer
+  - waraka
+  - kijachini
 ---
 
 
