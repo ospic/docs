@@ -34,10 +34,9 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    console.log(this.$i18n.locale)
-    const post = await $content(`${this.$i18n.locale}/docs`, params.slug).fetch();
+    const post = await $content("docs", params.slug).fetch();
 
-    const pages = await $content(`${this.$i18n.locale}/docs`)
+    const pages = await $content("docs")
       .only(["title", "description", "img", "slug", "author"])
       .sortBy("createdAt", "asc")
       .fetch();
