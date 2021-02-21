@@ -1,4 +1,5 @@
 <template>
+
 <blog-page :pages="pages" :post="post"></blog-page>
 </template>
 <script>

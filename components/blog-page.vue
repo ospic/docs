@@ -69,7 +69,7 @@
         </v-sheet>
       </v-col>
 
-      <v-col cols="12" sm="2" v-if="isMdAndUp">
+      <v-col cols="12" :sm="$vuetify.breakpoint.smOnly ? '4':'2'" v-if="$vuetify.breakpoint.smAndUp">
         <v-sheet rounded="lg" min-height="268" class="pa-5">
           <v-pages :pages="pages"></v-pages>
         </v-sheet>
