@@ -55,7 +55,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-i18n'
   ],
   content: {
     markdown: {
@@ -65,6 +66,7 @@ export default {
       tocDepth: 4
     },
   },
+  i18n: {},
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
