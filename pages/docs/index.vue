@@ -33,11 +33,12 @@
 </template>
 <script>
 export default {
-  async asyncData({ params, error, $content }) {
+  async asyncData({ params, error, $content,app }) {
+    console.log(app.i18n.locale)
     try {
       const postPath = `/docs/index`;
-      const [post] = await $content("docs", { deep: true }).fetch();
-      const pages = await $content("docs")
+      const [post] = await $content(`${app.i18n.locale}/docs`, { deep: true }).fetch();
+      const pages = await $content(`${app.i18n.locale}/docs`)
         .only(["title", "description", "img", "slug", "author"])
         .sortBy("createdAt", "asc")
         .fetch();
