@@ -69,25 +69,27 @@ export default {
   i18n: {
     locales: [
       {
-         code: 'es',
-         iso: 'en-ES',
-         name: 'Español',
-       },
-       {
-         code: 'en',
-         iso: 'en-US',
-         name: 'English',
-       },
-       {
-         code: 'fr',
-         iso: 'fr-fr',
-         name: 'Français',
-       },
-       {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+      },
+      {
         code: 'sw',
         iso: 'sw-sw',
         name: 'Swahili',
       },
+      {
+         code: 'es',
+         iso: 'en-ES',
+         name: 'Español',
+       },
+     
+       {
+         code: 'fr',
+         iso: 'fr-fr',
+         name: 'Français',
+       }
+     
     ],
     defaultLocale: 'en',
     noPrefixDefaultLocale: true,
