@@ -39,9 +39,9 @@
 </template>
 <script>
 export default {
-  async asyncData({ params, error, $content }) {
+  async asyncData({ params, error, $content ,app}) {
     try {
-      const posts = await $content("docs", { deep: true }).where({ tags: { $contains: params.slug } }).fetch();
+      const posts = await $content(`${app.i18n.locale}/docs`, { deep: true }).where({ tags: { $contains: params.slug } }).fetch();
         console.log(posts);
       return { posts };
     } catch (err) {
