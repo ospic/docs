@@ -6,8 +6,8 @@
         <v-toolbar-title
           v-if="$vuetify.breakpoint.mdAndUp"
           class="mx-0 title white--text plain-link"
-          v-text="title"
-        ></v-toolbar-title
+          
+        >{{ $t("apptitle") }}</v-toolbar-title
       ></nuxt-link>
       <p>Beta</p>
       <v-spacer></v-spacer>
