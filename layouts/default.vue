@@ -1,5 +1,5 @@
 <template>
-  <v-app class="app" :oncontextmenu="domain ? 'return true' : 'return false'">
+  <v-app class="app grey lighten-3"  :oncontextmenu="domain ? 'return true' : 'return false'" app>
       <v-system-bar color="primary darken-3"></v-system-bar>
 
     <v-app-bar class="primary" flat dark dense fixed app>
@@ -72,7 +72,7 @@
       </v-container>
     </v-main>
 
-    <v-footer class="primary" app>
+    <v-footer class="primary" fixed>
       <v-flex xs12 class="d-flex align-center justify-end  flex-column">
         <div style="color: white">
           Copyright &copy; {{ new Date().getFullYear() }} The Apache Software

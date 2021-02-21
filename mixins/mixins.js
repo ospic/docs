@@ -27,6 +27,9 @@ Vue.mixin({
     isMdAndUp() {
       return this.$vuetify.breakpoint.mdAndUp;
     },
+    domain() {
+      return window.location.hostname === "localhost";
+    }
 
   },
 });
