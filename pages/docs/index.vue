@@ -3,6 +3,7 @@
 </template>
 <script>
 export default {
+   layout: 'blog',
   async asyncData({ params, error, $content,app }) {
     console.log(app.i18n.locale)
     try {

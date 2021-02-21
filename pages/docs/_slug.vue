@@ -4,6 +4,7 @@
 <script>
 import blogPage from '../../components/blog-page.vue';
 export default {
+  layout: 'blog',
   components: { blogPage },
   async asyncData({ $content, params,app }) {
     const post = await $content(`${app.i18n.locale}/docs`, params.slug).fetch();
