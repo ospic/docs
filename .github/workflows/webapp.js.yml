@@ -64,7 +64,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm cache verify
-     
+      - name: Install typescript
+        run: npm install -D typescript
+      - name: Install ts-node
+        run: npm install -D ts-node
+
       - run: npm i --save
       - run: npm run generate
 
