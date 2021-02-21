@@ -43,6 +43,13 @@ body {
   padding-right: 5px;
 }
 
+.dotted {
+  border: 2px dotted gray;
+  border-style: none none dotted;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
 .tag {
   -webkit-box-shadow: -8px 15px 26px -14px #3dc21b;
           box-shadow: -8px 15px 26px -14px #3dc21b;
