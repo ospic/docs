@@ -1,5 +1,5 @@
 ---
-title: Page footer
+title: Pied de page
 description:  Page footer
 createdAt: '2021-10-10'
 image: index.png
