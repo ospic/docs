@@ -40,10 +40,10 @@
       
       height="100%"
       class="pa-3"
-       v-if="!isMdAndUp"
-    >
+       v-if="!isMdAndUp">
+       <h2 class="pa-2">Pages</h2>
      <v-pages :pages="pages"></v-pages>
-     <v-spacer></v-spacer>
+    
     </v-navigation-drawer>
   <v-container  fluid>
     <v-row>
