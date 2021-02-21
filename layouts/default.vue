@@ -2,10 +2,10 @@
   <v-app class="app" :oncontextmenu="domain ? 'return true' : 'return false'">
       <v-system-bar color="primary darken-3"></v-system-bar>
 
-    <v-app-bar class="primary" flat dense fixed app>
+    <v-app-bar class="primary" flat dark dense fixed app>
       <img src="@/static/logo.png" alt="Vuetify.js" height="100%" />
       <nuxt-link to="/">
-        <v-toolbar-title
+        <v-toolbar-title v-if="$vuetify.breakpoint.mdAndUp"
           class="mx-0 title white--text plain-link"
           v-text="title"
         ></v-toolbar-title
@@ -29,7 +29,7 @@
           <v-icon>mdi-web</v-icon>
         </v-btn></a
       >
-       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+       <v-app-bar-nav-icon  @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
     </v-app-bar>
 
