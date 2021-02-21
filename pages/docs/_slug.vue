@@ -1,5 +1,7 @@
 <template>
+
   <v-container fluid>
+    <pre>{{post}}</pre>
     <v-row>
       <v-col cols="12" sm="2" v-if="post.toc.length > 0">
         <v-sheet rounded="lg" min-height="268" class="pa-3">
@@ -33,10 +35,10 @@
 </template>
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const post = await $content("docs", params.slug).fetch();
+  async asyncData({ $content, params,app }) {
+    const post = await $content(`${app.i18n.locale}/docs`, params.slug).fetch();
 
-    const pages = await $content("docs")
+    const pages = await $content(`${app.i18n.locale}/docs`)
       .only(["title", "description", "img", "slug", "author"])
       .sortBy("createdAt", "asc")
       .fetch();
