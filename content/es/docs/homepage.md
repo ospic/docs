@@ -1,5 +1,5 @@
 ---
-title: Home page and Dashboard
+title: Página de inicio y panel
 description: Learning how to ospic authentication works to access the system informations
 img: first-blog-post.jpg
 alt: my first blog post

@@ -1,5 +1,5 @@
 ---
-title:  Setting and configurations
+title:  Ajuste y configuraciones
 description: Learning some setting and system configurations before start working with Ospic HMS
 img: first-blog-post.jpg
 alt: my first blog post
