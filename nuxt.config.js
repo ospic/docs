@@ -56,7 +56,28 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    {
+      locales: [
+        {
+           code: 'es',
+           iso: 'en-ES',
+           name: 'Español',
+         },
+         {
+           code: 'en',
+           iso: 'en-US',
+           name: 'English',
+         },
+         {
+           code: 'fr',
+           iso: 'fr-fr',
+           name: 'Français',
+         },
+      ],
+      defaultLocale: 'en',
+      noPrefixDefaultLocale: true,
+    }
   ],
   content: {
     markdown: {
