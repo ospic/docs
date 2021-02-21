@@ -1,5 +1,4 @@
 <template>
-<v-app class="app" :oncontextmenu="domain ? 'return true' : 'return false'">
    <v-container class="grey lighten-3"  fluid>
 
     <v-app-bar class="primary" flat dark dense fixed app>
@@ -29,21 +28,26 @@
           <v-icon>mdi-web</v-icon>
         </v-btn></a
       >
-       <v-app-bar-nav-icon  v-if="$vuetify.breakpoint.smAndDown"  @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+       <v-app-bar-nav-icon v-if="!isMdAndUp"    @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
     </v-app-bar>
 
     <v-navigation-drawer
       v-model="drawer"
-      absolute right
-      bottom v-if="$vuetify.breakpoint.smAndDown"
-      temporary class="pa-3"
+      mini-variant.sync="mini"
+      overlay-color="primary"
+      app right
+      
+      height="100%"
+      class="pa-3"
+       v-if="!isMdAndUp"
     >
      <v-pages :pages="pages"></v-pages>
+     <v-spacer></v-spacer>
     </v-navigation-drawer>
   <v-container  fluid>
     <v-row>
-      <v-col cols="12" sm="2" v-if="post.toc.length > 0 && $vuetify.breakpoint.smAndUp">
+      <v-col cols="12" sm="2" v-if="post.toc.length > 0 && isMdAndUp">
         <v-sheet rounded="lg" min-height="268" class="pa-3">
           <v-nav :post="post"></v-nav>
         </v-sheet>
@@ -65,7 +69,7 @@
         </v-sheet>
       </v-col>
 
-      <v-col cols="12" sm="2" v-if="!$vuetify.breakpoint.smAndDown">
+      <v-col cols="12" sm="2" v-if="isMdAndUp">
         <v-sheet rounded="lg" min-height="268" class="pa-5">
           <v-pages :pages="pages"></v-pages>
         </v-sheet>
@@ -73,7 +77,7 @@
     </v-row>
   </v-container>
    </v-container>
-</v-app>
+
 </template>
 <script>
 export default {
@@ -83,7 +87,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-
+      mini:true,
      
       miniVariant: false,
       right: true,

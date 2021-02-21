@@ -29,6 +29,9 @@ Vue.mixin({
     },
     domain() {
       return window.location.hostname === "localhost";
+    },
+    locales(){
+      return this._i18n.locales;
     }
 
   },
