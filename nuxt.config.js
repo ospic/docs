@@ -1,5 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-
+import i18n from "./plugins/i18n";
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -93,15 +93,7 @@ export default {
     ],
     defaultLocale: 'en',
     noPrefixDefaultLocale: true,
-    vueI18n:{
-      fallbackLocale: 'en',
-      messages: {
-        en: require("./locales/en-us.json"),
-        sw: require("./locales/sw-sw.json"),
-        fr: require("./locales/fr-fr.json"),
-        es: require("./locales/es-es.json")
-      },
-    }
+    vueI18n: i18n,
   },
 
 
