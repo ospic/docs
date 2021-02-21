@@ -11,8 +11,8 @@
       ></nuxt-link>
       <p>Beta</p>
       <v-spacer></v-spacer>
-      <h5>Language:</h5>
-      <div class="text-center">
+      <h5 v-if="isMdAndUp">Language:</h5>
+      <div v-if="isMdAndUp" class="text-center">
         <v-menu offset-y>
           <template v-slot:activator="{ on, attrs }">
             <v-btn
@@ -37,6 +37,7 @@
           </v-list>
         </v-menu>
       </div>
+    
 
       <a href="https://github.com/ospic/docs" target="_blank">
         <v-btn text fab x-small target="_blank">
@@ -66,6 +67,34 @@
     >
       <h2 class="pa-2">Pages</h2>
       <v-pages :pages="pages"></v-pages>
+    <template v-slot:append >
+      <h5>{{ $t("selectlanguage") }}</h5>
+      <div class="text-center">
+        <v-menu offset-y>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              text
+              color="primary"
+              small block
+              v-bind="attrs"
+              v-on="on"
+              style="text-transform:none; primary--text"
+            >
+              {{ locale.name }} <v-icon>mdi-menu-down</v-icon>
+            </v-btn>
+          </template>
+          <v-list dense>
+            <v-list-item dense v-for="(locale, index) in locales" :key="index">
+              <nuxt-link
+                class="primary--text"
+                :to="switchLocalePath(locale.code)"
+                >{{ locale.name }}</nuxt-link
+              >
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </div>
+    </template>
     </v-navigation-drawer>
     <v-container fluid>
       <v-row>
