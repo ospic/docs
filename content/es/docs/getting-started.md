@@ -1,5 +1,5 @@
 ---
-title: Geting started
+title: Empezando
 description: Improve your health institution data collection, distribution, reporting and customer self service by using Ospic Hospital Management System (Ospic HMS).
 img: first-blog-post.jpg
 alt: getting started
