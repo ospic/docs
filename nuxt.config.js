@@ -57,27 +57,6 @@ export default {
   modules: [
     '@nuxt/content',
     'nuxt-i18n',
-    {
-      locales: [
-        {
-           code: 'es',
-           iso: 'en-ES',
-           name: 'Español',
-         },
-         {
-           code: 'en',
-           iso: 'en-US',
-           name: 'English',
-         },
-         {
-           code: 'fr',
-           iso: 'fr-fr',
-           name: 'Français',
-         },
-      ],
-      defaultLocale: 'en',
-      noPrefixDefaultLocale: true,
-    }
   ],
   content: {
     markdown: {
@@ -87,7 +66,35 @@ export default {
       tocDepth: 4
     },
   },
-  i18n: {},
+  i18n: {
+    locales: [
+      {
+         code: 'es',
+         iso: 'en-ES',
+         name: 'Español',
+       },
+       {
+         code: 'en',
+         iso: 'en-US',
+         name: 'English',
+       },
+       {
+         code: 'fr',
+         iso: 'fr-fr',
+         name: 'Français',
+       },
+    ],
+    defaultLocale: 'en',
+    noPrefixDefaultLocale: true,
+    vueI18n:{
+      fallbackLocale: 'en',
+      messages: {
+        en: require("./locales/en-us.json"),
+        es: require("./locales/sw-sw.json"),
+        fr: require("./locales/fr-fr.json")
+      },
+    }
+  },
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
