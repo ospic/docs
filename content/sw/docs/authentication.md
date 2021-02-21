@@ -1,13 +1,13 @@
 ---
-title: Users Authentication
+title:  Uhalalishaji wa watumiaji
 description: Learning how to ospic authentication works to access the system informations
 img: first-blog-post.jpg
 alt: my first blog post
 createdAt: '2020-12-13'
 author: Eli
 tags:
-  - documentation
-  - authentication
+  - waraka
+  - uhalalishaji
 ---
 
 #### Users authentication
