@@ -89,10 +89,10 @@ export default {
         name: 'Swahili',
       },
     ],
-    defaultLocale: 'sw',
+    defaultLocale: 'en',
     noPrefixDefaultLocale: true,
     vueI18n:{
-      fallbackLocale: 'sw',
+      fallbackLocale: 'en',
       messages: {
         en: require("./locales/en-us.json"),
         es: require("./locales/sw-sw.json"),
