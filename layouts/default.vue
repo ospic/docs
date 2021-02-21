@@ -1,5 +1,7 @@
 <template>
   <v-app class="app" :oncontextmenu="domain ? 'return true' : 'return false'">
+      <v-system-bar color="primary darken-3"></v-system-bar>
+
     <v-app-bar class="primary" flat dense fixed app>
       <img src="@/static/logo.png" alt="Vuetify.js" height="100%" />
       <nuxt-link to="/">
@@ -27,14 +29,50 @@
           <v-icon>mdi-web</v-icon>
         </v-btn></a
       >
+       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+
     </v-app-bar>
+
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute right
+      bottom
+      temporary
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item>
+            <v-list-item-title>Foo</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Bar</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Fizz</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Buzz</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-main class="grey lighten-3">
       <v-container class=" pa-0" fluid>
         <nuxt />
       </v-container>
     </v-main>
 
-    <v-footer fixed class="primary" app>
+    <v-footer class="primary" app>
       <v-flex xs12 class="d-flex align-center justify-end  flex-column">
         <div style="color: white">
           Copyright &copy; {{ new Date().getFullYear() }} The Apache Software
@@ -76,26 +114,12 @@ export default {
       drawer: false,
       fixed: false,
 
-      locales: [
-        { locale: "English", lang: "en" },
-        { locale: "Swahili", lang: "sw" },
-        { locale: "French", lang: "fr" },
-        { locale: "Arabic", lang: "ar" }
-      ],
+     
       miniVariant: false,
       right: true,
       rightDrawer: false,
       title: "Ospic documentation",
-      imageLink: {
-        main:
-          "https://firebasestorage.googleapis.com/v0/b/endorfinevue.appspot.com/o/assets%2Fb13f0434-b228-11e6-8e5d-5252025056ab_web_scale_0.4666667_0.4666667__.jpg?alt=media&token=660df23e-599e-434b-9313-ba69c973eeea",
-        sub_main:
-          "https://firebasestorage.googleapis.com/v0/b/endorfinevue.appspot.com/o/assets%2FNight-Club-Clubbing-Jobs-Abroad2.jpg?alt=media&token=82bbda7d-5df4-430b-9217-adaf1c8485c5",
-        logo:
-          "https://firebasestorage.googleapis.com/v0/b/endorfinevue.appspot.com/o/assets%2Fandroid-chrome-512x512.png?alt=media&token=8a0a66f6-4741-4ff6-8f28-eb9ec74374df",
-        social_cover:
-          "https://firebasestorage.googleapis.com/v0/b/endorfinevue.appspot.com/o/assets%2Fo-NIGHTCLUB-facebook.jpg?alt=media&token=cefc5c4c-9714-41da-9c22-f63caf5e89a4"
-      }
+     
     };
   },
   computed: {
