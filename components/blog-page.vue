@@ -9,7 +9,12 @@
           
         >{{ $t("apptitle") }}</v-toolbar-title
       ></nuxt-link>
-      <p>Beta</p>
+       <v-avatar>
+      <img
+        src="https://library.kissclipart.com/20181003/szw/kissclipart-free-corner-ribbon-png-clipart-logo-f2cbd51c4ca46d94.png"
+        alt="John"
+      >
+    </v-avatar>
       <v-spacer></v-spacer>
       <h5 v-if="isMdAndUp">Language:</h5>
       <div v-if="isMdAndUp" class="text-center">
