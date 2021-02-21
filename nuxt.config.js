@@ -83,11 +83,16 @@ export default {
          iso: 'fr-fr',
          name: 'Français',
        },
+       {
+        code: 'sw',
+        iso: 'sw-sw',
+        name: 'Swahili',
+      },
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'sw',
     noPrefixDefaultLocale: true,
     vueI18n:{
-      fallbackLocale: 'en',
+      fallbackLocale: 'sw',
       messages: {
         en: require("./locales/en-us.json"),
         es: require("./locales/sw-sw.json"),

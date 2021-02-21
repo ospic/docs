@@ -10,6 +10,12 @@
       ></nuxt-link>
       <p>Beta</p>
       <v-spacer></v-spacer>
+      <nuxt-link class="white--text" :to="switchLocalePath('en')"
+        >English</nuxt-link
+      >
+      <nuxt-link class="white--text" :to="switchLocalePath('sw')"
+        >Français</nuxt-link
+      >
 
       <a href="https://github.com/ospic/docs" target="_blank">
         <v-btn text fab x-small target="_blank">
