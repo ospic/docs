@@ -97,8 +97,9 @@ export default {
       fallbackLocale: 'en',
       messages: {
         en: require("./locales/en-us.json"),
-        es: require("./locales/sw-sw.json"),
-        fr: require("./locales/fr-fr.json")
+        sw: require("./locales/sw-sw.json"),
+        fr: require("./locales/fr-fr.json"),
+        es: require("./locales/es-es.json")
       },
     }
   },

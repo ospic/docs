@@ -1,14 +1,13 @@
 ---
-title: Home page and Dashboard
+title: Ukurasa wa mwanzoni na Dashibodi
 description: Learning how to ospic authentication works to access the system informations
 img: first-blog-post.jpg
 alt: my first blog post
 createdAt: '2020-12-13'
 author: Eli
 tags:
-  - documentation
-  - homepage
-  - dashboard
+  - waraka
+  - dashibodi
 ---
 
 #### HomePage
