@@ -14,7 +14,7 @@
           <div  v-for="(post,index) in posts" :key="post.dir">
            
             <h1 class="h1 post-h1">
-              <nuxt-link :to="localePath({ name: 'docs-slug', params: { slug: post.slug }, }, locale)"> {{index}}.&nbsp;{{ post.title }}</nuxt-link></h1> 
+              <nuxt-link :to="localePath({ name: 'docs-slug', params: { slug: post.slug }, }, locale.code)"> {{index}}.&nbsp;{{ post.title }}</nuxt-link></h1> 
             <p v-if="post.description" class="excerpt">
               {{ post.description }}
             </p>
@@ -77,12 +77,8 @@ export default {
     console.log()
   },
   computed:{
-    locale(){
-      return this._i18n.localeProperties.code
-    },
-    locales(){
-      return this._i18n.locales;
-    }
+ 
+ 
   }
 };
 </script>

@@ -32,7 +32,10 @@ Vue.mixin({
     },
     locales(){
       return this._i18n.locales;
-    }
+    },
+    locale(){
+      return this._i18n.localeProperties;
+    },
 
   },
 });
