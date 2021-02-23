@@ -1,16 +1,14 @@
 <template>
-  <v-app
-    class="app grey lighten-3"
-    :oncontextmenu="domain ? 'return true' : 'return false'">
+  <v-app  class="app grey lighten-3 " :oncontextmenu="domain ? 'return true' : 'return false'" fluid>
 
 
-    <v-main class="grey lighten-3">
-      <v-container class=" pa-0" fluid>
+    <v-main style="background-color: #EEEEEE" >
+      <v-container  style="background-color: #EEEEEE" class="pa-0 ma-0" fluid>
         <nuxt />
       </v-container>
     </v-main>
 
-    <v-footer class="primary" fixed>
+    <v-footer class="primary" rounded fixed absolute padless app>
       <v-flex xs12 class="d-flex align-center justify-end  flex-column">
         <div style="color: white">
           Copyright &copy; {{ new Date().getFullYear() }} The Apache Software
