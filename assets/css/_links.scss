@@ -1,7 +1,8 @@
 a { 
      text-decoration: none;
-
-    
+    &:hover{
+          text-decoration: underline;
+     }
 }
 .icon.icon-link {
      background-image: url('~assets/svg/link_variant.svg');
