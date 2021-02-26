@@ -9,6 +9,14 @@
   }
 
   @font-face {
+    font-family: "CodeFont";
+    font-style: normal;
+    font-weight: 400;
+    src: local("CodeFont"),
+      url(../fonts/content/content-a.woff2) format("woff2");
+  }
+
+  @font-face {
     font-family: "ActorV10";
     font-style: normal;
     font-weight: 400;
@@ -19,6 +27,7 @@
 #__nuxt .app{
     font-family: "WolfFont";
     color: #37474F;
+    font-size: 13px;
     h1, h2, h3, h4{
       color: #263238;
     }
@@ -33,5 +42,9 @@
     }
    
 }
-
+p > code{
+  font-family: "CodeFont";
+  color: blue;
+  font-style: italic;
+}
 
