@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "CodeFont";
+  font-style: normal;
+  font-weight: 400;
+  src: local("CodeFont"), url(../fonts/content/content-a.woff2) format("woff2");
+}
+
+@font-face {
   font-family: "ActorV10";
   font-style: normal;
   font-weight: 400;
@@ -15,6 +22,7 @@
 #__nuxt .app {
   font-family: "WolfFont";
   color: #37474F;
+  font-size: 13px;
 }
 
 #__nuxt .app h1, #__nuxt .app h2, #__nuxt .app h3, #__nuxt .app h4 {
@@ -28,6 +36,12 @@
   vertical-align: middle;
   line-height: 90%;
   /* The same as your div height */
+}
+
+p > code {
+  font-family: "CodeFont";
+  color: blue;
+  font-style: italic;
 }
 
 body {
