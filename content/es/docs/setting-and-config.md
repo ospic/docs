@@ -4,7 +4,6 @@ description: Learning some setting and system configurations before start workin
 img: first-blog-post.jpg
 alt: my first blog post
 createdAt: '2021-02-30'
-author: Eli
 tags:
   - documentation
   - settings
