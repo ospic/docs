@@ -4,7 +4,6 @@ description: Learning how to ospic authentication works to access the system inf
 img: first-blog-post.jpg
 alt: my first blog post
 createdAt: '2020-12-13'
-author: Eli
 tags:
   - waraka
   - dashibodi
