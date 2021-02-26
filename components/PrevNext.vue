@@ -10,7 +10,12 @@
        <v-icon color="primary" class="mb-1" x-small>mdi-arrow-left</v-icon> {{ prev.title }} 
       </NuxtLink>
     </v-col>
-    <v-col md="4"></v-col>
+    <v-col md="4">
+       <a href="https://app.ospicx.com/"
+            target="_blank"
+            >Edit this page on Github !</a
+          >
+    </v-col>
     <v-col md="4" class="d-flex flex-row-reverse ">
       <NuxtLink
         v-if="next" prepend-icon="mdi-chevron-right"
