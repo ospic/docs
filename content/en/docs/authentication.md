@@ -10,7 +10,7 @@ tags:
 author:
   name: Lightness
   bio: Member
-  image: https://lh3.googleusercontent.com/proxy/1ik_1R_aK_maNx_KkkK80VVpqpUqvxl-5_dDLHoXU881dkeBqh4I1M6t5oQbVsZvjgWKj1adbVY24lrEQ6Yro84R
+  image: https://thumbs.dreamstime.com/b/beautiful-girl-female-programmer-occupation-jobs-programming-laptop-screen-code-behind-vector-75659699.jpg
 ---
 
 #### Users authentication
