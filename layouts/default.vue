@@ -32,7 +32,7 @@
           as official documentation for
           <a
             style="color: blue; text-decoration: underline;"
-            href="http://ospic.github.io/webapp/"
+            href="https://app.ospicx.com/"
             target="_blank"
             >Ospic HMS</a
           >
