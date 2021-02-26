@@ -15,7 +15,9 @@
           alt="John"
         />
       </v-avatar>
+      
       <v-spacer></v-spacer>
+      <AppSearchInput />
       <h5 v-if="isMdAndUp">Language:</h5>
       <div v-if="isMdAndUp" class="text-center">
         <v-menu offset-y>
