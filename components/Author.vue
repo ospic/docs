@@ -1,31 +1,27 @@
 <template>
-  <div class="w-full px-2 xs:mb-6 md:mb-12 article-card">
-    <NuxtLink
-      :to="`/blog/author/${author.name}`"
-      class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
-    >
-      <img
-        v-if="author.img"
-        class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
-        :src="author.img" :alt="author.name"
-      />
-      <div class="flex flex-col m-4">
-        <h4 class="font-semibold">Author</h4>
-
-        <p>{{ author.name }}</p>
-        <p>{{ author.bio }}</p>
-      </div>
-    </NuxtLink>
-  </div>
+  <v-card dense :to="`/docs/author/${author.name}`" class=" ma-2 pa-3" width="300" outlined flat>
+    <img
+      v-if="author.img"
+      class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+      :src="author.img"
+      :alt="author.name"
+    />
+    <div class="flex flex-col m-4">
+      <h4 class="font-semibold">Author</h4>
+      <ul style="list-style-type:none;">
+        <li>{{ author.name }}</li>
+        <li>{{ author.bio }}</li>
+      </ul>
+    </div>
+  </v-card>
 </template>
-
 <script>
 export default {
   props: {
     author: {
       type: Object,
-      required: true,
-      default: null
+      default: () => null
     }
   }
-}
+};
+</script>
