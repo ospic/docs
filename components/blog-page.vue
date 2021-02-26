@@ -128,6 +128,7 @@
               </div>
             </div>
             <nuxt-content :document="post" />
+              <v-author v-if="post.author" :author="post.author"></v-author>
             </div>
             <sheet-footer>
                <prev-next :prev="prev" :next="next" />

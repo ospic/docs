@@ -59,6 +59,7 @@ export default {
     'nuxt-i18n',
   ],
   content: {
+    nestedProperties: ['author.name'],
     markdown: {
       prism: {
         theme: false,
