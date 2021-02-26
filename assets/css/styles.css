@@ -108,6 +108,14 @@ a {
   text-decoration: none;
 }
 
+a.v-card {
+  text-decoration: none;
+}
+
+a.v-card:hover {
+  text-decoration: underline;
+}
+
 a:hover {
   text-decoration: underline;
 }
