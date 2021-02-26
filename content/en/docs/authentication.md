@@ -8,7 +8,7 @@ tags:
   - documentation
   - authentication
 author:
-  name: Lightness (LE)
+  name: Lightness
   bio: Member
   image: https://lh3.googleusercontent.com/proxy/1ik_1R_aK_maNx_KkkK80VVpqpUqvxl-5_dDLHoXU881dkeBqh4I1M6t5oQbVsZvjgWKj1adbVY24lrEQ6Yro84R
 ---
