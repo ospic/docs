@@ -1,18 +1,22 @@
 <template>
-  <v-card dense :to="`/docs/author/${author.name}`" class=" ma-2 pa-3" width="300" outlined flat>
-    <img
-      v-if="author.img"
-      class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
-      :src="author.img"
-      :alt="author.name"
-    />
-    <div class="flex flex-col m-4">
-      <h4 class="font-semibold">Author</h4>
-      <ul style="list-style-type:none;">
-        <li>{{ author.name }}</li>
-        <li>{{ author.bio }}</li>
-      </ul>
-    </div>
+  <v-card
+    dense
+    :to="`/docs/author/${author.name}`"
+    class=" ma-2 pa-3"
+    width="400"
+    outlined
+    flat
+  >
+    <v-list-item dense :key="item.title">
+      <v-list-item-avatar size="52" color="primary">
+        <v-img :src="author.image"></v-img>
+      </v-list-item-avatar>
+
+      <v-list-item-content>
+        <v-list-item-title v-html="author.name"></v-list-item-title>
+        <v-list-item-subtitle v-html="author.bio"></v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
   </v-card>
 </template>
 <script>
@@ -22,6 +26,13 @@ export default {
       type: Object,
       default: () => null
     }
-  }
+  },
+  data: () => ({
+    item: {
+      avatar: "https://cdn.vuetifyjs.com/images/lists/2.jpg",
+      title: 'Summer BBQ <span class="grey--text text--lighten-1">4</span>',
+      subtitle: `<span class="text--primary">to Alex, Scott, Jennifer</span> &mdash; Wish I could come, but I'm out of town this weekend.`
+    }
+  })
 };
 </script>
