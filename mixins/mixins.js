@@ -5,14 +5,15 @@ import VTags from "~/components/VTags.vue";
 import VNav from "~/components/VNav";
 import VPages from "@/components/VPages";
 import BlogPage from "@/components/blog-page.vue";
-
+import AuthorPage from "@/components/Author.vue"
 Vue.mixin({
   components:{
     "VImg":VImg,
     "VTags":VTags,
     "VNav":VNav,
     "v-pages": VPages,
-    "blog-page":BlogPage
+    "blog-page":BlogPage,
+    "v-author": AuthorPage
   },
   data: function () {
     return {     }
