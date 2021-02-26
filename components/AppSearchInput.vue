@@ -8,16 +8,16 @@
         placeholder="Search"
         filled
         dense
-        flat rounded 
+        flat 
         solo
         light clearable
         single-line
         append-icon="mdi-magnify"
-        class="shrink mr-3 mt-1"
+        class="shrink mr-3"
       >
       </v-text-field>
     </div>
-    <div  class="mt-2">
+    <div  class="mt-0">
       <ul v-if="articles.length" class="articles">
         <li v-for="article of articles" :key="article.slug">
           <NuxtLink
@@ -55,18 +55,16 @@ export default {
 };
 </script>
 <style scoped lang="css">
+  @media screen and ( min-width: 265px){
 .articles {
   position: fixed;
-  padding: 2%;
-  background-color: white;
+  padding: .2% 4% .3% 2%;
+  background-color: #424242;
   
 }
-ul li::before {
-  content: "\2022";
-  color: red;
-  font-weight: bold;
+  }
+ul li a {
   display: inline-block; 
- 
 }
 
 </style>
