@@ -8,7 +8,7 @@
       </v-container>
     </v-main>
 
-    <v-footer class="primary" rounded fixed absolute padless app>
+    <v-footer class="primary" rounded fixed :absolute="!$vuetify.breakpoint.mdAndUp" padless app>
       <v-flex xs12 class="d-flex align-center justify-end  flex-column">
         <div style="color: white">
           Copyright &copy; {{ new Date().getFullYear() }} The Apache Software
