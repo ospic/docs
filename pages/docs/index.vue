@@ -1,5 +1,7 @@
 <template>
- <blog-page :pages="pages" :post="post"></blog-page>
+<div>
+    <blog-page :pages="pages" :post="post" :next="next"></blog-page>
+</div>
 </template>
 <script>
 export default {
@@ -12,7 +14,11 @@ export default {
         .only(["title", "description", "img", "slug", "author"])
         .sortBy("createdAt", "asc")
         .fetch();
-      return { post, pages };
+
+      const [prev, next] = await $content(`${app.i18n.locale}/docs`)
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc').fetch()
+      return { post, pages, prev, next };
     } catch (err) {
       error({
         statusCode: 404,

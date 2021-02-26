@@ -126,4 +126,9 @@ a {
 .page-leave-to {
   opacity: 0;
 }
+
+.v-sheet .post-header,
+.v-sheet .nuxt-content-container {
+  padding: 20px;
+}
 /*# sourceMappingURL=styles.css.map */

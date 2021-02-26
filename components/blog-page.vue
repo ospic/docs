@@ -6,15 +6,15 @@
         <v-toolbar-title
           v-if="$vuetify.breakpoint.mdAndUp"
           class="mx-0 title white--text plain-link"
-          
-        >{{ $t("apptitle") }}</v-toolbar-title
-      ></nuxt-link>
-       <v-avatar>
-      <img
-        src="https://library.kissclipart.com/20181003/szw/kissclipart-free-corner-ribbon-png-clipart-logo-f2cbd51c4ca46d94.png"
-        alt="John"
+          >{{ $t("apptitle") }}</v-toolbar-title
+        ></nuxt-link
       >
-    </v-avatar>
+      <v-avatar>
+        <img
+          src="https://library.kissclipart.com/20181003/szw/kissclipart-free-corner-ribbon-png-clipart-logo-f2cbd51c4ca46d94.png"
+          alt="John"
+        />
+      </v-avatar>
       <v-spacer></v-spacer>
       <h5 v-if="isMdAndUp">Language:</h5>
       <div v-if="isMdAndUp" class="text-center">
@@ -23,7 +23,7 @@
             <v-btn
               text
               dark
-              small 
+              small
               v-bind="attrs"
               v-on="on"
               style="text-transform:none;"
@@ -42,7 +42,6 @@
           </v-list>
         </v-menu>
       </div>
-    
 
       <a href="https://github.com/ospic/docs" target="_blank">
         <v-btn text fab x-small target="_blank">
@@ -72,36 +71,41 @@
     >
       <h2 class="pa-2">Pages</h2>
       <v-pages :pages="pages"></v-pages>
-    <template v-slot:append >
-      <h5>{{ $t("selectlanguage") }}</h5>
-      <div class="text-center">
-        <v-menu offset-y>
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn
-              text
-              color="primary"
-              small block
-              v-bind="attrs"
-              v-on="on"
-              style="text-transform:none; primary--text"
-            >
-              {{ locale.name }} <v-icon>mdi-menu-down</v-icon>
-            </v-btn>
-          </template>
-          <v-list dense>
-            <v-list-item dense v-for="(locale, index) in locales" :key="index">
-              <nuxt-link
-                class="primary--text"
-                :to="switchLocalePath(locale.code)"
-                >{{ locale.name }}</nuxt-link
+      <template v-slot:append>
+        <h5>{{ $t("selectlanguage") }}</h5>
+        <div class="text-center">
+          <v-menu offset-y>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                text
+                color="primary"
+                small
+                block
+                v-bind="attrs"
+                v-on="on"
+                style="text-transform:none; primary--text"
               >
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </div>
-    </template>
+                {{ locale.name }} <v-icon>mdi-menu-down</v-icon>
+              </v-btn>
+            </template>
+            <v-list dense>
+              <v-list-item
+                dense
+                v-for="(locale, index) in locales"
+                :key="index"
+              >
+                <nuxt-link
+                  class="primary--text"
+                  :to="switchLocalePath(locale.code)"
+                  >{{ locale.name }}</nuxt-link
+                >
+              </v-list-item>
+            </v-list>
+          </v-menu>
+        </div>
+      </template>
     </v-navigation-drawer>
-    
+
     <v-container fluid>
       <v-row>
         <v-col cols="12" sm="2" v-if="post.toc.length > 0 && isMdAndUp">
@@ -111,8 +115,8 @@
         </v-col>
 
         <v-col cols="12" :sm="post.toc.length > 0 ? '8' : '10'">
-          <v-sheet min-height="70vh" rounded="lg" class="pa-5">
-            <div>
+          <v-sheet rounded="lg">
+            <div class="post-header">
               <h1 class="h1 post-h1">{{ post.title }}</h1>
               <p v-if="post.description" class="excerpt">
                 {{ post.description }}
@@ -123,6 +127,9 @@
               </div>
             </div>
             <nuxt-content :document="post" />
+            <sheet-footer >
+              <prev-next :prev="prev" :next="next" />
+            </sheet-footer>
           </v-sheet>
         </v-col>
 
@@ -141,7 +148,28 @@
 </template>
 <script>
 export default {
-  props: ["pages", "post"],
+  props: ["pages", "post", "prev", "next"],
+  components: {
+    // A simple helper component
+    SheetFooter: {
+      functional: true,
+
+      render(h, { children }) {
+        return h(
+          "v-sheet",
+          {
+            staticClass: "mt-auto align-center justify-center d-flex px-2",
+            props: {
+              color: "black lighten-3",
+              dark: true,
+              height: 50
+            }
+          },
+          children
+        );
+      }
+    }
+  },
   data() {
     return {
       clipped: false,

@@ -6,6 +6,7 @@ import VNav from "~/components/VNav";
 import VPages from "@/components/VPages";
 import BlogPage from "@/components/blog-page.vue";
 import AuthorPage from "@/components/Author.vue"
+import PrevNext from "@/components/PrevNext"
 Vue.mixin({
   components:{
     "VImg":VImg,
@@ -13,7 +14,8 @@ Vue.mixin({
     "VNav":VNav,
     "v-pages": VPages,
     "blog-page":BlogPage,
-    "v-author": AuthorPage
+    "v-author": AuthorPage,
+    "prev-next":PrevNext
   },
   data: function () {
     return {     }
