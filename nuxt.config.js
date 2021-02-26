@@ -1,7 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 import i18n from "./plugins/i18n";
 export default {
-  target: 'static',
   ssr: false,
   router: {
     base: process.env.NODE_ENV === "production" ? "/docs/" : "/",
@@ -13,7 +12,10 @@ export default {
     color: ' #00A756',
     background: '#FAFAFA'
   },
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
 
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: 'Ospic documentation',
     title: 'docs',
@@ -29,19 +31,28 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }    ]
   },
 
+  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/styles.css'
   ],
+
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     "~/plugins/vuetify.js", 
     "~/plugins/prism.js", 
     "~/mixins/mixins.js"
   ],
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
   ],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
     'nuxt-i18n',
@@ -85,6 +96,8 @@ export default {
     vueI18n: i18n,
   },
 
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
 
