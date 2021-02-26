@@ -184,12 +184,7 @@ export default {
       right: true,
       rightDrawer: false,
       title: "Ospic documentation",
-      items: [
-        { title: "Click Me" },
-        { title: "Click Me" },
-        { title: "Click Me" },
-        { title: "Click Me 2" }
-      ]
+    
     };
   }
 };
