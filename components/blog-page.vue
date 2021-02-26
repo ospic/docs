@@ -101,6 +101,7 @@
       </div>
     </template>
     </v-navigation-drawer>
+    
     <v-container fluid>
       <v-row>
         <v-col cols="12" sm="2" v-if="post.toc.length > 0 && isMdAndUp">
