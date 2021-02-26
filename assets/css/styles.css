@@ -108,6 +108,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .icon.icon-link {
   background-image: url("~assets/svg/link_variant.svg");
   display: inline-block;
