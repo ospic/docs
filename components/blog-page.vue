@@ -15,7 +15,7 @@
           alt="John"
         />
       </v-avatar>
-      
+
       <v-spacer></v-spacer>
       <AppSearchInput />
       <h5 v-if="isMdAndUp">Language:</h5>
@@ -118,24 +118,23 @@
 
         <v-col cols="12" :sm="post.toc.length > 0 ? '8' : '10'">
           <v-sheet rounded="lg">
-            <div>
-            <div class="post-header">
-              <h1 class="h1 post-h1">{{ post.title }}</h1>
-              <p v-if="post.description" class="excerpt">
-                {{ post.description }}
-              </p>
-              <div class="post-tags d-flex justify-space-between">
-                <v-tags :tags="post.tags" />
-                Last updated: {{ formatDate(post.updatedAt) }}
+            <div class="pa-4">
+              <div class="post-header">
+                <h1 class="h1 post-h1">{{ post.title }}</h1>
+                <p v-if="post.description" class="excerpt">
+                  {{ post.description }}
+                </p>
+                <div class="post-tags d-flex justify-space-between">
+                  <v-tags :tags="post.tags" />
+                  Last updated: {{ formatDate(post.updatedAt) }}
+                </div>
               </div>
-            </div>
-            <nuxt-content :document="post" />
+              <nuxt-content :document="post" />
               <v-author v-if="post.author" :author="post.author"></v-author>
             </div>
             <sheet-footer>
-               <prev-next :prev="prev" :next="next" />
+              <prev-next :prev="prev" :next="next" />
             </sheet-footer>
-            
           </v-sheet>
         </v-col>
 
@@ -186,8 +185,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Ospic documentation",
-    
+      title: "Ospic documentation"
     };
   }
 };
