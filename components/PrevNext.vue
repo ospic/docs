@@ -1,21 +1,20 @@
 <template>
-  <div class="flex justify-between">
+    <div class="mx-auto">
     <NuxtLink
       v-if="prev"
       :to="localePath({ name: 'docs-slug', params: { slug: prev.slug } })"
-      class="text-primary font-bold hover:underline"
+      class="d-flex align-start text-primary font-bold hover:underline"
     >
       {{ prev.title }}
     </NuxtLink>
     <NuxtLink
       v-if="next"
       :to="localePath({ name: 'docs-slug', params: { slug: next.slug } })"
-      class="font-bold hover:underline"
+      class="d-flex align-start font-bold hover:underline"
     >
-     Next:  {{ next.title }}
+     {{ next.title }}
     </NuxtLink>
-    <span v-else>&nbsp;</span>
-  </div>
+</div>
 </template>
 <script>
 export default {

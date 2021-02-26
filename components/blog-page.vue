@@ -116,6 +116,7 @@
 
         <v-col cols="12" :sm="post.toc.length > 0 ? '8' : '10'">
           <v-sheet rounded="lg">
+            <div>
             <div class="post-header">
               <h1 class="h1 post-h1">{{ post.title }}</h1>
               <p v-if="post.description" class="excerpt">
@@ -127,9 +128,11 @@
               </div>
             </div>
             <nuxt-content :document="post" />
-            <sheet-footer >
-              <prev-next :prev="prev" :next="next" />
+            </div>
+            <sheet-footer>
+               <prev-next :prev="prev" :next="next" />
             </sheet-footer>
+            
           </v-sheet>
         </v-col>
 
