@@ -161,9 +161,9 @@ export default {
         return h(
           "v-sheet",
           {
-            staticClass: "mt-auto align-center justify-center d-flex px-2",
+            staticClass: "d-flex flex-row align-self-stretch",
             props: {
-              color: "black lighten-3",
+              color: "grey lighten-2",
               dark: true,
               height: 50
             }
