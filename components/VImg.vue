@@ -22,7 +22,7 @@ export default {
         const { post } = this.$parent;
          // eslint-disable-next-line no-console
 
-        return require(`@/content${post.dir}/img/${this.src}`);
+        return require(`@/content/a/${this.src}`);
       } catch (error) {
         return null;
       }

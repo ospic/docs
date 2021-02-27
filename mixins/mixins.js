@@ -9,7 +9,7 @@ import AuthorPage from "@/components/Author.vue"
 import PrevNext from "@/components/PrevNext"
 Vue.mixin({
   components:{
-    "VsImg":VImg,
+    "c-image":VImg,
     "VTags":VTags,
     "VNav":VNav,
     "v-pages": VPages,
