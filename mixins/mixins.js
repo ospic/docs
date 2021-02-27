@@ -7,6 +7,7 @@ import VPages from "@/components/VPages";
 import BlogPage from "@/components/blog-page.vue";
 import AuthorPage from "@/components/Author.vue"
 import PrevNext from "@/components/PrevNext"
+import AppIcon from "@/components/AppIcon.vue";
 Vue.mixin({
   components:{
     "c-image":VImg,
@@ -15,7 +16,8 @@ Vue.mixin({
     "v-pages": VPages,
     "blog-page":BlogPage,
     "v-author": AuthorPage,
-    "prev-next":PrevNext
+    "prev-next":PrevNext,
+    "icon":AppIcon
   },
   data: function () {
     return {     }
