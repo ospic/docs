@@ -112,6 +112,7 @@
       <v-row>
         <v-col cols="12" sm="2" v-if="post.toc.length > 0 && isMdAndUp">
           <v-sheet rounded="lg" min-height="268" class="pa-3">
+          
             <v-nav :post="post"></v-nav>
           </v-sheet>
         </v-col>
