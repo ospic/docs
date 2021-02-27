@@ -25,8 +25,9 @@ In your navigation drawer select [Settings and configurations](/docs/a/#settings
 <strong >USER ROLE</strong> by default. Checking Is staff checkbox will open selection for department where you want to assign this user and automatically assign this user as member of that department. Now the user can login with provided username and password. <c-image src="newuser.png" alt="Create user screenshot"></c-image>
 
 
-### Edit user
 
+### Edit user
+To edit existing user in your users list click the edit icon <v-icon color="primary">mdi-pencil</v-icon> you will be provided with popup screen with information already filled for editing.
 
 ### Users authentication
 Ospic deals with human confidential information. With this understanding we have implemented strict Authorization and Authentication methods just to make sure that the one using the system is exactly who is pretending to be and is allowed to perform what operation is trying to perfom. Soon after installation the database comes with default user for testing `username = demo` and `password=password`. The system admin can navigate to [Settings and configurations](/docs/a/#settings-and-configurations) to create a new user, assign them roles then login.
