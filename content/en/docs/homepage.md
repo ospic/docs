@@ -1,6 +1,6 @@
 ---
-title: Home page and Dashboard
-description: Learning how to ospic authentication works to access the system informations
+title:  Dashboard
+description: Dashboard screen display an organizational day-to-day statistical records.
 img: first-blog-post.jpg
 alt: my first blog post
 createdAt: '2020-12-13'
@@ -8,16 +8,20 @@ tags:
   - documentation
   - homepage
   - dashboard
+author:
+  name: Elirehema
+  bio: Member (Software developer)
+  image: https://avatars.githubusercontent.com/u/29277048?s=460&u=7b9129df86f037dc4fb021e22ecbf252f308e688&v=4
 ---
 
-#### HomePage
-Ospic deals with human confidential information. With this understanding we have implemented strict Authorization and Authentication methods just to make sure that the one using the system is exactly who is pretending to be and is allowed to perform what operation is trying to perfom. Soon after installation the database comes with default user for testing `username = demo` and `password=password`. The system admin can navigate to [Settings and configurations](/docs/a/#settings-and-configurations) to create a new user, assign them roles then login.
+This is the first page after login. It  display statistical records and contain the following statistical graphs.
 
-#### Dashboard
-Documenting ...
+### Totals
+This display the total number of seletcive records from the system e,g Total number of patients and in terms of thier gender(i.e Male, female and unspecified), total number of staffs, consultations and assigned and un-assigned consultations , number of bed, occupied and un-occupied beds, total OPD and IPD's etc. 
+<c-image src="totals.png" alt="Record totals"></c-image>
 
 
-#### Statistical graphs
+### Statistical pie graphs
 Documenting ...
 
 
