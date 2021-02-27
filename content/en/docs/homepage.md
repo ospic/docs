@@ -27,10 +27,14 @@ The six sibling pie charts potray  records conposition in the following sequence
 
 ###  Consultations frequency graph
 A linear graph shows the number of consultations conducted per day
-<c-image src="consultations_chart.png" alt="Six sibling pie charts"></c-image>
+<c-image src="consultations_chart.png" alt="Number of consultations per day"></c-image>
 
 
-## Navigation menus
+### Patients/Clients registrations frequency
+Shows the frequency of new patient registrations per gender distributions
+<c-image src="registration_frequency.png" alt="Patient registration frequency"></c-image>
+
+
 ### Dashboard
 ### Patients
   - Appointment
