@@ -22,8 +22,8 @@ This display the total number of seletcive records from the system e,g Total num
 
 
 ### Statistical pie graphs
-Documenting ...
-
+The six sibling pie charts potray  records conposition in the following sequence <strong>gender composition (i.e Male vs female), IPD vs OPD,  Consultations (i.e active vs inactive), Consultation assignment (i.e Assigned vs Un-assigned) , beds distribution and  System users</strong> respectively
+<c-image src="statistical_pie_chart.png" alt="Six sibling pie charts"></c-image>
 
 ### Buttons
  - Refresh Button
