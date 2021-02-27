@@ -176,4 +176,8 @@ strong.button:active {
 .sheet .nuxt-content-container {
   padding: 20px;
 }
+
+.markdown table {
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
