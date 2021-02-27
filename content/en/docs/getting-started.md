@@ -9,4 +9,4 @@ tags:
     - getting started
 ---
 
-Now on our page we can see we have an object with a variable property which is an empty array and a body variable which has our h1 and p tag as well as some other info that we will look at later. If we scroll down you will see we have all the other variables that we have access to.
+We are now aware of what Ospic HMS is and what part has being implented up to the moment of writing this documentation. We can are now going to start explaining each part as mentioned in the [Welcome page section](http://localhost:4000/docs/a)
