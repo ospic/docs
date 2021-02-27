@@ -21,7 +21,8 @@ To access the system information one need to login using their username and pass
 For demonstration purpose you can try to login into our [Demo server]() with `Username: demo, Password: password`. 
 
 ### Create new user
-In your navigation drawer select [Settings and configurations](/docs/a/#settings-and-configurations). This will give you a list of users. With administrator priviledge you can now create a new user by clicking <strong>CREATE NEW</strong> button. Fill the required fields NOTE: the username and password will be used later for login, select the role of user in the system if no role provided the user with be have <strong>USER ROLE</strong> by default. Checking Is staff checkbox will open selection for department where you want to assign this user and automatically assign this user as member of that department. Now the user can login with provided username and password. <c-image src="newuser.png" alt="Create user screenshot"></c-image>
+In your navigation drawer select [Settings and configurations](/docs/a/#settings-and-configurations). This will give you a list of users. With administrator priviledge you can now create a new user by clicking <strong class="button">CREATE NEW user</strong> button. Fill the required fields NOTE: the username and password will be used later for login, select the role of user in the system if no role provided the user with be have 
+<strong >USER ROLE</strong> by default. Checking Is staff checkbox will open selection for department where you want to assign this user and automatically assign this user as member of that department. Now the user can login with provided username and password. <c-image src="newuser.png" alt="Create user screenshot"></c-image>
 
 
 ### Edit user
