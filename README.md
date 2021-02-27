@@ -1,4 +1,7 @@
-# docs
+# Ospic Hospital Management System documentation repository
+
+This repository contain Ospic HMS documetation. Currently hosted in gh-pages [Here](https://ospic.github.io/docs/)
+
 
 ## Build Setup
 
