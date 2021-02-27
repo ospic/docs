@@ -34,35 +34,3 @@ A linear graph shows the number of consultations conducted per day
 Shows the frequency of new patient registrations per gender distributions
 <c-image src="registration_frequency.png" alt="Patient registration frequency"></c-image>
 
-
-### Dashboard
-### Patients
-  - Appointment
-  - Patients
-  - OPD department
-  - IPD department
-### Inventory
-  - Pharmacy
-  - Medicine 
-  - Blood bank
-  - Ward 
-  - Beds
-### Laboratory
-  - Laboratory
-  Under development
-  - Rediology
-  Under development
-### Organization
- - Staffs 
- - Departments
- - Services
-### Finance
-  Under development
-### Stations
-  Under development
-### Calendar
-  For sharing organization calendar with other members.
-### Reports
-  Display the list of business reports.
-### Settings and configurations
- This is nothing but link to  [Settings and configurations](/docs/a/#settings-and-configurations)  for system and Admin configurations
