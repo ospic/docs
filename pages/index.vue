@@ -1,6 +1,6 @@
 <template>
 <v-container fluid >
-    <v-content >
+   
       <section>
         <v-parallax :src="imageLink.sub_main" height="600">
           <v-layout column align-center justify-center class="white--text">
@@ -177,7 +177,7 @@
         </v-container>
      </section>
 
-    </v-content>
+   
 </v-container>
 
 </template>
