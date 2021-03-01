@@ -14,7 +14,7 @@ author:
   image: https://avatars.githubusercontent.com/u/29277048?s=460&u=7b9129df86f037dc4fb021e22ecbf252f308e688&v=4
 ---
 
-### Appointments
+## Appointments
 This shows the list of an assigned and un-assgined consultation. Assigned consultation list all active created consultations and assigned to any medical specialist or staff, but un-assigned work the opposite.
 - Un-assigned patient consultations list
 <c-image src="un-assigned-consultation.png" alt="Assigned and un assigned consultation"></c-image>
@@ -22,6 +22,15 @@ This shows the list of an assigned and un-assgined consultation. Assigned consul
 - Assigned patient consultations list
 <c-image src="assigned-consultation.png" alt="Assigned and un assigned consultation"></c-image>
 
-### Patients
-### OPD department
-### IPD department
+## Patients
+This section list available patients and their status i.e Active or Inactive. 
+<c-image src="patients.png" alt="List of patients"></c-image> You can also create new patient, view patient, edit patient information, add patient contacts informations, upload patient profile image, Initiate patient consultation service to be attended
+
+### Create new patient
+The patient/client registration can be done only once. To create a new patient in you patients list click <strong class="button">+ Add new patient</strong> button, this will navigate you to a new page to fill out some new client information like Fullname, age, weight, height etc. All fields are mandatory except fot Note. After you fill the information click save button. <c-image src="create-patient.png" alt="List of patients"></c-image> 
+
+### View patient
+After 
+
+## OPD department
+## IPD department
