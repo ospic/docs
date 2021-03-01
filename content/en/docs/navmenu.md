@@ -59,36 +59,41 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 
 </div>
 
-### Dashboard
-### Patients
+### Descriptions
+
+##### Dashboard
+A navigation link to take you back to dashboard screen from any point you are in the application. This is visible from all page except finance department.
+##### Patients
+For Patient information management 
   - Appointment
+A navigation link to patient appointments 
   - Patients
   - OPD department
   - IPD department
-### Inventory
+##### Inventory
   - Pharmacy
   - Medicine 
   - Blood bank
   - Ward 
   - Beds
-### Laboratory
+##### Laboratory
   - Laboratory
   Under development
   - Rediology
   Under development
-### Organization
+##### Organization
  - Staffs 
  - Departments
  - Services
-### Finance
+##### Finance
   Under development
-### Stations
+##### Stations
   Under development
-### Calendar
+##### Calendar
   For sharing organization calendar with other members.
-### Reports
+##### Reports
   Display the list of business reports.
-### Settings and configurations
+##### Settings and configurations
  This is nothing but link to  [Settings and configurations](/docs/a/#settings-and-configurations)  for system and Admin configurations
-### Language selection
+##### Language selection
 A drop down to allow user to switch between multiple languages
