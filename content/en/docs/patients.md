@@ -15,6 +15,13 @@ author:
 ---
 
 ### Appointments
+This shows the list of an assigned and un-assgined consultation. Assigned consultation list all active created consultations and assigned to any medical specialist or staff, but un-assigned work the opposite.
+- Un-assigned patient consultations list
+<c-image src="un-assigned-consultation.png" alt="Assigned and un assigned consultation"></c-image>
+
+- Assigned patient consultations list
+<c-image src="assigned-consultation.png" alt="Assigned and un assigned consultation"></c-image>
+
 ### Patients
 ### OPD department
 ### IPD department
