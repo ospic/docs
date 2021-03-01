@@ -2,7 +2,7 @@
 title: Welcome
 description: Welcome! If you are reading this for the first time we would ruther say welcome to Ospic HMS documentation. Official documentation for Ospic Hospital Management system (HMS).
 createdAt: '2020-10-10'
-image: index.png
+image: 
 tags:
   - documentation
   - ospic

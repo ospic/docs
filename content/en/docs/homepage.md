@@ -1,7 +1,7 @@
 ---
 title:  Dashboard
 description: Dashboard screen display an organizational day-to-day statistical records.
-img: first-blog-post.jpg
+image: dashboard.png
 alt: my first blog post
 createdAt: '2020-12-13'
 tags:
