@@ -30,7 +30,9 @@ This section list available patients and their status i.e Active or Inactive.
 The patient/client registration can be done only once. To create a new patient in you patients list click <strong class="button">+ Add new patient</strong> button, this will navigate you to a new page to fill out some new client information like Fullname, age, weight, height etc. All fields are mandatory except fot Note. After you fill the information click save button. <c-image src="create-patient.png" alt="List of patients"></c-image> 
 
 ### View patient
-After 
+After succesfully submit you will be redirect to the created client profile. In the list of clients you can also select one to view his/her details. Currently client profile shows Biography and Consultation history.  <c-image src="profile.png" alt="Client po"></c-image> 
+
+### Edit Patient
 
 ## OPD department
 ## IPD department
