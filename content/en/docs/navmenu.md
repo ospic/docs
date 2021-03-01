@@ -25,10 +25,10 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 | :---        | :--               |           :--- |
 | Dashboard   |  - Dashboard      |  [Dashboard](/docs/homepage)     |
 |  <hr>       |    <hr>           |   <hr>         |
-| Patients    |   - Appointment   |  Here's this   |
-|             |   - Patients      |  Here's this   |
-|             |   - OPD department|  Here's this   |
-|             |   - IPD department|  Here's this   |
+| Patients    |   - Appointment   |  [Appointments](/docs/patients#appointments)   |
+|             |   - Patients      |  [Patients](/docs/patients#patients)   |
+|             |   - OPD department|  [OPD department](/docs/patients#opd-department)  |
+|             |   - IPD department|  [IPD department](/docs/patients#ipd-department)   |
 |  <hr>       |    <hr>           |   <hr>         |
 | Inventory   |  - Pharmacy       |  And more      |
 |             |   -  Medicine     |  Here's this   |
