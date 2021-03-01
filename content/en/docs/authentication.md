@@ -31,7 +31,7 @@ In your navigation drawer select [Settings and configurations](/docs/a/#settings
 To edit existing user in your users list click the edit icon <icon icon="pencil"></icon> you will be provided with popup screen with information already filled for editing.
 
 ### Delete user
-In your users list click trash-can <icon icon="trash-can"></icon>icon, The dialog screen will popup to ask if you real mean to delete this user. <c-image src="delete_user.png" alt="Create user screenshot"></c-image> Confirming by yes or no the operation will succeed as you asked.
+In your users list click trash-can <icon icon="trash-can"></icon> icon, The dialog screen will popup to ask if you real mean to delete this user. <c-image src="delete_user.png" alt="Create user screenshot"></c-image> Confirming by yes or no the operation will succeed as you asked.
 
 ### Authorization and default user
 Ospic deals with human confidential information. With this understanding we have implemented strict Authorization and Authentication methods just to make sure that the one using the system is exactly who is pretending to be and is allowed to perform what operation is trying to perfom. Soon after installation the database comes with default user for testing `Username: demo Password: password`. The system admin can navigate to [Settings and configurations](/docs/a/#settings-and-configurations) to create a new user, assign them roles then login.

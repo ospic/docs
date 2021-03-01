@@ -33,6 +33,7 @@ The patient/client registration can be done only once. To create a new patient i
 After succesfully submit you will be redirect to the created client profile. In the list of clients you can also select one to view his/her details. Currently client profile shows Biography and Consultation history.  <c-image src="profile.png" alt="Client po"></c-image> 
 
 ### Edit Patient
+To edit patient click edit button <icon icon="account-edit"></icon>
 
 ## OPD department
 ## IPD department
