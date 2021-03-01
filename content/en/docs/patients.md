@@ -29,11 +29,17 @@ This section list available patients and their status i.e Active or Inactive.
 ### Create new patient
 The patient/client registration can be done only once. To create a new patient in you patients list click <strong class="button">+ Add new patient</strong> button, this will navigate you to a new page to fill out some new client information like Fullname, age, weight, height etc. All fields are mandatory except fot Note. After you fill the information click save button. <c-image src="create-patient.png" alt="List of patients"></c-image> 
 
-### View patient
+### View client
 After succesfully submit you will be redirect to the created client profile. In the list of clients you can also select one to view his/her details. Currently client profile shows Biography and Consultation history.  <c-image src="profile.png" alt="Client po"></c-image> 
 
-### Edit Patient
-To edit patient click edit button <icon icon="account-edit"></icon>
+### Edit client
+To edit patient click edit button <icon icon="account-edit"></icon> it will give you the edit option click save after you have editted.
+
+### Upload client image
+To upload client image for later refferences click upload button <icon icon="progress-upload"></icon> the popup screen with image select option will appear select image and click save to persist.  The selected image will appear on client profile. <c-image src="profile-image-upload.png" alt="upload profile image"></c-image>  
+
+### Add patient contacts
+Click <strong class="button">add contacts</strong> button. The new page to fill contacts information appear after you have filled the contacts information click submit button. Then the contacts information will appear below client profile image. <c-image src="contact-profile.png" alt="Profile display contacts"></c-image>
 
 ## OPD department
 ## IPD department
