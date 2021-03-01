@@ -53,12 +53,12 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 |  <hr>       |    <hr>           |   <hr>         |
 |    Settings and configurations  |   - Settings and configurations       |  [Settings and configurations](/docs/setting-and-config)  |
 |  <hr>       |    <hr>           |   <hr>         |
+|    Language selections  |   -  Language selections       |  A drop down for language selection  |
+|  <hr>       |    <hr>           |   <hr>         |
 
 
 </div>
 
-## Descriptions
-Description on each menu link
 ### Dashboard
 ### Patients
   - Appointment
@@ -90,3 +90,5 @@ Description on each menu link
   Display the list of business reports.
 ### Settings and configurations
  This is nothing but link to  [Settings and configurations](/docs/a/#settings-and-configurations)  for system and Admin configurations
+### Language selection
+A drop down to allow user to switch between multiple languages
