@@ -130,6 +130,8 @@
                   Last updated: {{ formatDate(post.updatedAt) }}
                 </div>
               </div>
+
+                <c-image v-if="post.image" :src="post.image" alt="Header image"></c-image>
               <nuxt-content :document="post" />
               <v-author v-if="post.author" :author="post.author"></v-author>
             </div>
