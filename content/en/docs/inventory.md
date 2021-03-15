@@ -17,7 +17,16 @@ author:
 
 Spending on assets efficiently and make better business decisions
 ## Pharmacy
+According to [European statment of hospital pharmacy](https://statements.eahp.eu/about/what-hospital-pharmacy) A hospital pharmacy is the health care service, which comprises the art, practice, and profession of choosing, preparing, storing, compounding, and dispensing medicines and medical devices, advising patients, doctors, nurses and other healthcare professionals on their safe, effective and efficient use.
+
+This medicines can be categorized in groups categories and also have measurement units. In you Navigation drawer > Inventory > Pharmacy will appear with all mentioned parts in its separate tabs(i.e Medicine categories tab, Medicine groups tabs, Medicines tabs and Measure units). <c-image src="pharmacy.png" alt="Pharmacy"></c-image>
+### Medicine groups tab
+### Medicine categories tab
+### Medicines tab
+### Measurement units tab
 ## Medicine 
+A shortcut to pharmacy medicine list. It display the same list of medicines mentioned in pharmacy medicine tab but without an option to add new medicine or edit medicine stock. This list is mainly for those users with roles authoriities to view medicines but not to update or create new medicine stock. <c-image src="medicines.png" alt="Medicines"></c-image>
+
 ## Blood bank
 The blood bank section is a simple Blood Bank Management System (BBMS) to track blood types and blood bank stock. The aim is to minimize the manual work for Blood bank and  [Blood groups](https://www.nhs.uk/conditions/blood-groups/) management. All blood groups were defined in the system and its definition considered blood groups and their RH factor as explained [here](https://www.nhs.uk/conditions/blood-groups/).  The blood bank give the list of available blood groups and their stock and option to edit.  Go to Navigation drawer > Inventory > Blood bank <c-image src="blood_bank.png" alt="Blood bank list"></c-image>
 ### Update blood group stock
@@ -29,3 +38,4 @@ To create a new ward click <strong class="button">+ CREATE NEW ward</strong>  bu
 ### View ward 
 To view a ward click ward name from the list of wards and the ward screen will open. But this time the ward will show the numbers of beds available and their status (Occupied or Un-occupied) <c-image src="view_ward.png" alt="View ward"></c-image> For the occupied bed i.e there is patient actively admitted in one othe ward bed the bed will have geen filled color  and on-hover the dialog screen will display the patient admitted informations. <c-image src="view_occupied_bed.png" alt="Wards list"></c-image>
 ## Beds
+This acts as a shortcut to view all the list of wards and their beds. Clicking a ward from this list will takes you to [View ward](/docs/inventory/#view-ward) . <c-image src="beds.png" alt="Beds list"></c-image>
