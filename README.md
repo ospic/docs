@@ -1,9 +1,10 @@
-# Ospic Hospital Management System documentation repository
+# Ospic documentation reporitoy
 
-This repository contain Ospic HMS documetation. Currently hosted in gh-pages [Here](https://ospic.github.io/docs/)
+This repository contain Ospic HMS documetation. Currently hosted in [gh-pages](https://ospic.github.io/docs/)
 
 
-## Build Setup
+## Getting started
+To get started working with this application clone [this repository](https://github.com/ospic/docs.git) and follow this simple instructions. 
 
 ```bash
 # install dependencies
@@ -20,4 +21,7 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+After you run ```npm run dev``` open http://localhost:4000/ from your browser. 
+
+The documentation is powered by [nuxt content](https://content.nuxtjs.org/) 
+ To update a documentation in your localhost double click inside your page, a markdown fill appear you can move on with update. 
