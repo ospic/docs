@@ -21,6 +21,9 @@ According to [European statment of hospital pharmacy](https://statements.eahp.eu
 
 This medicines can be categorized in groups categories and also have measurement units. In you Navigation drawer > Inventory > Pharmacy will appear with all mentioned parts in its separate tabs(i.e Medicine categories tab, Medicine groups tabs, Medicines tabs and Measure units). <c-image src="pharmacy.png" alt="Pharmacy"></c-image>
 ### Medicine groups tab
+Drugs are categorized in a variety of different ways. In the pharmaceutical industry, drugs are grouped according to their chemical activity or conditions that they treat. There are many reasons to classify drugs, ranging from understanding the usefulness of particular types of drugs to formulating treatment plans based on chemically similar drugs. In the world of illicit and abused drug use, there are essentially [7 different types of drugs](https://luxury.rehabs.com/drug-abuse/classifications/).  Each has its own set of characteristics, effects, dangers, and side effects.
+
+
 ### Medicine categories tab
 ### Medicines tab
 ### Measurement units tab
