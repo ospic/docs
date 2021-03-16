@@ -30,11 +30,11 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 |             |   - OPD department|  [OPD department](/docs/patients#opd-department)  |
 |             |   - IPD department|  [IPD department](/docs/patients#ipd-department)   |
 |  <hr>       |    <hr>           |   <hr>         |
-| Inventory   |  - Pharmacy       |  And more      |
-|             |   -  Medicine     |  Here's this   |
-|             |   - Blood bank    |  Here's this   |
-|             |   - Wards         |  Here's this   |
-|             |   - Beds          |  Here's this   |
+| Inventory   |  - Pharmacy       |  [Inventory pharmacy](/docs/inventory#pharmacy)      |
+|             |   -  Medicine     |  [Inventory medicine tab](/docs/inventory#medicine)  |
+|             |   - Blood bank    | [Inventory blood bank](/docs/inventory#blood-bank)   |
+|             |   - Wards         |  [Inventory-wards](/docs/inventory#wards)   |
+|             |   - Beds          |  [Inventory-beds](/docs/inventory#beds)   |
 |  <hr>       |    <hr>           |   <hr>         |
 | Laboratory  |  - Laboratory     |  And more      |
 |             |   -  Rediology    |  Here's this   |
