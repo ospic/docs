@@ -8,14 +8,16 @@ tags:
   - documentation
   - settings
   - configurations
+  - roles
 ---
 
 
 #### Settings & Configurations
- - Administrations
-   - Users Management
-   - Roles and Authorities
- - System
+ - Roles and permissions - _Administrations_
+   - System users management
+   - Self-service users management
+   - Roles Management
+ - System - _configurartion_
    - SMS Configurations
    - Email configurations
 
