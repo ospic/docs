@@ -1,4 +1,4 @@
-# Ospic documentation reporitoy
+# Ospic documentation reporitoy [![Projects](https://github.com/ospic/docs/actions/workflows/projects.yml/badge.svg)](https://github.com/ospic/docs/actions/workflows/projects.yml) [![Deploy](https://github.com/ospic/docs/actions/workflows/webapp.js.yml/badge.svg)](https://github.com/ospic/docs/actions/workflows/webapp.js.yml)
 
 This repository contain Ospic HMS documetation. Currently hosted in [gh-pages](https://ospic.github.io/docs/)
 
