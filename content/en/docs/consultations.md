@@ -29,3 +29,7 @@ From the [list of consultations](/docs/patients#consultations) click one consult
 
 ### Diagnoses
 This list consultation diagnoses. To add new consultation diagnoses click <strong class="button"><v-icon x-small color="white">mdi-view-headline</v-icon>Add new diagnosis</strong> . Popup screen will appear to fill the diagnosis info and diagnosis date <c-image src="diagnosis_form.png" alt="Add new diagnosis information"></c-image>. Click save and it will appear on the top of diagnoses list <c-image src="diagnoses-list.png" alt="Add new diagnosis information"></c-image>.
+
+### Services
+This list medical services received by patient under this consultation. To add new medical service click <strong class="button"> Add patient service</strong> button and select a service, click save and it will appear in the list of service received by patient and its price.
+<c-image src="service-tab.png" alt="Consultation medical services"></c-image>.
