@@ -42,3 +42,7 @@ Display list of medical reports file. <c-image src="laboratory_reports.png" alt=
 
 ### Charges and Costs
 This combine charges for medical service and medicines given to particular consultation services. The list update with update in medical service and medicines received. <c-image src="consultation_consts.png" alt="Consultation charges cost"></c-image>
+
+### Admission history
+Display consultation admission information the admission start and end date, ward number the patient addmitted and bed number. 
+<c-image src="admission-info.png" alt="Admission infos"></c-image>
