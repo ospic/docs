@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "github": "DEPLOY_ENV=prod nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.13.1",
