@@ -53,4 +53,10 @@ From admiision history click to view the admission <c-image src="view_admission.
 - End current admission (i.e close the admission and free the bed for other admissions)
 -  Visit admission (i.e add admission visits info)
 - View visits (view the list of admission visits infos)
+### Visit admission
+Click visit admission button to add admission visits infos. The popup screen will launch to fill the patient condition infos and date of visit then save.
+### End consultation 
+Click end consultation button to mark this consultation as un-admitted and mark the bed as un-occupied for next admissions.
+### View admission visits
+Click admission visits buttons to view list of admissions visits infos by date and time of visit. <c-image src="admission-visits.png" alt="Admission  visits"></c-image>
 
