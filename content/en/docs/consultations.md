@@ -39,3 +39,6 @@ Medication part work exactly the same as services
 
 ### Laboratory reports
 Display list of medical reports file. <c-image src="laboratory_reports.png" alt="Laboratory reports"></c-image> Click upload report file button to add new laboratory report file.
+
+### Charges and Costs
+This combine charges for medical service and medicines given to particular consultation services. The list update with update in medical service and medicines received. <c-image src="consultation_consts.png" alt="Consultation charges cost"></c-image>
