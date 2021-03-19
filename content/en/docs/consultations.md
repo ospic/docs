@@ -27,6 +27,10 @@ From the [list of consultations](/docs/patients#consultations) click one consult
 - Costs (i.e this list all service and medication received, their price of each and total price, the same list will appear in finance for bill payment)
 - Admissions (i.e patient admission historical records)
 
+### Assign staff
+Individual staff's works on consultation they have being assigned to them. To assign consultation service to staff in consultation view page select staff from drop down, consultation will be assigned as soon as you select to re-assign select another staff and consultation will be re-assgined to him/her. 
+<c-image src="assign_staff.png" alt="Assing consultation to staff"></c-image> The staff assigned consultation will appear in their profile pages.
+
 ### Diagnoses
 This list consultation diagnoses. To add new consultation diagnoses click <strong class="button"><v-icon x-small color="white">mdi-view-headline</v-icon>Add new diagnosis</strong> . Popup screen will appear to fill the diagnosis info and diagnosis date <c-image src="diagnosis_form.png" alt="Add new diagnosis information"></c-image>. Click save and it will appear on the top of diagnoses list <c-image src="diagnoses-list.png" alt="Add new diagnosis information"></c-image>.
 
