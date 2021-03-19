@@ -1,8 +1,9 @@
 import i18n from "./plugins/i18n";
+const routerBase = process.env.DEPLOY_ENV === 'prod' ? '/docs/' : '/';
 export default {
   ssr: false,
   router: {
-    base: process.env.NODE_ENV === "production" ? "/docs/" : "/",
+    base: routerBase,
     routerNameSplitter: "/",
   },
 
