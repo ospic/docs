@@ -36,3 +36,6 @@ This list medical services received by patient under this consultation. To add n
 
 ### Medication 
 Medication part work exactly the same as services
+
+### Laboratory reports
+Display list of medical reports file. <c-image src="laboratory_reports.png" alt="Laboratory reports"></c-image> Click upload report file button to add new laboratory report file.
