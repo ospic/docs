@@ -1,4 +1,3 @@
-import colors from 'vuetify/es5/util/colors'
 import i18n from "./plugins/i18n";
 export default {
   ssr: false,
@@ -59,6 +58,8 @@ export default {
   ],
   content: {
     nestedProperties: ['author.name'],
+    apiPrefix: "post",
+    dir: "content",
     markdown: {
       prism: {
         theme: false,
