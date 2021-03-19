@@ -58,8 +58,6 @@ export default {
   ],
   content: {
     nestedProperties: ['author.name'],
-    apiPrefix: "post",
-    dir: "content",
     markdown: {
       prism: {
         theme: false,
