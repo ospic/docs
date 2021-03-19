@@ -41,8 +41,10 @@ To upload client image for later refferences click upload button <icon icon="pro
 ### Add patient contacts
 Click <strong class="button">add contacts</strong> button. The new page to fill contacts information appear after you have filled the contacts information click submit button. Then the contacts information will appear below client profile image. <c-image src="contact-profile.png" alt="Profile display contacts"></c-image>
 
-### Consultations 
+## Consultations 
 In the client profile you can create new service instance for client each time the client visit the health organization after the first day of registration the client will be served as consultation instance. All medical procedures, consts and reports will be under this consultation instance. From the profile select the Consultation tab it will display the list of consultation ever received by particular client in that organization.   <c-image src="concultations.png" alt="Consultations list"></c-image>The consultation list also have  <strong class="button">new consultation</strong> button to initiate client consultation. But this button only appears if client has no any other active consultation service.  Soon after intiating the consultation this consultation will appear in the list  [OPD department](/docs/patients#opd-department) consultations. And if the patient under the consultation get addmitted then it will appear under the list of [IPD department consultations](/docs/patients#ipd-department) 
+
+### View consultation
 
 ## OPD department
 This list all Out-patient client consultations.
