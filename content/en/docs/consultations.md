@@ -46,3 +46,11 @@ This combine charges for medical service and medicines given to particular consu
 ### Admission history
 Display consultation admission information the admission start and end date, ward number the patient addmitted and bed number. 
 <c-image src="admission-info.png" alt="Admission infos"></c-image>
+
+## Admission
+### View admission
+From admiision history click to view the admission <c-image src="view_admission.png" alt="View admission "></c-image> View admission gives three more options
+- End current admission (i.e close the admission and free the bed for other admissions)
+-  Visit admission (i.e add admission visits info)
+- View visits (view the list of admission visits infos)
+
