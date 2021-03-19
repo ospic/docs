@@ -19,5 +19,10 @@ In the client profile you can create new service instance for client each time t
 
 ### View consultation
 From the [list of consultations](/docs/patients#consultations) click one consultations. This will open a new page to view a consulation. 
-
-  <c-image src="consultation.png" alt="View Consultation"></c-image>
+  <c-image src="consultation.png" alt="View Consultation"></c-image> The consultation page currently have 6 tabs
+- Diagnoses (i.e for patient diagnoses informations)
+- Services (i.e for other medical services provided under this consultation)
+- Medication (i.e for list of medicine provided)
+- Laboratory reports (i.e to keep record of laboratory reports uploaded in for this consultation)
+- Costs (i.e this list all service and medication received, their price of each and total price, the same list will appear in finance for bill payment)
+- Admissions (i.e patient admission historical records)
