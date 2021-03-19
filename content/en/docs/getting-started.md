@@ -9,4 +9,4 @@ tags:
     - getting started
 ---
 
-We are now aware of what Ospic HMS is and what part has being implented up to the moment of writing this documentation. We can are now going to start explaining each part as mentioned in the [Welcome page section](http://localhost:4000/docs/a)
+We are now aware of what Ospic HMS is and what part has being implented up to the moment of writing this documentation. We can are now going to start explaining each part as mentioned in the [Welcome page section](/docs/a)
