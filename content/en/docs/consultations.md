@@ -33,3 +33,6 @@ This list consultation diagnoses. To add new consultation diagnoses click <stron
 ### Services
 This list medical services received by patient under this consultation. To add new medical service click <strong class="button"> Add patient service</strong> button and select a service, click save and it will appear in the list of service received by patient and its price.
 <c-image src="service-tab.png" alt="Consultation medical services"></c-image>.
+
+### Medication 
+Medication part work exactly the same as services
