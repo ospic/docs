@@ -57,7 +57,7 @@ From view contact page click <icon icon="pencil"></icon> button to edit and prev
 
 ### Consultations
 ---
-This are patient medical service instances between one day and the next. Click [here to learn about consultation management](/docs/consultations)
+This are patient medical service instances between one day and the next. Click [here to learn about consultation management](/consultations)
 
 ## OPD department
 ---

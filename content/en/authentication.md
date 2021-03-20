@@ -22,7 +22,7 @@ For demonstration purpose you can try to login into our [Demo server]() with `Us
 
 
 ### Create new user
-In your navigation drawer select [Settings and configurations](/docs/a/#settings-and-configurations). This will give you a list of users. With administrator priviledge you can now create a new user by clicking <strong class="button">CREATE NEW user</strong> button. Fill the required fields NOTE: the username and password will be used later for login, select the role of user in the system if no role provided the user with be have 
+In your navigation drawer select [Settings and configurations](/setting-and-config). This will give you a list of users. With administrator priviledge you can now create a new user by clicking <strong class="button">CREATE NEW user</strong> button. Fill the required fields NOTE: the username and password will be used later for login, select the role of user in the system if no role provided the user with be have 
 <strong >USER ROLE</strong> by default. Checking Is staff checkbox will open selection for department where you want to assign this user and automatically assign this user as member of that department. Now the user can login with provided username and password. <c-image src="create_user.png" alt="Create user screenshot"></c-image>
 
 
@@ -34,7 +34,7 @@ To edit existing user in your users list click the edit icon <icon icon="pencil"
 In your users list click trash-can <icon icon="trash-can"></icon> icon, The dialog screen will popup to ask if you real mean to delete this user. <c-image src="delete_user.png" alt="Create user screenshot"></c-image> Confirming by yes or no the operation will succeed as you asked.
 
 ### Default database user
-Ospic deals with human confidential information. With this understanding we have implemented strict Authorization and Authentication methods just to make sure that the one using the system is exactly who is pretending to be and is allowed to perform what operation is trying to perfom. Soon after installation the database comes with default user for testing `Username: demo Password: password`. The system admin can navigate to [Settings and configurations](/docs/a/#settings-and-configurations) to create a new user, assign them roles then login.
+Ospic deals with human confidential information. With this understanding we have implemented strict Authorization and Authentication methods just to make sure that the one using the system is exactly who is pretending to be and is allowed to perform what operation is trying to perfom. Soon after installation the database comes with default user for testing `Username: demo Password: password`. The system admin can navigate to [Settings and configurations]/a/#settings-and-configurations) to create a new user, assign them roles then login.
 
 ### Logout
 After your day activities you may want to call it a day,  just click a button with power icon <icon icon="power"></icon> in your toolbar as shown in dashboard [Toolbar section](docs/homepage#tool-bar)

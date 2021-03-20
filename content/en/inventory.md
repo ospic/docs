@@ -44,4 +44,4 @@ To create a new ward click <strong class="button">+ CREATE NEW ward</strong>  bu
 ### View ward 
 To view a ward click ward name from the list of wards and the ward screen will open. But this time the ward will show the numbers of beds available and their status (Occupied or Un-occupied) <c-image src="view_ward.png" alt="View ward"></c-image> For the occupied bed i.e there is patient actively admitted in one othe ward bed the bed will have geen filled color  and on-hover the dialog screen will display the patient admitted informations. <c-image src="view_occupied_bed.png" alt="Wards list"></c-image>
 ## Beds
-This acts as a shortcut to view all the list of wards and their beds. Clicking a ward from this list will takes you to [View ward](/docs/inventory/#view-ward) . <c-image src="beds.png" alt="Beds list"></c-image>
+This acts as a shortcut to view all the list of wards and their beds. Clicking a ward from this list will takes you to [View ward]/inventory/#view-ward) . <c-image src="beds.png" alt="Beds list"></c-image>
