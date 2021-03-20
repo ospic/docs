@@ -41,17 +41,18 @@ After succesfully submit you will be redirect to the created client profile. In 
 ---
 To edit patient click edit button <icon icon="account-edit"></icon> it will give you the edit option click save after you have editted.
 
-### Upload client image
+### Profile thumbnail
 ---
 To upload client image for later refferences click upload button <icon icon="progress-upload"></icon> the popup screen with image select option will appear select image and click save to persist.  The selected image will appear on client profile. <c-image src="profile-image-upload.png" alt="upload profile image"></c-image>  
 
-## Contacts
+### Contacts
 The defines contacts for specific client/patient.
 ###  Add contacts
 ---
 If client/patient contacts infomation are not yet provided the <strong class="button">add contacts</strong> button will shows up to add. Click the button and the new page to fill contacts information appear after you have filled the contacts information click submit button. Then page to view the contacts information  will appear. The same page will appear when you click view contact infomation from the client profile. <c-image src="view-contact.png" alt="Profile display contacts"></c-image>
 
 ### Edit contacts
+---
 From view contact page click <icon icon="pencil"></icon> button to edit and preview the changes then click <strong class="button">submit</strong>  button to save the changes. <c-image src="edit-contact.png" alt="Edit client profile  contacts"></c-image>
 
 
