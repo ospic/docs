@@ -9,16 +9,23 @@ tags:
   - settings
   - configurations
   - roles
+  - authorities
 ---
 
+ ## Roles and permissions 
+---
+##  <strong>_Administrations_</strong>
+---
+  ### System users 
+List all system users
+<c-image src="users.png" alt="System users lits"></c-image>
+This also gives the option to create new system users by clicking <strong  class="button"> + add new user </strong> button. Add new user by filling the username and password form login. If is staff will display the option to assign user to particular department. Give user role from list of roles. Each role have set of permissions as authorities to perform or not to perform some system operations.  This roles also define which pages in the system a user can or can not see or acces.
+### Self-service users
+### Roles and authorities
+## System 
+---
+##  <strong>_Configurartions_</strong>
+---
+### SMS configurations
+### Email configurations
 
-#### Settings & Configurations
- - Roles and permissions - _Administrations_
-   - System users management
-   - Self-service users management
-   - Roles Management
- - System - _configurartion_
-   - SMS Configurations
-   - Email configurations
-
-### Language selection
