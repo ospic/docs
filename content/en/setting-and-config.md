@@ -23,7 +23,7 @@ This also gives the option to create new system users by clicking <strong  class
 List of all self service user accounts created in each patient accounts. <c-image src="selfservice-users.png" alt="Self-service users list"></c-image>
 
 ### Roles & authorities
-This list all roles ever created in th stystem. <c-image src="roles.png" alt="System roles list"></c-image>
+This list all roles ever created in the system. <c-image src="roles.png" alt="System roles list"></c-image>
 ### Add new role
 --- 
 To add new role click <strong class="button">+ add new role</strong> button and fill the role name e.g Administrator in your drop down select all permission for this role and click save <c-image src="createrole.png" alt="Create new role"></c-image>
@@ -34,5 +34,6 @@ Click edit <icon icon="pencil"></icon>  icon from the list of roles and edit the
 ##  <strong>_Configurartions_</strong>
 ---
 ### SMS configurations
+Twillio SMS campaign
 ### Email configurations
 
