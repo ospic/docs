@@ -1,7 +1,7 @@
 <template>
   <v-card
     dense
-    :to="`/docs/author/${author.name}`"
+    :to="`/author/${author.name}`"
     class=" ma-2 pa-3"
     width="400"
     outlined

@@ -4,7 +4,7 @@
      
       <NuxtLink
         v-if="prev"
-        :to="localePath({ name: 'docs-slug', params: { slug: prev.slug } })"
+        :to=" prev.slug "
         class="text-primary font-weight-bold hover:underline"
       >
        <v-icon color="primary" class="mb-1" x-small>mdi-arrow-left</v-icon> {{ prev.title }} 
@@ -19,7 +19,7 @@
     <v-col md="4" class="d-flex flex-row-reverse ">
       <NuxtLink
         v-if="next" prepend-icon="mdi-chevron-right"
-        :to="localePath({ name: 'docs-slug', params: { slug: next.slug } })"
+        :to=" next.slug "
         class=" mt-auto font-weight-bold hover:underline"
       >
         {{ next.title }} <v-icon color="primary" class="mb-1" x-small >mdi-arrow-right</v-icon>
