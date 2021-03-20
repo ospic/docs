@@ -23,18 +23,18 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 
 | Menu name   |  Submenu          |  Destination   |
 | :---        | :--               |           :--- |
-| Dashboard   |  - Dashboard      |  [Dashboard](/docs/homepage)     |
+| Dashboard   |  - Dashboard      |  [Dashboard](/homepage)     |
 |  <hr>       |    <hr>           |   <hr>         |
-| Patients    |   - Appointment   |  [Appointments](/docs/patients#appointments)   |
-|             |   - Patients      |  [Patients](/docs/patients#patients)   |
-|             |   - OPD department|  [OPD department](/docs/patients#opd-department)  |
-|             |   - IPD department|  [IPD department](/docs/patients#ipd-department)   |
+| Patients    |   - Appointment   |  [Appointments](/patients#appointments)   |
+|             |   - Patients      |  [Patients](/patients#patients)   |
+|             |   - OPD department|  [OPD department](/patients#opd-department)  |
+|             |   - IPD department|  [IPD department](/patients#ipd-department)   |
 |  <hr>       |    <hr>           |   <hr>         |
-| Inventory   |  - Pharmacy       |  [Inventory pharmacy](/docs/inventory#pharmacy)      |
-|             |   -  Medicine     |  [Inventory medicine tab](/docs/inventory#medicine)  |
-|             |   - Blood bank    | [Inventory blood bank](/docs/inventory#blood-bank)   |
-|             |   - Wards         |  [Inventory-wards](/docs/inventory#wards)   |
-|             |   - Beds          |  [Inventory-beds](/docs/inventory#beds)   |
+| Inventory   |  - Pharmacy       |  [Inventory pharmacy](/inventory#pharmacy)      |
+|             |   -  Medicine     |  [Inventory medicine tab](/inventory#medicine)  |
+|             |   - Blood bank    | [Inventory blood bank](/inventory#blood-bank)   |
+|             |   - Wards         |  [Inventory-wards](/inventory#wards)   |
+|             |   - Beds          |  [Inventory-beds](/inventory#beds)   |
 |  <hr>       |    <hr>           |   <hr>         |
 | Laboratory  |  - Laboratory     |  And more      |
 |             |   -  Rediology    |  Here's this   |
@@ -51,7 +51,7 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 |  <hr>       |    <hr>           |   <hr>         |
 |    Reports  |   - Reports       |  Here's this   |
 |  <hr>       |    <hr>           |   <hr>         |
-|    Settings and configurations  |   - Settings and configurations       |  [Settings and configurations](/docs/setting-and-config)  |
+|    Settings and configurations  |   - Settings and configurations       |  [Settings and configurations](/setting-and-config)  |
 |  <hr>       |    <hr>           |   <hr>         |
 |    Language selections  |   -  Language selections       |  A drop down for language selection  |
 |  <hr>       |    <hr>           |   <hr>         |
@@ -94,6 +94,6 @@ A navigation link to patient appointments
 ##### Reports
   Display the list of business reports.
 ##### Settings and configurations
- This is nothing but link to  [Settings and configurations](/docs/a/#settings-and-configurations)  for system and Admin configurations
+ This is nothing but link to  [Settings and configurations](/setting-and-config)  for system and Admin configurations
 ##### Language selection
 A drop down to allow user to switch between multiple languages
