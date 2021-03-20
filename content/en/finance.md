@@ -21,14 +21,20 @@ A dashboard for financial data trends
 ---
 List of consultation service bills generated from services provided to particular medical consultation with their paid and un-paid amount.
 <c-image src="bills.png" alt="Financial  bills"></c-image>
-### View bill
----
-To view bill select one bill from list and click. The new page will display bill with stamp paid (for paid bill) or Outstanding (for un-paid bill). This page will also list all medical service transactions which make up the bill amount.
+
 
 ### View bill receipt
 ---
 From bills list view click receipt <icon icon="receipt"></icon> icon. The dialog screen will display the bill receipt 
  <c-image src="receipt.png" alt="View receipt"></c-image>
+### View bill
+---
+To view bill select one bill from list and click. The new page will display bill with stamp paid (for paid bill) or Outstanding (for un-paid bill). This page will also list all medical service transactions which make up the bill amount.
+
+### Pay bill
+In un-paid bill click the <strong class="button">pay bill</strong> button. The dialog screen will appear enter the bill amount and click <strong class="button">Yes pay bill</strong> button to close the bill. If the amount paid satisfy the bill amount required the consultation linked to this bill will also be closed auutomatically. <c-image src="paybill.png" alt="Pay bill" ></c-image>
+
+
 #### Paid bill 
 ---
  <c-image src="paid-bill.png" alt="paid bill"></c-image> 
