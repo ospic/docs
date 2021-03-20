@@ -59,6 +59,10 @@ From view contact page click <icon icon="pencil"></icon> button to edit and prev
 ---
 Self-service is the practice of serving oneself. The client has right to access their medical informations. Creating self service user account to this client will allow client to loging with crendentials provided during creation of this account using [client mobile application(under development)](https://github.com/ospic/mobile).  Under strictly security supervisions the client should be able to access one and only patient profile informations . This user account will appear in the list of  self service users [Self services users](/setting-and-config#self-service-users)  
 
+### Create self-service account
+Click <strong class="button"> create self service</strong> button the new page to fill the login credentials for particular client and click submit button.
+<c-image src="create-self-service.png" alt="Create self service account"></strong>. Verify if the user was created in the  [Self services users](/setting-and-config#self-service-users)  
+
 ### Consultations
 ---
 This are patient medical service instances between one day and the next. Click [here to learn about consultation management](/consultations)
