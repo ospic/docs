@@ -1,6 +1,6 @@
 ---
-title:  Finance
-description: Finance
+title:  Finance 
+description: Finance represents money management and the process of acquiring needed funds.
 image: 
 alt: my first blog post
 createdAt: '2020-12-25'
