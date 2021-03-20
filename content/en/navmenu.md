@@ -36,20 +36,19 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 |             |   - Wards         |  [Inventory-wards](/inventory#wards)   |
 |             |   - Beds          |  [Inventory-beds](/inventory#beds)   |
 |  <hr>       |    <hr>           |   <hr>         |
-| Laboratory  |  - Laboratory     |  And more      |
-|             |   -  Rediology    |  Here's this   |
+| Laboratory  |  - Laboratory     |  [Laboratory](/laboratory)     |
+|             |   -  Radiology    |  [Radiology](/radiology)   |
 |  <hr>       |    <hr>           |   <hr>         |
-| Organization|  - Staffs         |  And more      |
-|             |   -  Department   |  Here's this   |
-|             |   -  Services     |  Here's this   |
+| Organization|  - Staffs         |   [Staffs](/organization#staffs)        |
+|             |   -  Department   |   [Department](/organization#departments)     |
 |  <hr>       |    <hr>           |   <hr>         |
 | Stations    |  - Stations       |  And more      |
 |  <hr>       |    <hr>           |   <hr>         |
-|    Finance  |   - Finance       |  Here's this   |
+|    Finance  |   - Finance       |   [Finance](/finance)    |
 |  <hr>       |    <hr>           |   <hr>         |
 |    Calendar |   - Calendar      |  Here's this   |
 |  <hr>       |    <hr>           |   <hr>         |
-|    Reports  |   - Reports       |  Here's this   |
+|    Reports  |   - Reports       |   [Reports](/reports)   |
 |  <hr>       |    <hr>           |   <hr>         |
 |    Settings and configurations  |   - Settings and configurations       |  [Settings and configurations](/setting-and-config)  |
 |  <hr>       |    <hr>           |   <hr>         |

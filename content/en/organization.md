@@ -15,7 +15,7 @@ author:
 
 
 System users i.e doctors, nurses, administration personnel, finance and others all fall within the organization as human resources. From your navigation drawer hover Organization and this will gives you child menus;-
-- Staffs and 
-- Departments
+### Staffs and 
+### Departments
 
 All system users must have a member of one department at a time.
