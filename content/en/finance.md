@@ -17,5 +17,7 @@ author:
 A dashboard for financial data trends 
 <c-image src="finance_dashboard.png" alt="Financial trends dashboard"></c-image>
 ## Service bill's
+List of consultation service bills generated from services provided to particular medical consultation.
+<c-image src="bills.png" alt="Financial  bills"></c-image>
 ## Transactions
 ## Financial reports
