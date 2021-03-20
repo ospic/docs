@@ -21,10 +21,7 @@
       <ul v-if="articles.length" class="articles">
         <li v-for="article of articles" :key="article.slug">
           <NuxtLink
-            :to="
-              localePath({ name: 'docs-slug', params: { slug: article.slug } })
-            "
-          >
+            :to=" article.slug">
             {{ article.title }}
           </NuxtLink>
         </li>
@@ -46,7 +43,7 @@ export default {
         this.articles = [];
         return;
       }
-      this.articles = await this.$content(`${this.$i18n.locale}/docs`)
+      this.articles = await this.$content(`docs/${this.$i18n.locale}`)
         .limit(6)
         .search(searchQuery)
         .fetch();

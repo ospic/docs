@@ -2,7 +2,7 @@
   <v-container class="grey lighten-3" fluid>
     <v-app-bar class="primary" flat dark dense fixed app>
       <img src="@/static/logo.png" alt="Vuetify.js" height="100%" />
-      <nuxt-link to="/">
+      <nuxt-link to="/welcome">
         <v-toolbar-title
           v-if="$vuetify.breakpoint.mdAndUp"
           class="mx-0 title white--text plain-link"

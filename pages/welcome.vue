@@ -5,7 +5,7 @@
           <v-layout column align-center justify-center class="white--text">
             <h1 class="blue--text mb-2 display-1 d-flex align-center justify-end  flex-column" style="font-weight: 900;  #000000">Hospital Management System documentation (Ospic HMS)</h1>
             <h3 class="blue--text subheading mb-3 d-flex align-center justify-end  flex-column" style="font-weight: 900;  #000000">Unlesh your creativity without limitations</h3>
-            <v-btn class="primary  mt-5" dark large :href="isgithubpage ? '/docs/docs/': '/docs'">
+            <v-btn class="primary  mt-5" dark large :to="isgithubpage ? '/docs': '/'">
               Getting Started with documentation
             </v-btn>
           </v-layout>
