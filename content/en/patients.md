@@ -55,6 +55,9 @@ If client/patient contacts infomation are not yet provided the <strong class="bu
 ---
 From view contact page click <icon icon="pencil"></icon> button to edit and preview the changes then click <strong class="button">submit</strong>  button to save the changes. <c-image src="edit-contact.png" alt="Edit client profile  contacts"></c-image>
 
+### Self-service account
+---
+Self-service is the practice of serving oneself. The client has right to access their medical informations. Creating self service user account to this client will allow client to loging with crendentials provided during creation of this account using [client mobile application(under development)](https://github.com/ospic/mobile).  Under strictly security supervisions the client should be able to access one and only patient profile informations . This user account will appear in the list of  self service users [Self services users](/setting-and-config#self-service-users)  
 
 ### Consultations
 ---
