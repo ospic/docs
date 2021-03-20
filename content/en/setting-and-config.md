@@ -23,7 +23,12 @@ This also gives the option to create new system users by clicking <strong  class
 ### Self-service users
 List of all self service user accounts created in each patient accounts. <c-image src="selfservice-users.png" alt="Self-service users list"></c-image>
 
-### Roles and authorities
+### Roles & authorities
+This list all roles ever created in th stystem. <c-image src="roles.png" alt="System roles list"></c-image>
+### Add new role
+--- 
+To add
+
 ## System 
 ---
 ##  <strong>_Configurartions_</strong>
