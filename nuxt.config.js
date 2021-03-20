@@ -66,14 +66,14 @@ export default {
       tocDepth: 4
     },
   },
-    generate: {
+   /** generate: {
     async routes () {
       const { $content } = require('@nuxt/content')
       const dynamicRoutes = await $content('docs').only(['slug']).fetch()
       return dynamicRoutes.map(myroute => myroute.slug === '/index' ? '/' : '/blog/' + myroute.slug)
     
     }
-  },
+  },**/
   i18n: {
     locales: [
       {

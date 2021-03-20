@@ -9,14 +9,14 @@ export default {
   layout: 'blog',
   components: { blogPage },
   async asyncData({ $content, params,app }) {
-    const post = await $content(`docs/${app.i18n.locale}`, params.slug).fetch();
+    const post = await $content(`${app.i18n.locale}`, params.slug).fetch();
 
-    const pages = await $content(`docs/${app.i18n.locale}`)
+    const pages = await $content(`${app.i18n.locale}`)
       .only(["title", "description", "img", "slug", "author"])
       .sortBy("createdAt", "asc")
       .fetch();
 
-      const [prev, next] = await $content(`docs/${app.i18n.locale}`)
+      const [prev, next] = await $content(`${app.i18n.locale}`)
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)

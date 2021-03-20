@@ -118,7 +118,7 @@
         </v-col>
 
         <v-col cols="12" :sm="post.toc.length > 0 ? '8' : '10'">
-          <v-sheet rounded="lg">
+          <v-sheet tile>
             <div class="pa-4">
               <div class="post-header">
                 <h1 class="h1 post-h1">{{ post.title }}</h1>
