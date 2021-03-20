@@ -36,8 +36,7 @@ Ospic is a web based open source Hospital Management system. By the time of writ
 - Radiology
 - Oragnization
   - Staffs
-  - Departments and
-  - Services
+  - Departments 
 - Finance
   - Service bills
   - Transaction tracking system
