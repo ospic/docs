@@ -9,12 +9,12 @@ export default {
   async asyncData({ params, error, $content,app }) {
     console.log(app.i18n.locale)
     try {
-      const [post] = await $content(`docs/${app.i18n.locale}`, { deep: true }).fetch();
-      const pages = await $content(`docs/${app.i18n.locale}`)
+      const [post] = await $content(`${app.i18n.locale}`, { deep: true }).fetch();
+      const pages = await $content(`${app.i18n.locale}`)
         .only(["title", "description", "img", "slug", "author"])
         .sortBy("createdAt", "asc")
         .fetch();
-      const [prev, next] = await $content(`docs/${app.i18n.locale}`)
+      const [prev, next] = await $content(`${app.i18n.locale}`)
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc').fetch()
       return { post, pages, prev, next };

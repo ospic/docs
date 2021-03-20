@@ -41,7 +41,7 @@
 export default {
   async asyncData({ params, error, $content ,app}) {
     try {
-      const posts = await $content(`docs/${app.i18n.locale}`, { deep: true }).where({ tags: { $contains: params.slug } }).fetch();
+      const posts = await $content(`${app.i18n.locale}`, { deep: true }).where({ tags: { $contains: params.slug } }).fetch();
       return { posts };
     } catch (err) {
       error({
