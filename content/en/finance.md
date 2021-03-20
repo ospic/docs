@@ -24,6 +24,11 @@ List of consultation service bills generated from services provided to particula
 ### View bill
 ---
 To view bill select one bill from list and click. The new page will display bill with stamp paid (for paid bill) or Outstanding (for un-paid bill). This page will also list all medical service transactions which make up the bill amount.
+
+### View bill receipt
+---
+From bills list view click receipt <icon icon="receipt"></icon> icon. The dialog screen will display the bill receipt 
+ <c-image src="receipt.png" alt="View receipt"></c-image>
 #### Paid bill 
 ---
  <c-image src="paid-bill.png" alt="paid bill"></c-image> 
@@ -33,5 +38,7 @@ To view bill select one bill from list and click. The new page will display bill
 
 ## Transactions
 ---
+List all pageable transactions ever made in the system and their status (i.e reversed or not).
+<c-image src="transaction.png" alt="List of financial transaction"></c-image>
 ## Financial reports
 ---
