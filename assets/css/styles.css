@@ -57,13 +57,6 @@ body {
   padding-right: 5px;
 }
 
-.dotted {
-  border: 2px dotted gray;
-  border-style: none none dotted;
-  color: #ffffff;
-  background-color: #ffffff;
-}
-
 .tag {
   -webkit-box-shadow: -8px 15px 26px -14px #3dc21b;
           box-shadow: -8px 15px 26px -14px #3dc21b;
@@ -179,5 +172,29 @@ strong.button:active {
 
 .markdown table {
   width: 100%;
+}
+
+hr {
+  position: relative;
+  top: 10px;
+  border: none;
+  height: 12px;
+  background: transparent;
+  margin-bottom: 40px;
+  border-top: 1px solid #e5e2e2;
+}
+
+hr.dotted {
+  border: 2px dotted gray;
+  border-style: none none dotted;
+  top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+hr.v-divider {
+  top: 0px;
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=styles.css.map */
