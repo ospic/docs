@@ -27,7 +27,7 @@ List of all self service user accounts created in each patient accounts. <c-imag
 This list all roles ever created in th stystem. <c-image src="roles.png" alt="System roles list"></c-image>
 ### Add new role
 --- 
-To add
+To add new role click <strong class="button">+ add new role</strong> button and fill the role name e.g Administrator in your drop down select all permission for this role and click save <c-image src="createrole.png" alt="Create new role"></c-image>
 
 ## System 
 ---
