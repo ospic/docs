@@ -43,7 +43,7 @@ export default {
         this.articles = [];
         return;
       }
-      this.articles = await this.$content(`docs/${this.$i18n.locale}`)
+      this.articles = await this.$content(`${this.$i18n.locale}`)
         .limit(6)
         .search(searchQuery)
         .fetch();

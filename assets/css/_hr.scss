@@ -1,0 +1,23 @@
+hr{
+ 
+    position: relative; 
+    top: 10px; 
+    border: none; 
+    height: 12px; 
+    background: transparent; 
+    margin-bottom: 40px; 
+    border-top: 1px solid #e5e2e2;
+
+    &.dotted {
+        border: 2px dotted gray; 
+        border-style: none none dotted;
+        top: 0px;
+        margin-bottom: 0px;
+        color: #ffffff;
+         background-color: #ffffff; 
+    }
+    &.v-divider{
+        top: 0px;
+        margin-bottom: 0px;
+    }    
+}
