@@ -15,7 +15,9 @@ author:
 
 
 System users i.e doctors, nurses, administration personnel, finance and others all fall within the organization as human resources. From your navigation drawer hover Organization and this will gives you child menus;-
-### Staffs and 
+### Staffs
+---
+Staffs this are all the people employed by a particular organization.  As explained in [create user](/setting-and-config#system-users) 
 ### Departments
 
 All system users must have a member of one department at a time.
