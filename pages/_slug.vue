@@ -1,14 +1,13 @@
 <template>
-
-   <blog-page :pages="pages" :post="post" :next="next" :prev="prev"></blog-page>
-
+  <blog-page :pages="pages" :post="post" :next="next" :prev="prev"></blog-page>
 </template>
 <script>
-import blogPage from '../components/blog-page.vue';
+import blogPage from "../components/blog-page.vue";
+
 export default {
-  layout: 'blog',
+  layout: "blog",
   components: { blogPage },
-  async asyncData({ $content, params,app }) {
+  async asyncData({ $content, params, app }) {
     const post = await $content(`${app.i18n.locale}`, params.slug).fetch();
 
     const pages = await $content(`${app.i18n.locale}`)
@@ -16,12 +15,17 @@ export default {
       .sortBy("createdAt", "asc")
       .fetch();
 
-      const [prev, next] = await $content(`${app.i18n.locale}`)
-      .only(['title', 'slug'])
-      .sortBy('createdAt', 'asc')
+    const [prev, next] = await $content(`${app.i18n.locale}`)
+      .only(["title", "slug"])
+      .sortBy("createdAt", "asc")
       .surround(params.slug)
-      .fetch()
-      return { post, pages, prev, next };
-  }
+      .fetch();
+    return { post, pages, prev, next };
+  },
+  data() {
+    return {
+      title: "Home page"
+    };
+  },
 };
 </script>

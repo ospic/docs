@@ -190,6 +190,23 @@ export default {
       rightDrawer: false,
       title: "Ospic documentation"
     };
-  }
+  },
+   head() {
+    return {
+      meta: [
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.post.title
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.post.description
+        }
+     
+      ]
+   }
+   }
 };
 </script>
