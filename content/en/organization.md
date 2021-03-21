@@ -26,8 +26,10 @@ Documenting ...
 This list all department under organization. In navigation drawer > organization > departments. <c-image src="departments.png" alt="Departments"></c-image>
 ### Add new department
 ---
+Click <strong class="button"> new department</strong> button and provide the required information in the popup screen and click save <c-image src="createdepartment.png" alt="Create department"></c-image>
 ### View department
 ---
+From department list select a department an click. This will open a new page where you will see more information about this department. This also will display a members/staffs assigned to this department.  You can navigate to staffs profile by clicking the staff card <c-image src="viewdepartment.png" alt="View department"></c-image>
 ### Edit department
 --- 
 
