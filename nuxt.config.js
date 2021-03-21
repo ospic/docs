@@ -1,4 +1,6 @@
 import i18n from "./plugins/i18n";
+import metajs from './plugins/meta';
+const meta = metajs();
 const routerBase = process.env.DEPLOY_ENV === 'prod' ? '/docs/' : '/';
 export default {
   ssr: false,
@@ -23,19 +25,36 @@ export default {
       lang: 'en'
     },
     meta: [
+      ...meta,
       { charset: 'utf-8' },
-          /**Chrome, Firefox OS and Opera **/
+      /**Chrome, Firefox OS and Opera **/
       { name: "theme-color", content: "#00A756" },
       /**Windows phone **/
       { name: "msapplication-navbutton-color", content: "#00A756" },
       /**iOS Safari**/
-      { name: "apple-mobile-web-app-status-bar-style", content: "#00A756" },
+     { name: "apple-mobile-web-app-status-bar-style", content: "#00A756" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Hospital Management System documentation' },
-      { hid: 'og:image', property: 'og:image', content: "https://docs.ospicx.com/preview.png" || '' }
+     /**   { hid: 'description', name: 'description', content: 'Hospital Management System documentation' },
+      { hid: 'og:image', property: 'og:image', content: "https://docs.ospicx.com/preview.png" || '' },
+      { property: "og:site_name", content: "Ospic documentation" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      { hid: "og:url", property: "og:url", content: "https://docs.ospicx.com", },
+      { hid: "og:title", property: "og:title",content: "Ospic documentation",},
+       **/
+      //Twitter meta-data
+        { hid: "twitter:site", name: "twitter:site", content: "ospicapp" },
+        { hid: "twitter:card", name: "twitter:card", content: "summary_large_image" },
+        { hid: "twitter:image:alt", name:"twitter:image:alt",content: "Ospic documentation"},
+     
+    
+      
+        
+     
+       
+
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -45,8 +64,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    "~/plugins/vuetify.js", 
-    "~/plugins/prism.js", 
+    "~/plugins/vuetify.js",
+    "~/plugins/prism.js",
     "~/mixins/mixins.js"
   ],
 
@@ -73,12 +92,12 @@ export default {
       tocDepth: 4
     },
   },
-    generate: {
-    async routes () {
+  generate: {
+    async routes() {
       const { $content } = require('@nuxt/content')
       const dynamicRoutes = await $content(`${i18n.locale}`).only(['slug']).fetch()
       return dynamicRoutes.map(myroute => myroute.slug === '/index' ? '/' : `/${i18n.locale}` + myroute.slug)
-    
+
     }
   },
   i18n: {
@@ -94,17 +113,17 @@ export default {
         name: 'Swahili',
       },
       {
-         code: 'es',
-         iso: 'en-ES',
-         name: 'Español',
-       },
-     
-       {
-         code: 'fr',
-         iso: 'fr-fr',
-         name: 'Français',
-       }
-     
+        code: 'es',
+        iso: 'en-ES',
+        name: 'Español',
+      },
+
+      {
+        code: 'fr',
+        iso: 'fr-fr',
+        name: 'Français',
+      }
+
     ],
     defaultLocale: 'en',
     noPrefixDefaultLocale: true,
