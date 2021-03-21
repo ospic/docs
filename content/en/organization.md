@@ -21,6 +21,14 @@ System users i.e doctors, nurses, administration personnel, finance and others a
 Staffs this are all the people employed by a particular organization.  As explained in [create user](/setting-and-config#system-users), if you assign the user to spcific department when creating them, this users will appear under the members of particular department. In navigation drawer > Organization > staffs contain automcatic populated tabs for department names available with list of department members for each department tab. <c-image src="staffs.png" alt="Staff's list"></c-image>
 ###  View staffs
 ---
+Documenting ...
 ## Departments
+This list all department under organization. In navigation drawer > organization > departments. <c-image src="departments.png" alt="Departments"></c-image>
+### Add new department
+---
+### View department
+---
+### Edit department
+--- 
 
 All system users must have a member of one department at a time.
