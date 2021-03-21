@@ -32,5 +32,5 @@ Click <strong class="button"> new department</strong> button and provide the req
 From department list select a department an click. This will open a new page where you will see more information about this department. This also will display a members/staffs assigned to this department.  You can navigate to staffs profile by clicking the staff card <c-image src="viewdepartment.png" alt="View department"></c-image>
 ### Edit department
 --- 
-
+To edit department information click edit icon <icon icon="pencil"></icon> the same popup screen shown in create department will appear pre-populated edit the required information and click save button. 
 All system users must have a member of one department at a time.
