@@ -18,14 +18,21 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: 'Ospic documentation',
-    title: 'docs',
+    title: 'Ospic documentation',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
+          /**Chrome, Firefox OS and Opera **/
+      { name: "theme-color", content: "#00A756" },
+      /**Windows phone **/
+      { name: "msapplication-navbutton-color", content: "#00A756" },
+      /**iOS Safari**/
+      { name: "apple-mobile-web-app-status-bar-style", content: "#00A756" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Hospital Management System documentation' },
+      { hid: 'og:image', property: 'og:image', content: "https://docs.ospicx.com/preview.png" || '' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }    ]
@@ -70,7 +77,7 @@ export default {
     async routes () {
       const { $content } = require('@nuxt/content')
       const dynamicRoutes = await $content(`${i18n.locale}`).only(['slug']).fetch()
-      return dynamicRoutes.map(myroute => myroute.slug === '/index' ? '/' : '/' + myroute.slug)
+      return dynamicRoutes.map(myroute => myroute.slug === '/index' ? '/' : `/${i18n.locale}` + myroute.slug)
     
     }
   },
