@@ -76,6 +76,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -133,6 +134,50 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+        /*
+     ** You can extend webpack config here
+     */
+     publicPath: process.env.NODE_ENV === 'production' ? '/assets/' : '',
+     extend(config, ctx) { },
+     postcss: {
+       preset: {
+         features: {
+           customProperties: false
+         }
+       }
+     },
+     terser: {
+       extractComments: false // default was LICENSES
+     }
+  },
+  pwa: {
+    manifest: {
+      name: 'Ospic Hospital Management System',
+      short_name: 'Ospic Hms',
+      lang: 'en',
+      useWebmanifestExtension: false
+    },
+    meta: {
+      /* meta options */
+      name: "OspicDoc",
+      author: "Ospic",
+      description: "OOspic Hospital management system documentation",
+      lang: "en",
+      ogType: "website",
+      ogSiteName: "OspicDoc",
+      ogTitle: "Ospic Documentation",
+      ogDescription: "Ospic Hospital management system documentation",
+      ogHost: "https://docs.ospicx.com/",
+      ogImage: "https://docs.ospicx.com/preview.png",
+      ogUrl: "",
+      twitterCard: "Ospic",
+      twitterSite: "ospicapp",
+
+
+    },
+    icon: {
+      iconSrc: '/static/icon.png'
+    }
   },
 
   server: {
