@@ -197,4 +197,17 @@ hr.v-divider {
   top: 0px;
   margin-bottom: 0px;
 }
+
+.nuxt-content-container .nuxt-content h3 {
+  margin-top: 16px;
+}
+
+.nuxt-content-container .nuxt-content ul {
+  width: 50%;
+  background-color: #EFEFEF;
+}
+
+.nuxt-content-container .nuxt-content ul code {
+  background-color: transparent;
+}
 /*# sourceMappingURL=styles.css.map */
