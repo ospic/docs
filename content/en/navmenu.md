@@ -21,7 +21,8 @@ Navigation menu's this are set of links pointing to important areas of an applic
 For space management you can feel like to hide or display the navigation drawer.  Click navigation drawer menu icon to hide or un-hide navigation menu. 
 <c-image src="drawer_button.png" alt="Navigation drawer button"></c-image>
 
-## Navigation links
+### Navigations
+---
 Set of navigation menu links, sub-menu and their respective destination in the documentation
 <div class="markdown">
 
@@ -63,7 +64,7 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 </div>
 
 ### Descriptions
-
+---
 ##### Dashboard
 A navigation link to take you back to dashboard screen from any point you are in the application. This is visible from all page except finance department.
 ##### Patients
