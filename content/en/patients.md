@@ -15,31 +15,31 @@ author:
 ---
 
 ## Appointments
-This shows the list of an assigned and un-assgined consultation. Assigned consultation list all active created consultations and assigned to any medical specialist or staff, but un-assigned work the opposite.
-### Un-assigned patient consultations list
+This shows the list of an assigned and un-assgined consultation. Assigned consultation list all active created consultations and assigned to any medical specialist or staffs, but un-assigned work the opposite.
+### Un-assigned patients
 ---
 <c-image src="un-assigned-consultation.png" alt="Assigned and un assigned consultation"></c-image>
 
-### Assigned patient consultations list
+### Assigned patients
 ---
 <c-image src="assigned-consultation.png" alt="Assigned and un assigned consultation"></c-image>
 
 ## Patients
 ---
-This section list available patients and their status i.e Active or Inactive. 
-<c-image src="patients.png" alt="List of patients"></c-image> You can also create new patient, view patient, edit patient information, add patient contacts informations, upload patient profile image, Initiate patient consultation service to be attended
+List all patients ever recorded in particular health organization and their status i.e Active or Inactive.  This page also gives you an option to create new patient, view patient.
+<c-image src="patients.png" alt="List of patients"></c-image>.
 
 ### Create new patient
 ---
-The patient/client registration can be done only once. To create a new patient in you patients list click <strong class="button">+ Add new patient</strong> button, this will navigate you to a new page to fill out some new client information like Fullname, age, weight, height etc. All fields are mandatory except fot Note. After you fill the information click save button. <c-image src="create-patient.png" alt="List of patients"></c-image> 
+The patient/client registration can only be done once. To create a new patient in you patients list click <strong class="button">+ Add new patient</strong> button, this will navigate you to a new page to fill out some new client information like Fullname, age, weight, height etc. All fields are mandatory except fot Note. After you fill the information click save button. <c-image src="create-patient.png" alt="List of patients"></c-image> 
 
 ### View client
 ---
-After succesfully submit you will be redirect to the created client profile. In the list of clients you can also select one to view his/her details. Currently client profile shows Biography and Consultation history.  <c-image src="profile.png" alt="Client po"></c-image> 
+After succesfully submit you will be redirect to the created client profile. In the list of clients you can also select one to view his/her details. Currently client profile shows Biography and Consultation history.   This page gives you an option to edit client profile information e.g upload client image, add profile thumbnail, add patient contacts, initiate client consultation instance etc. <c-image src="profile.png" alt="Client po"></c-image>.
 
 ### Edit client
 ---
-To edit patient click edit button <icon icon="account-edit"></icon> it will give you the edit option click save after you have editted.
+To edit patient click edit button <icon icon="account-edit"></icon> in view client page Biography tab the same biography tab will change to give you the edit options click save after you have editted.
 
 ### Profile thumbnail
 ---
