@@ -37,13 +37,13 @@ This display organization records in total of selective records from the system 
 The six sibling pie charts potray  records conposition in the following sequence <strong>gender composition (i.e Male vs female), IPD vs OPD,  Consultations (i.e active vs inactive), Consultation assignment (i.e Assigned vs Un-assigned) , beds distribution and  System users</strong> respectively
 <c-image src="statistical_pie_chart.png" alt="Six sibling pie charts"></c-image>
 
-###  Consultations frequency graph
+###  Consultations
 ---
 A linear graph shows the number of consultations conducted per day
 <c-image src="consultations_chart.png" alt="Number of consultations per day"></c-image>
 
 
-### Registration frequency
+### Registrations
 ---
 Shows the frequency of new patient registrations per gender distributions
 <c-image src="registration_frequency.png" alt="Patient registration frequency"></c-image>

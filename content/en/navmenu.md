@@ -17,6 +17,10 @@ author:
 
 Navigation menu's this are set of links pointing to important areas of an application. 
 
+## Navigation drawer button
+For space management you can feel like to hide or display the navigation drawer.  Click navigation drawer menu icon to hide or un-hide navigation menu. 
+<c-image src="drawer_button.png" alt="Navigation drawer button"></c-image>
+
 ## Navigation links
 Set of navigation menu links, sub-menu and their respective destination in the documentation
 <div class="markdown">
@@ -85,13 +89,13 @@ A navigation link to patient appointments
  - Departments
  - Services
 ##### Finance
-  Under development
+  Financial infomation and funds managements. [More ...](/finance)
 ##### Stations
   Under development
 ##### Calendar
   For sharing organization calendar with other members.
 ##### Reports
-  Display the list of business reports.
+  Display the list of business reports. [More...](/reports)
 ##### Settings and configurations
  This is nothing but link to  [Settings and configurations](/setting-and-config)  for system and Admin configurations
 ##### Language selection
