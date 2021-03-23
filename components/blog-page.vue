@@ -1,7 +1,12 @@
 <template>
   <v-container class="grey lighten-3" fluid>
-    <v-app-bar class="primary" flat dark dense fixed app>
-      <img src="@/static/logo.png" alt="Vuetify.js" height="100%" />
+    <v-app-bar class="primary ma-0 pa-0" flat dark dense fixed app>
+      <v-app-bar-nav-icon>
+        <nuxt-link to="/welcome" class="ma-0 pa-0">
+          <img src="@/static/logo.png" alt="Vuetify.js" height="100%" />
+        </nuxt-link>
+      </v-app-bar-nav-icon>
+
       <nuxt-link to="/welcome">
         <v-toolbar-title
           v-if="$vuetify.breakpoint.mdAndUp"
@@ -9,7 +14,7 @@
           >{{ $t("apptitle") }}</v-toolbar-title
         ></nuxt-link
       >
-      <v-avatar>
+      <v-avatar v-if="false">
         <img
           src="https://library.kissclipart.com/20181003/szw/kissclipart-free-corner-ribbon-png-clipart-logo-f2cbd51c4ca46d94.png"
           alt="John"
@@ -110,9 +115,7 @@
 
     <v-container fluid>
       <v-row>
-      
-
-          <v-col
+        <v-col
           cols="12"
           :sm="$vuetify.breakpoint.smOnly ? '4' : '2'"
           v-if="$vuetify.breakpoint.smAndUp"
@@ -136,7 +139,11 @@
                 </div>
               </div>
 
-                <c-image v-if="post.image" :src="post.image" alt="Header image"></c-image>
+              <c-image
+                v-if="post.image"
+                :src="post.image"
+                alt="Header image"
+              ></c-image>
               <nuxt-content :document="post" />
               <v-author v-if="post.author" :author="post.author"></v-author>
             </div>
@@ -145,14 +152,12 @@
             </sheet-footer>
           </v-sheet>
         </v-col>
-        
-  <v-col cols="12" sm="2" v-if="post.toc.length > 0 && isMdAndUp">
+
+        <v-col cols="12" sm="2" v-if="post.toc.length > 0 && isMdAndUp">
           <v-sheet rounded="lg" min-height="268" class="pa-3">
-          
             <v-nav :post="post"></v-nav>
           </v-sheet>
         </v-col>
-      
       </v-row>
     </v-container>
   </v-container>
@@ -194,22 +199,21 @@ export default {
       title: "Ospic documentation"
     };
   },
-   head() {
+  head() {
     return {
       meta: [
         {
-          hid: 'twitter:title',
-          name: 'twitter:title',
+          hid: "twitter:title",
+          name: "twitter:title",
           content: this.post.title
         },
         {
-          hid: 'twitter:description',
-          name: 'twitter:description',
+          hid: "twitter:description",
+          name: "twitter:description",
           content: this.post.description
         }
-     
       ]
-   }
-   }
+    };
+  }
 };
 </script>
