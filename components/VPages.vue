@@ -1,6 +1,6 @@
 <template>
    <nav>
-      <h5 class="gray--text lighten-2 text-uppercase">Getting started</h5>
+      <p class="gray--text lighten-2 text-uppercase">Pages</p>
        <v-divider></v-divider>
       <ul>
       
