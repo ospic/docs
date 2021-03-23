@@ -10,7 +10,7 @@
           <v-divider></v-divider>
           <div v-for="(post, index) in articles" :key="post.dir">
             <h1 class="h1 post-h1">
-              <nuxt-link :to=" post.slug">
+              <nuxt-link :to="`/${post.slug}`">
                 {{ index }}.&nbsp;{{ post.title }}</nuxt-link
               >
             </h1>
