@@ -1,6 +1,11 @@
 .image {
   img {
-    border-radius: 0.1%;
+   background-color: #d1caca;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 4px solid #d1caca;
   }
   &.post-image {
     height: 200px;
