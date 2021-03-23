@@ -1,5 +1,5 @@
 ---
-title: Authentication and authorization
+title: Authentication 
 description: Learning how to ospic authentication works to access the system informations
 img: first-blog-post.jpg
 alt: my first blog post
