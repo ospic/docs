@@ -2,6 +2,18 @@ import i18n from "./plugins/i18n";
 import metajs from './plugins/meta';
 const meta = metajs();
 const routerBase = process.env.DEPLOY_ENV === 'prod' ? '/docs/' : '/';
+const createSitemapRoutes = async () => {
+  let routes = [];
+  let posts = [];
+  const { $content } = require('@nuxt/content')
+  if (posts === null || posts.length === 0)
+   posts = await $content(`${i18n.locale}`).fetch();
+  for (const post of posts) {
+    routes.push(`${i18n.locale}/${post.slug}`);
+  }
+  return routes;
+}
+
 export default {
   ssr: false,
   router: {
@@ -83,6 +95,7 @@ export default {
   modules: [
     '@nuxt/content',
     'nuxt-i18n',
+    '@nuxtjs/sitemap',
   ],
   content: {
     nestedProperties: ['author.name'],
@@ -179,6 +192,22 @@ export default {
     icon: {
       iconSrc: '/static/icon.png'
     }
+  },
+  /**Sitemap file */
+  sitemap: {
+    hostname: 'https://docs.ospicx.com',
+    gzip: false,
+  
+    i18n:{
+      locales:['en','es','fr','sw'],
+      routerNameSplitter: '/'
+    },
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+    },
+    routes: createSitemapRoutes
   },
 
   server: {
