@@ -96,8 +96,9 @@ export default {
   generate: {
     async routes() {
       const { $content } = require('@nuxt/content')
-      const dynamicRoutes = await $content(`${i18n.locale}`).only(['slug']).fetch()
-      return dynamicRoutes.map(myroute => myroute.slug === '/index' ? '/' : `/${i18n.locale}` + myroute.slug)
+      const dynamicRoutes = await $content(`${i18n.locale}`, { deep: true }).only(['slug']).fetch()
+      //return dynamicRoutes.map(myroute => myroute.slug === '/index' ? '/' : `/${i18n.locale}` + myroute.slug)
+      return dynamicRoutes.map(file => file.slug === '/index' ? '/' :  file.slug)
 
     }
   },
