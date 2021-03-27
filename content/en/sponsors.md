@@ -14,8 +14,8 @@ createdAt: '2021-03-30'
 | :---        | :----:      |       :----:      |   :----:          |   :----:      |   :----:          |   :----:           |
 |             |             |                   |                   |               |                   |                    |
 |  <hr>       |    <hr>     |    <hr>           |   <hr>            |        <hr>   |         <hr>      |            <hr>    |
-|    Sponsor1        |     Logo        | <icon icon="check"></icon>  |                   |               |       |    | 
+|    Sponsor 1        |    <rimg src="sponsor.jpg"></rimg>        | <v-icon large>mdi-check</v-icon>  |                   |               |       |    | 
 |  <hr>       |    <hr>     |    <hr>           |   <hr>            |        <hr>   |         <hr>      |            <hr>    |
-|    Sponsor2        |     Logo        | |                   |               |  <icon icon="check"></icon>       |    | 
+|    Sponsor 2        |     <rimg src="sponsor-icon.jpg"></rimg>       | |                   |               | <v-icon large>mdi-check</v-icon>      |    | 
 
 </div>
