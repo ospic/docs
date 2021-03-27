@@ -8,6 +8,7 @@ import BlogPage from "@/components/blog-page.vue";
 import AuthorPage from "@/components/Author.vue"
 import PrevNext from "@/components/PrevNext"
 import AppIcon from "@/components/AppIcon.vue";
+import RoundImage from "@/components/RImage"
 Vue.mixin({
   components:{
     "c-image":VImg,
@@ -17,7 +18,8 @@ Vue.mixin({
     "blog-page":BlogPage,
     "v-author": AuthorPage,
     "prev-next":PrevNext,
-    "icon":AppIcon
+    "icon":AppIcon,
+    "rimg":RoundImage
   },
   data: function () {
     return {     }

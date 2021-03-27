@@ -10,6 +10,15 @@
   &.post-image {
     height: 200px;
     width: 200px;
+    object-fit: fill;
     border-radius: 50%;
+  }
+}
+.round{
+  img{
+    width: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
