@@ -102,6 +102,10 @@ body {
   border-radius: 50%;
 }
 
+.round .image {
+  border-radius: 50%;
+}
+
 a {
   text-decoration: none;
 }
