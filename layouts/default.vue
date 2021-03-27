@@ -8,19 +8,9 @@
       </v-container>
     </v-main>
 
-    <v-footer class="primary" rounded fixed :absolute="!$vuetify.breakpoint.mdAndUp" padless app>
+    <v-footer class="primary" fixed :absolute="!$vuetify.breakpoint.mdAndUp" padless app>
       <v-flex xs12 class="d-flex align-center justify-end  flex-column">
-        <div style="color: white">
-          Copyright &copy; {{ new Date().getFullYear() }} The Apache Software
-          Foundation, Licensed under the
-          <a
-            href="https://www.apache.org/licenses/LICENSE-2.0"
-            style="color: blue;  text-decoration: underline;"
-            target="_blank"
-          >
-            Apache License, Version 2.0.</a
-          >
-        </div>
+  
         <div class="white--text ml-3">
           Made by
           <a
