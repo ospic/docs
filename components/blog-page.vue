@@ -1,5 +1,5 @@
 <template>
-  <v-container class="grey lighten-3" fluid>
+  <v-container class="grey lighten-3 ma-0 pa-0" fluid>
     <v-app-bar class="primary ma-0 pa-0" flat dark dense fixed app>
       <v-app-bar-nav-icon>
         <nuxt-link to="/welcome" class="ma-0 pa-0">
