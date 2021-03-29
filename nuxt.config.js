@@ -198,10 +198,12 @@ export default {
     hostname: 'https://docs.ospicx.com',
     gzip: false,
   
+    /** 
     i18n:{
       locales:['en','es','fr','sw'],
       routerNameSplitter: '/'
     },
+    **/
     defaults: {
       changefreq: 'daily',
       priority: 1,
