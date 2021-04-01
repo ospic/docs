@@ -9,7 +9,7 @@ const createSitemapRoutes = async () => {
   if (posts === null || posts.length === 0)
    posts = await $content(`${i18n.locale}`).fetch();
   for (const post of posts) {
-    routes.push(`${i18n.locale}/${post.slug}`);
+    routes.push(`${post.slug}`);
   }
   return routes;
 }
