@@ -120,7 +120,7 @@
           :sm="$vuetify.breakpoint.smOnly ? '4' : '2'"
           v-if="$vuetify.breakpoint.smAndUp"
         >
-          <v-sheet rounded="lg" min-height="268" class="pa-5">
+          <v-sheet rounded="lg" min-height="268" elevation="1" class="pa-5">
             <v-pages :pages="pages"></v-pages>
           </v-sheet>
         </v-col>
