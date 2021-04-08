@@ -166,8 +166,8 @@ export default {
   },
   pwa: {
     manifest: {
-      name: 'Ospic Hospital Management System',
-      short_name: 'Ospic Hms',
+      name: 'Ospic documentation',
+      short_name: 'Ospic Doc',
       lang: 'en',
       useWebmanifestExtension: false
     },
