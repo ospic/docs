@@ -14,5 +14,5 @@ author:
 ---
 
 ## Radiology services
-This list all radiology services provided by an organization.
-<c-image src="radiology.png" alt="Radiology services"></c-image> All other operations like create, update works as in [Laboratory](/laboratory)
+This navigation menu just stands as a filter for radiology services from [medical services](/services)
+
