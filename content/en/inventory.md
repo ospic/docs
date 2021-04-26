@@ -29,6 +29,9 @@ Drugs are categorized in a variety of different ways. In the pharmaceutical indu
 ---
 This list all medicines available. This section gives option to update or delete medicine  <c-image src="medicines_tab.png" alt="Medicines"></c-image>
 
+#### Edit medicine
+---
+From medicines list click edit button <icon icon="pencil"></icon>  edit the required information in popup screen click <strong class="button"> save</strong> button. <c-image src="update_medicine.png" alt="Update medicines"></c-image>
 ### Measurement units tab
 ---
 The pre-defined [Units of Measurement for Drug Calculations](https://studyskills.southwales.ac.uk/maths/mathematics-learning-resources/maths-topic-locator-numbers/units-measurement-drug-calculations/) are arcoding to [The University of South Wales](https://studyskills.southwales.ac.uk/) all this measurement unit are pre-defined in the system and also leave the room for creating new one if needed. This units will be used in creating a medicine product for easy price calculation of medicine price per unit. From you Navigation drawer > Inventory > Pharmacy open the Measurement units tabs this will gives you the list of available measurement units <c-image src="units.png" alt="Medicines measurement units"></c-image>
