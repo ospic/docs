@@ -15,12 +15,17 @@ author:
 ## Built-in reports
 ---
 From navigation drawer > reports shows list of available reports <c-image src="reports.png" alt="List of available reports"></c-image>
-## Upload new report (Disabled for demo server)
+## Upload new report 
 ---
-The reports part give you the option to view the system build in reports and option to upload new reports. System uses [JasperReports](https://www.jaspersoft.com/)  an open source Java reporting tool that can write to a variety of targets, such as: screen, a printer, into PDF, HTML, Microsoft Excel, RTF, ODT, comma-separated values (CSV) or XML files. It can be used in Java-enabled applications, including Java EE or web applications, to generate dynamic content. It reads its instructions from an XML or .jasper file. JasperReports is part of the Lisog open source stack initiative.
+NOTE: This is Disabled for demo server to avoid bug reports. Though the reports section give you the option to view the system build in reports and option to upload new reports. System uses [JasperReports](https://www.jaspersoft.com/)  an open source Java reporting tool that can write to a variety of targets, such as: screen, a printer, into PDF, HTML, Microsoft Excel, RTF, ODT, comma-separated values (CSV) or XML files. It can be used in Java-enabled applications, including Java EE or web applications, to generate dynamic content. It reads its instructions from an XML or .jasper file. JasperReports is part of the Lisog open source stack initiative.
 
 So any valid jasper files can be uploaded in the report section. After uploading the system will create report name from the file name e.g if the report file name is `example_report.jrxml` the system will create `Example report` name. Be wise in naming your report file.
 
 ## View report
 ---
 From you navigation menu click Reports this will navigate to report list page. Select one report by clicking it it will open as shown below <c-image src="view_report.png" alt="View reports"></c-image>
+
+### Print report 
+---
+On top-right coner of report preview click printer button <icon icon="printer"></icon> 
+ <c-image src="report_print.png" alt="Report print preview"></c-image>
