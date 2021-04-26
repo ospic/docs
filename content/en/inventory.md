@@ -26,7 +26,11 @@ Drugs are categorized in a variety of different ways. In the pharmaceutical indu
 
 ### Medicine categories tab
 ### Medicines tab
+---
+This list all medicines available. This section gives option to update or delete medicine  <c-image src="medicines_tab.png" alt="Medicines"></c-image>
+
 ### Measurement units tab
+---
 The pre-defined [Units of Measurement for Drug Calculations](https://studyskills.southwales.ac.uk/maths/mathematics-learning-resources/maths-topic-locator-numbers/units-measurement-drug-calculations/) are arcoding to [The University of South Wales](https://studyskills.southwales.ac.uk/) all this measurement unit are pre-defined in the system and also leave the room for creating new one if needed. This units will be used in creating a medicine product for easy price calculation of medicine price per unit. From you Navigation drawer > Inventory > Pharmacy open the Measurement units tabs this will gives you the list of available measurement units <c-image src="units.png" alt="Medicines measurement units"></c-image>
 -  **Create new measurement unit**
 To create a new measurement unit click <strong class="button">+ add NEW measurement unit</strong> button and the popup screen will appear with options Unit for the measurement units e.g Kilogram, Gram, Symbol eg, Kg, mg, g and in Quantity specify what time of measurement units is that for eg Mass, Volume Amount etc.  <c-image src="add_measure_unit.png" alt="Add new Medicines measurement units"></c-image>  Click save button if you are willing to save this unit or decline to ignore
