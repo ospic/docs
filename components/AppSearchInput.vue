@@ -11,7 +11,7 @@
         flat 
         solo rounded
         light clearable
-        single-line
+        single-line 
         append-icon="mdi-magnify"
         class="shrink mr-4"
       >
