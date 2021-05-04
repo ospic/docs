@@ -9,23 +9,37 @@
         filled
         dense
         flat 
-        solo
+        solo rounded
         light clearable
         single-line
         append-icon="mdi-magnify"
-        class="shrink mr-3"
+        class="shrink mr-4"
       >
       </v-text-field>
     </div>
     <div  class="mt-0">
-      <ul v-if="articles.length" class="articles">
+      <!--<ul v-if="articles.length" class="articles">
         <li v-for="article of articles" :key="article.slug">
           <NuxtLink
             :to=" article.slug">
             {{ article.title }}
           </NuxtLink>
         </li>
-      </ul>
+      </ul>-->
+      <v-list dense v-if="articles.length" class="articles mt-1 pr-14" color="primary">
+    
+        <v-list-item v-for="article of articles" :key="article.slug" dense class="ma-0 pa-0">
+          <v-list-item-icon>
+            <v-icon small color="white">mdi-magnify</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>  <NuxtLink style="color:white"
+            :to=" article.slug">
+            {{ article.title }}
+          </NuxtLink></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+    </v-list>
     </div>
   </div>
 </template>
