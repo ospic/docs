@@ -46,6 +46,7 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 |  <hr>       |    <hr>           |   <hr>         |
 | Organization|  - Staffs         |   [Staffs](/organization#staffs)        |
 |             |   -  Department   |   [Department](/organization#departments)     |
+|             |   -  Insurance   |    [Insurance](/organization#insurance)     |
 |  <hr>       |    <hr>           |   <hr>         |
 | Stations    |  - Stations       |  And more      |
 |  <hr>       |    <hr>           |   <hr>         |

@@ -37,7 +37,7 @@ The patient/client registration can only be done once. To create a new patient i
 ---
 After succesfully submit you will be redirect to the created client profile. In the list of clients you can also select one to view his/her details. Currently client profile shows Biography and Consultation history.   This page gives you an option to edit client profile information e.g upload client image, add profile thumbnail, add patient contacts, initiate client consultation instance etc. <c-image src="profile.png" alt="Client po"></c-image>.
 
-### Edit client
+### Edit client biography
 ---
 To edit patient click edit button <icon icon="account-edit"></icon> in view client page Biography tab the same biography tab will change to give you the edit options click save after you have editted.
 

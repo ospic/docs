@@ -34,3 +34,8 @@ From department list select a department an click. This will open a new page whe
 --- 
 To edit department information click edit icon <icon icon="pencil"></icon> the same popup screen shown in create department will appear pre-populated edit the required information and click save button. 
 All system users must have a member of one department at a time.
+
+## Insurance
+### Health insurance copanies
+--- 
+**Health insurance**, is a system for the financing of medical expenses 
