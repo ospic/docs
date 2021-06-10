@@ -47,6 +47,7 @@
   ],
   "start_url": "/docs/?standalone=true",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "lang": "en"
+  "background_color": "#2F4454",
+  "lang": "en",
+  "color_theme": "#2F4454"
 }
