@@ -24,7 +24,7 @@ export default {
   loadingIndicator: {
     name: 'pulse',
     color: ' #00A756',
-    background: '#2F4454'
+    background: '#FAFAFA'
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -168,6 +168,8 @@ export default {
     manifest: {
       name: 'Ospic documentation',
       short_name: 'Ospic Doc',
+      color_theme: "#2F4454",
+      background_color:"#2F4454",
       lang: 'en',
       useWebmanifestExtension: false
     },
@@ -175,7 +177,7 @@ export default {
       /* meta options */
       name: "OspicDoc",
       author: "Ospic",
-      description: "OOspic Hospital management system documentation",
+      description: "Ospic Hospital management system documentation",
       lang: "en",
       ogType: "website",
       ogSiteName: "OspicDoc",
