@@ -24,7 +24,7 @@ export default {
   loadingIndicator: {
     name: 'pulse',
     color: ' #00A756',
-    background: '#FAFAFA'
+    background: '#2F4454'
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
