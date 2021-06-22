@@ -22,7 +22,7 @@
       </v-avatar>
 
       <v-spacer></v-spacer>
-      <v-btn medium rounded outlined dark color="white" class="yellow accent-2 primary--text" href="https://github.com/sponsors/ospic?o=esb" target="_blank">
+      <v-btn medium rounded outlined dark color="white" class="yellow accent-2 primary--text" href="https://opencollective.com/ospic" target="_blank">
        <v-icon >mdi-heart-outline</v-icon>&nbsp;
        Sponsor</v-btn>&nbsp;&nbsp;
       <!--<iframe src="https://github.com/sponsors/ospic/button" title="Sponsor ospic" height="35" width="116" style="border: 0;"></iframe>-->
