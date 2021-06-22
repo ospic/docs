@@ -39,3 +39,7 @@ Click edit <icon icon="pencil"></icon>  icon from the list of roles and edit the
 Twillio SMS campaign
 ### Email configurations
 
+### Color themes
+Option to select system themes 
+### Global configurations 
+Enable/ disable application pre defined configurations
