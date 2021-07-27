@@ -31,8 +31,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: 'Ospic documentation',
-    title: 'Ospic documentation',
+    //titleTemplate: 'Ospic documentation',
+    //title: 'Ospic documentation',
     htmlAttrs: {
       lang: 'en'
     },
