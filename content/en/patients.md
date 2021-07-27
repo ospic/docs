@@ -33,7 +33,7 @@ List all patients ever recorded in particular health organization and their stat
 ---
 The patient/client registration can only be done once. To create a new patient in you patients list click <strong class="button">+ Add new patient</strong> button, this will navigate you to a new page to fill out some new client information like Fullname, age, weight, height etc. All fields are mandatory except fot Note. After you fill the information click save button. <c-image src="create-patient.png" alt="List of patients"></c-image> 
 
-### View client
+### View patient profile
 ---
 On succesful submit you will be redirect to the created client profile. In the list of clients you can also select one to view his/her details. Currently client profile shows Biography,  Consultation history and Insurances for health insurance cards.   This page gives you an option to edit client profile information e.g upload client image, add profile thumbnail, add patient contacts, initiate client consultation instance etc. <c-image src="profile.png" alt="Client po"></c-image>.
 
