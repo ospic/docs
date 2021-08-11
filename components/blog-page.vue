@@ -115,18 +115,20 @@
 
     <v-container fluid>
       <v-row>
-        <v-col   v-if="$vuetify.breakpoint.smAndUp" :sm="1"></v-col>
-        <v-col
-          cols="12" class="pr-2"
-          :sm="$vuetify.breakpoint.smOnly ? '3' : '2'"
+        <v-col  cols="12"   v-if="$vuetify.breakpoint.smAndUp" :sm="2" ></v-col>
+        <v-col cols="12" lg="8" md="12" >
+          <v-row>
+            <v-col
+          cols="12" 
+          :sm="$vuetify.breakpoint.smOnly ? '2' : '2'"
           v-if="$vuetify.breakpoint.smAndUp"
         >
          <v-pages :pages="pages"></v-pages>
         </v-col>
 
-        <v-col cols="12" :sm="post.toc.length > 0 ? '6' : '10'">
+        <v-col cols="12" :sm="post.toc.length > 0 ? '8' : '10'">
           <v-sheet tile>
-            <div class="pa-4">
+            <div class="pt-4">
               <div class="post-header">
                 <h1 class="h1 post-h1">{{ post.title }}</h1>
                 <p v-if="post.description" class="excerpt">
@@ -151,14 +153,15 @@
             </sheet-footer>
           </v-sheet>
         </v-col>
-
         <v-col cols="12" sm="2" v-if="post.toc.length > 0 && isMdAndUp">
-          <v-sheet rounded="lg" min-height="268" class="pa-3">
+          <v-sheet rounded="lg" min-height="268" >
             <v-nav :post="post"></v-nav>
           </v-sheet>
         </v-col>
 
-        <v-col   v-if="$vuetify.breakpoint.smAndUp" :sm="1"></v-col>
+          </v-row>
+        </v-col>
+        <v-col  cols="12"   v-if="$vuetify.breakpoint.smAndUp" :sm="2"></v-col>
       </v-row>
     </v-container>
   </v-container>

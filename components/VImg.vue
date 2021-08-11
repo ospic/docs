@@ -22,7 +22,6 @@ export default {
       try {
         const { post } = this.$parent;
          // eslint-disable-next-line no-console
-         console.log(require(`@/content/a/${this.src}`).default)
 
         return require(`@/content/a/${this.src}`).default;
       } catch (error) {

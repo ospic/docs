@@ -24,8 +24,15 @@
       url(../fonts/actor-v10-latin/actor-v10-latin-regular.woff2) format("woff2");
   }
 
+  @font-face {
+    font-family: "QuickSand";
+    font-style: normal;
+    src: local("QuickSand"),
+      url(../fonts/quicksand/quicksand_medium.ttf);
+  }
+
 #__nuxt .app{
-    font-family: "WolfFont";
+    font-family: "QuickSand";
     color: #37474F;
     font-size: 14px;
     h1, h2, h3, h4{
