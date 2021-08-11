@@ -10,6 +10,7 @@
     "github": "DEPLOY_ENV=prod nuxt generate"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.12.13",
     "@nuxt/content": "^1.13.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
