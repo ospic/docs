@@ -16,6 +16,15 @@ hr{
         color: #ffffff;
          background-color: #ffffff; 
     }
+    &.dashed{
+        border: 2px dashed gray; 
+        border-style: none none dashed;
+        top: 0px;
+        margin-top: 10px;
+        margin-bottom: -5px;
+        color: #ffffff;
+         background-color: #ffffff; 
+    }
     &.v-divider{
         top: 0px;
         margin-bottom: 0px;

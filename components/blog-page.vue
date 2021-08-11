@@ -1,28 +1,24 @@
 <template>
-  <v-container class="grey lighten-3 ma-0 pa-0" fluid>
-    <v-app-bar class="primary ma-0 pa-0" flat dark dense fixed app>
-      <v-app-bar-nav-icon>
-        <nuxt-link to="/welcome" class="ma-0 pa-0">
-          <img src="@/static/logo.png" alt="Vuetify.js" height="100%" />
-        </nuxt-link>
-      </v-app-bar-nav-icon>
+  <v-container class="white lighten-3 ma-0 pa-0" fluid>
+    <v-app-bar class="white ma-0 pa-0" flat  fixed app>
+    
 
       <nuxt-link to="/welcome">
         <v-toolbar-title
           v-if="$vuetify.breakpoint.mdAndUp"
-          class="mx-0 title white--text plain-link"
+          class="mx-0 primary--text plain-link"
           >{{ $t("apptitle") }}</v-toolbar-title
         ></nuxt-link
       >
       <v-avatar v-if="false">
         <img
           src="https://library.kissclipart.com/20181003/szw/kissclipart-free-corner-ribbon-png-clipart-logo-f2cbd51c4ca46d94.png"
-          alt="John"
+          alt="Image"
         />
       </v-avatar>
 
       <v-spacer></v-spacer>
-      <v-btn medium rounded outlined dark color="white" class="yellow accent-2 primary--text" href="https://opencollective.com/ospic" target="_blank">
+      <v-btn medium rounded outlined dark color="white" class="primary accent-2 white--text" href="https://opencollective.com/ospic" target="_blank">
        <v-icon >mdi-heart-outline</v-icon>&nbsp;
        Sponsor</v-btn>&nbsp;&nbsp;
       <!--<iframe src="https://github.com/sponsors/ospic/button" title="Sponsor ospic" height="35" width="116" style="border: 0;"></iframe>-->
@@ -33,13 +29,13 @@
           <template v-slot:activator="{ on, attrs }">
             <v-btn
               text
-              dark
+              color="primary"
               small
               v-bind="attrs"
               v-on="on"
               style="text-transform:none;"
             >
-              {{ locale.name }} <v-icon>mdi-menu-down</v-icon>
+              {{ locale.name }} <v-icon color="primary">mdi-menu-down</v-icon>
             </v-btn>
           </template>
           <v-list>
@@ -80,7 +76,7 @@
       class="pa-3"
       v-if="!isMdAndUp"
     >
-      <h2 class="pa-2">Pages</h2>
+      <h2 class="ml-2">Pages</h2>
       <v-pages :pages="pages"></v-pages>
       <template v-slot:append>
         <h5>{{ $t("selectlanguage") }}</h5>
@@ -119,17 +115,16 @@
 
     <v-container fluid>
       <v-row>
+        <v-col   v-if="$vuetify.breakpoint.smAndUp" :sm="1"></v-col>
         <v-col
-          cols="12"
-          :sm="$vuetify.breakpoint.smOnly ? '4' : '2'"
+          cols="12" class="pr-2"
+          :sm="$vuetify.breakpoint.smOnly ? '3' : '2'"
           v-if="$vuetify.breakpoint.smAndUp"
         >
-          <v-sheet rounded="lg" min-height="268" elevation="1" class="pa-5">
-            <v-pages :pages="pages"></v-pages>
-          </v-sheet>
+         <v-pages :pages="pages"></v-pages>
         </v-col>
 
-        <v-col cols="12" :sm="post.toc.length > 0 ? '8' : '10'">
+        <v-col cols="12" :sm="post.toc.length > 0 ? '6' : '10'">
           <v-sheet tile>
             <div class="pa-4">
               <div class="post-header">
@@ -162,6 +157,8 @@
             <v-nav :post="post"></v-nav>
           </v-sheet>
         </v-col>
+
+        <v-col   v-if="$vuetify.breakpoint.smAndUp" :sm="1"></v-col>
       </v-row>
     </v-container>
   </v-container>
@@ -200,7 +197,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Ospic documentation"
+      title: "Ospic"
     };
   },
   head() {

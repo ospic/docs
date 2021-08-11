@@ -8,7 +8,7 @@
           <p>Bio: {{ articles[0].author.bio }}</p>
           <h3>Here are a list of articles by {{ articles[0].author.name }}:</h3>
           <v-divider></v-divider>
-          <div v-for="(post, index) in articles" :key="post.dir">
+          <div v-for="(post, index) in articles" :key="index">
             <h1 class="h1 post-h1">
               <nuxt-link :to="`/${post.slug}`">
                 {{ index }}.&nbsp;{{ post.title }}</nuxt-link

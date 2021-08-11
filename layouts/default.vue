@@ -2,8 +2,8 @@
   <v-app  class="app grey lighten-3 " :oncontextmenu="domain ? 'return true' : 'return false'" fluid>
 
 
-    <v-main style="background-color: #EEEEEE" >
-      <v-container  style="background-color: #EEEEEE" class="pa-0 ma-0" fluid>
+    <v-main >
+      <v-container class="" fluid>
         <nuxt />
       </v-container>
     </v-main>

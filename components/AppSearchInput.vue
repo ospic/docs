@@ -12,6 +12,7 @@
         solo rounded
         light clearable
         single-line 
+        background-color="#EEEEEE"
         append-icon="mdi-magnify"
         class="shrink mr-4"
       >

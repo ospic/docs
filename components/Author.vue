@@ -9,7 +9,7 @@
   >
     <v-list-item dense :key="item.title">
       <v-list-item-avatar size="52" color="primary">
-        <v-img :src="author.image"></v-img>
+        <v-img :src="author.image" alt="Author"></v-img>
       </v-list-item-avatar>
 
       <v-list-item-content>
