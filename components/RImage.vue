@@ -14,6 +14,7 @@ export default {
     alt: {
       type: String,
       required: true,
+      default: 'Image',
     },
   },
   methods: {
@@ -22,7 +23,7 @@ export default {
         const { post } = this.$parent;
          // eslint-disable-next-line no-console
 
-        return require(`@/static/${this.src}`);
+        return require(`@/static/${this.src}`).default;
       } catch (error) {
         return null;
       }
