@@ -1,7 +1,7 @@
 import i18n from "./plugins/i18n";
 import metajs from './plugins/meta';
 const meta = metajs();
-const routerBase = process.env.DEPLOY_ENV === 'prod' ? '/docs/' : '/docs/';
+const routerBase = process.env.DEPLOY_ENV === 'prod' ? '/docs/' : '/';
 const createSitemapRoutes = async () => {
   let routes = [];
   let posts = [];
