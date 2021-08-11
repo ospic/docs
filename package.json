@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "DEPLOY_ENV=prod  nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "github": "DEPLOY_ENV=prod nuxt generate"
+    "github": "DEPLOY_ENV=prod nuxt export"
   },
   "dependencies": {
     "@babel/preset-env": "^7.12.13",
