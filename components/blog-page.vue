@@ -1,7 +1,12 @@
 <template>
   <v-container class="white lighten-3 ma-0 pa-0" fluid>
     <v-app-bar class="white ma-0 pa-0" flat  fixed app>
-    
+      <v-row>
+        <v-col sm="1"></v-col>
+        <v-col sm="10">
+
+          <v-app-bar class="white" flat>
+                
 
       <nuxt-link to="/welcome">
         <v-toolbar-title
@@ -23,7 +28,7 @@
        Sponsor</v-btn>&nbsp;&nbsp;
       <!--<iframe src="https://github.com/sponsors/ospic/button" title="Sponsor ospic" height="35" width="116" style="border: 0;"></iframe>-->
       <AppSearchInput />
-      <h5 v-if="isMdAndUp">Language:</h5>
+      <h5 v-if="isMdAndUp" class="primary--text">Language:</h5>
       <div v-if="isMdAndUp" class="text-center">
         <v-menu offset-y>
           <template v-slot:activator="{ on, attrs }">
@@ -52,18 +57,22 @@
 
       <a href="https://github.com/ospic/docs" target="_blank">
         <v-btn text fab x-small target="_blank">
-          <v-icon>mdi-github</v-icon>
+          <v-icon color="primary">mdi-github</v-icon>
         </v-btn>
       </a>
       <a href="https://app.ospicx.com/" target="_blank">
         <v-btn text fab x-small>
-          <v-icon>mdi-web</v-icon>
+          <v-icon color="primary">mdi-web</v-icon>
         </v-btn></a
       >
       <v-app-bar-nav-icon
         v-if="!isMdAndUp"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
+          </v-app-bar>
+        </v-col>
+        <v-col sm="1"></v-col>
+      </v-row>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -115,8 +124,8 @@
 
     <v-container fluid>
       <v-row>
-        <v-col  cols="12"   v-if="$vuetify.breakpoint.smAndUp" :sm="2" ></v-col>
-        <v-col cols="12" lg="8" md="12" >
+        <v-col  cols="12"   v-if="$vuetify.breakpoint.smAndUp" :sm="1" ></v-col>
+        <v-col cols="12" lg="10" md="12" >
           <v-row>
             <v-col
           cols="12" 
@@ -126,7 +135,7 @@
          <v-pages :pages="pages"></v-pages>
         </v-col>
 
-        <v-col cols="12" :sm="post.toc.length > 0 ? '8' : '10'">
+        <v-col cols="12" :sm="post.toc.length > 0 ? '7' : '10'">
           <v-sheet tile>
             <div class="pt-4">
               <div class="post-header">
@@ -153,7 +162,7 @@
             </sheet-footer>
           </v-sheet>
         </v-col>
-        <v-col cols="12" sm="2" v-if="post.toc.length > 0 && isMdAndUp">
+        <v-col cols="12" sm="3" v-if="post.toc.length > 0 && isMdAndUp">
           <v-sheet rounded="lg" min-height="268" >
             <v-nav :post="post"></v-nav>
           </v-sheet>
@@ -161,7 +170,7 @@
 
           </v-row>
         </v-col>
-        <v-col  cols="12"   v-if="$vuetify.breakpoint.smAndUp" :sm="2"></v-col>
+        <v-col  cols="12"   v-if="$vuetify.breakpoint.smAndUp" :sm="1"></v-col>
       </v-row>
     </v-container>
   </v-container>

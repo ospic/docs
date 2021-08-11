@@ -216,11 +216,12 @@ hr.dotted {
 }
 
 hr.dashed {
-  border: 2px dashed gray;
+  border: 0.1px dashed #4caf50;
   border-style: none none dashed;
   top: 0px;
-  margin-top: 10px;
-  margin-bottom: -5px;
+  margin-top: 7px;
+  margin-bottom: 0px;
+  padding-bottom: 7px;
   color: #ffffff;
   background-color: #ffffff;
 }

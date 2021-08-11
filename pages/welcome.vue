@@ -47,7 +47,7 @@ export default {
   layout:"home",
   data: function() {
     return {
-      title: "Ospic documentation",
+      title: "Ospic",
       imageLink: {
         main:
           "https://cdn2.hubspot.net/hubfs/3790014/hospital-data.jpg",

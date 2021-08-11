@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-center justify-space-between flex-grow-1 ">
+  <div class="white d-flex align-center justify-space-between flex-grow-1 ">
     <v-col md="4">
      
       <NuxtLink
