@@ -1,7 +1,7 @@
 <template>
    <nav>
        <ul>
-          <li v-for="page of pages" :key="page.slug" style="list-style-type: circle;" class="pa-2 font-weight-bold" >
+          <li v-for="page of pages" :key="page.slug" style="list-style-type: none;" class="pa-2 font-weight-bold" >
                <NuxtLink :to=" page.slug ">{{page.title}}</NuxtLink>
                
             </li>

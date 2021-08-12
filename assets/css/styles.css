@@ -74,8 +74,6 @@ body {
   display: inline-block;
   cursor: pointer;
   margin-left: 5px;
-  text-decoration: none;
-  font-family: Arial;
   font-size: 12px;
   padding: 1px 9px;
   -webkit-text-decoration-color: #ffffff;
@@ -84,7 +82,7 @@ body {
 }
 
 .tag a.link {
-  color: #2196f3;
+  color: #ffffff;
   text-decoration: none;
 }
 
