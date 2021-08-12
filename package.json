@@ -4,21 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "DEPLOY_ENV=prod  nuxt build",
+    "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "github": "DEPLOY_ENV=prod nuxt export"
+    "github": "DEPLOY_ENV=prod nuxt generate"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.12.13",
-    "@nuxt/content": "^1.13.1",
+    "@nuxt/content": "^1.14.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
-    "core-js": "^3.16.1",
-    "nuxt": "^2.13.3",
-    "nuxt-i18n": "^6.28.1"
+    "core-js": "^3.15.2",
+    "nuxt": "^2.14.0",
+    "nuxt-i18n": "^6.28.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.3"
+    "@nuxtjs/vuetify": "^1.12.1"
   }
 }
