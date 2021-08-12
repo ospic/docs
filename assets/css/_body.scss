@@ -1,7 +1,8 @@
 body {
-    background-color: #EEEEEE;
+    background-color: $color_white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-smooth: 12em;
     zoom: 82%;
   }
   .post-tags {
