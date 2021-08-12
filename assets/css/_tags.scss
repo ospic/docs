@@ -6,14 +6,12 @@
     display: inline-block;
     cursor: pointer;
     margin-left: 5px;
-    text-decoration: none;
-    font-family: Arial;
     font-size: 12px;
     padding: 1px 9px;
     text-decoration-color: #ffffff;
     color: white;
     &.link {
-      color: $color_info;
+      color: $color_white;
       text-decoration: none;
       &.nuxt-link-exact-active {
         &.nuxt-link-active {
