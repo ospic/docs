@@ -22,6 +22,8 @@
 @font-face {
   font-family: "QuickSand";
   font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   src: local("QuickSand"), url(../fonts/quicksand/quicksand_medium.ttf);
 }
 
@@ -29,6 +31,7 @@
   font-family: "QuickSand";
   color: #37474F;
   font-size: 14px;
+  font-smooth: always;
 }
 
 #__nuxt .app h1, #__nuxt .app h2, #__nuxt .app h3, #__nuxt .app h4 {
@@ -51,9 +54,10 @@ p > code {
 }
 
 body {
-  background-color: #EEEEEE;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-smooth: 12em;
   zoom: 82%;
 }
 
