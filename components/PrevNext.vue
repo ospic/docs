@@ -11,7 +11,7 @@
       </NuxtLink>
     </v-col>
     <v-col md="4">
-       <a href="https://app.ospicx.com/"
+       <a href="https://github.dev/ospic/docs"
             target="_blank"
             >Edit this page on Github !</a
           >
