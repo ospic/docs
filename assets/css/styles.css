@@ -28,7 +28,7 @@
 }
 
 #__nuxt .app {
-  font-family: "QuickSand";
+  font-family: "QuickSand", sans-serif;
   color: #37474F;
   font-size: 14px;
   font-smooth: always;

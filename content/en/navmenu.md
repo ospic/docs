@@ -1,6 +1,6 @@
 ---
 title:  Navigation menu
-description: A shortcut list of an important links to the application.
+description: A navigation menu is a list of links that point you to the important parts of the website or application.
 img: first-blog-post.jpg
 alt: my first blog post
 createdAt: '2020-12-14'
@@ -66,39 +66,39 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 
 ### Descriptions
 ---
-##### Dashboard
+### Dashboard
 A navigation link to take you back to dashboard screen from any point you are in the application. This is visible from all page except finance department.
-##### Patients
+### Patients
 For Patient information management 
   - Appointment
 A navigation link to patient appointments 
   - Patients
   - OPD department
   - IPD department
-##### Inventory
+### Inventory
   - Pharmacy
   - Medicine 
   - Blood bank
   - Ward 
   - Beds
-##### Laboratory
+### Laboratory
   - Laboratory
   Under development
   - Rediology
   Under development
-##### Organization
+### Organization
  - Staffs 
  - Departments
  - Services
-##### Finance
+### Finance
   Financial infomation and funds managements. [More ...](/finance)
-##### Stations
+### Stations
   Under development
-##### Calendar
+### Calendar
   For sharing organization calendar with other members.
-##### Reports
+### Reports
   Display the list of business reports. [More...](/reports)
-##### Settings and configurations
+### Settings and configurations
  This is nothing but link to  [Settings and configurations](/setting-and-config)  for system and Admin configurations
-##### Language selection
+### Language selection
 A drop down to allow user to switch between multiple languages

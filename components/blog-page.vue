@@ -147,6 +147,7 @@
                   <v-tags :tags="post.tags" />
                   Last updated: {{ formatDate(post.updatedAt) }}
                 </div>
+                <hr/>
               </div>
 
               <c-image
