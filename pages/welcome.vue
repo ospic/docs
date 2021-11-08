@@ -58,15 +58,6 @@ export default {
         social_cover:
           "https://www.pymnts.com/wp-content/uploads/2020/01/hospitals-healthcare-data.jpg"
       },
-      email: "",
-      emailRules: [
-        v => {
-          return !!v || "E-mail is required";
-        },
-        v =>
-          /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
-          "E-mail must be valid"
-      ],
       subscribed: false
     };
   },
