@@ -36,6 +36,6 @@ To edit department information click edit icon <icon icon="pencil"></icon> the s
 All system users must have a member of one department at a time.
 
 ## Insurance
-### Health insurance copanies
+### Health insurance companies
 --- 
 **Health insurance**, is a system for the financing of medical expenses 

@@ -30,7 +30,7 @@
                   <div class="headline">Open for contribution</div>
                 </v-card-title>
                 <v-card-text>
-                  Are you a creative person? Do you like techy stuff? You can jump to our github repository and check what you can add there. We value each individual contributions
+                  Are you a creative person? Do you like tech stuffs? You can jump to our github repository and give your contribution. We value each of your contributions
                 </v-card-text>
               </v-card>
             </v-flex>

@@ -52,7 +52,7 @@ Set of navigation menu links, sub-menu and their respective destination in the d
 |  <hr>       |    <hr>           |   <hr>         |
 |    Finance  |   - Finance       |   [Finance](/finance)    |
 |  <hr>       |    <hr>           |   <hr>         |
-|    Calendar |   - Calendar      |  Here's this   |
+|    Calendar |   - Calendar      |  [calendar](/calendar)   |
 |  <hr>       |    <hr>           |   <hr>         |
 |    Reports  |   - Reports       |   [Reports](/reports)   |
 |  <hr>       |    <hr>           |   <hr>         |
