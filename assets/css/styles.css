@@ -58,7 +58,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: 12em;
-  zoom: 82%;
+  zoom: 95%;
 }
 
 .post-tags {
@@ -71,12 +71,16 @@ main.welcome {
   background-color: #00a756 !important;
 }
 
-.tag {
+p {
+  color: black;
+}
+
+span.tag {
   -webkit-box-shadow: -8px 15px 26px -14px #3dc21b;
           box-shadow: -8px 15px 26px -14px #3dc21b;
 }
 
-.tag a {
+span.tag a {
   background-color: #00a756;
   border-radius: 4px;
   display: inline-block;
@@ -89,12 +93,12 @@ main.welcome {
   color: white;
 }
 
-.tag a.link {
+span.tag a.link {
   color: #ffffff;
   text-decoration: none;
 }
 
-.tag a.link.nuxt-link-exact-active.nuxt-link-active {
+span.tag a.link.nuxt-link-exact-active.nuxt-link-active {
   color: #ffffff;
   text-decoration: none;
 }
