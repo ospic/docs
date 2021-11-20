@@ -20,14 +20,14 @@ From navigation drawer > Calendar shows list of available events within an month
 
 <br/>
 
-## Create new event
+## Create a new event
 Click  <strong class="button">CREATE NEW event</strong> button to create new event. The popup dialog will request Event name, Descriptions, Start and end time and date then click save button to save an event <c-image src="create_event.png" alt="Create new calendar event"></c-image>
 
 <br/>
 
 ## View an event 
 
-To view an event click event from calendar and popup screen will display up. The dialog screen will display update and delete icons if the viewer is the one who created an event. <c-image src="view_event.png" alt="View event details"></c-image>
+To view an event click event from calendar and popup screen will display up. A dialog screen will display update and delete icons if the viewer is the one who created an event. <c-image src="view_event.png" alt="View event details"></c-image>
 
 <br/>
 
@@ -39,5 +39,5 @@ From view event dialog click pencil icon <icon icon="pencil"></icon> edit the in
 
 ## Delete an event
 
-From view event dialog click trash icon <icon icon="trash"></icon>. NOTE: this icon will only display to the creator of particular event
+From view event dialog click trash icon <icon icon="delete"></icon>. NOTE: this icon will only display to the creator of particular event
 
