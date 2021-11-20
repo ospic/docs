@@ -87,7 +87,7 @@
           Browse Your Topics
         </p>
         <v-row  justify-space-around class="my-6">
-          <v-col v-for="topic in topics" :key="topic.title"  xs="12"  md="12" lg="3">
+          <v-col v-for="topic in topics" :key="topic.title" cols="12"  xs="12" sm="6" md="3" lg="3">
             <v-card
               class="elevation-4 ma-2 pa-4"
               :to="topic.to"
