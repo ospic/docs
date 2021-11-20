@@ -36,7 +36,7 @@
       <v-btn class="ma-2" outlined color="green"  v-if="$vuetify.breakpoint.mdAndUp"> Contacts </v-btn>
     </v-app-bar>
     <section>
-      <v-parallax :src="imageLink.sub_main" height="900">
+      <v-parallax :src="imageLink.sub_main" height="840">
         <v-layout column align-center justify-center class="white--text">
           <h1
             class="
