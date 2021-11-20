@@ -54,7 +54,7 @@ p > code {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #00a756 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: 12em;
@@ -65,6 +65,10 @@ body {
   background-color: white;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+main {
+  background-color: #00a756 !important;
 }
 
 .tag {
@@ -137,6 +141,14 @@ a:hover {
   text-decoration: underline;
 }
 
+a.links {
+  margin-left: 1%;
+  margin-right: 1%;
+  text-decoration: none !important;
+  font-weight: 400;
+  color: #00a756 !important;
+}
+
 .icon.icon-link {
   background-image: url("~assets/svg/link_variant.svg");
   display: none;
@@ -176,6 +188,12 @@ strong.button:hover {
 strong.button:active {
   position: relative;
   top: 1px;
+}
+
+.v-toolbar__title {
+  font-weight: bolder;
+  font-size: x-large !important;
+  color: #00a756 !important;
 }
 
 .page-enter-active,
@@ -231,6 +249,11 @@ hr.dashed {
 hr.v-divider {
   top: 0px;
   margin-bottom: 0px;
+}
+
+button.v-btn.v-btn--outlined span.v-btn__content.colored {
+  text-transform: none !important;
+  color: #ffffff;
 }
 
 .nuxt-content-container .nuxt-content h3 {
