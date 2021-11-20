@@ -1,0 +1,16 @@
+button {
+    &.v-btn {
+        &.v-btn--outlined  {
+        & span{
+            &.v-btn__content{
+                &.colored{
+                    text-transform: none !important;
+                    color: $color_white; 
+                }
+                    
+             }
+        }
+  }
+ 
+}
+}

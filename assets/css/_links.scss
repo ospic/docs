@@ -9,6 +9,14 @@ a {
     &:hover{
           text-decoration: underline;
      }
+
+     &.links{
+          margin-left: 1%;
+          margin-right: 1%;
+          text-decoration: none !important;
+          font-weight: 400;
+          color: $color_primary !important;
+     }
 }
 
 .icon.icon-link {
@@ -43,5 +51,10 @@ strong {
 	top:1px;
 }
 }
+}
+.v-toolbar__title{
+     font-weight: bolder;
+     font-size: x-large !important;
+     color: $color_primary !important;
 }
     
