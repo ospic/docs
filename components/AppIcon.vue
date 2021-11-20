@@ -1,6 +1,6 @@
 <template>
-    <v-btn elevation="0" x-small fab  class="primary ma-0 pa-0 mb-1">
-      <v-icon small class="icon" color="white">mdi-{{icon}}</v-icon>
+    <v-btn x-small fab  class="primary ma-0 pa-0 mx-1 mb-1 icon">
+      <v-icon small class="icon"  color="white">mdi-{{icon}}</v-icon>
     </v-btn>
 </template>
 <script>

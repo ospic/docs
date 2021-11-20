@@ -256,6 +256,17 @@ button.v-btn.v-btn--outlined span.v-btn__content.colored {
   color: #ffffff;
 }
 
+p button.v-btn--fab.icon {
+  -webkit-box-shadow: 1px 1px 2px 2px #aeaeae;
+          box-shadow: 1px 1px 2px 2px #aeaeae;
+  color: blue !important;
+  background-color: #f5f5f5 !important;
+}
+
+p button.v-btn--fab.icon span.v-btn__content i {
+  color: #00a756 !important;
+}
+
 .nuxt-content-container .nuxt-content h3 {
   margin-top: 16px;
 }
