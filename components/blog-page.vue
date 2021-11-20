@@ -2,7 +2,7 @@
   <v-container class="white lighten-3 ma-0 pa-0" fluid>
     <v-app-bar class="white ma-0 pa-0" flat  fixed app>
       <v-row>
-        <v-col sm="1"></v-col>
+           <v-col sm="1" v-if="$vuetify.breakpoint.smAndUp"></v-col>
         <v-col sm="10">
 
           <v-app-bar class="white" flat>
@@ -13,7 +13,12 @@
           v-if="$vuetify.breakpoint.mdAndUp"
           class="mx-0 primary--text plain-link"
           >{{ $t("apptitle") }}</v-toolbar-title
-        ></nuxt-link
+        >
+        <v-btn icon v-else>
+          <v-icon left color="primary">mdi-home</v-icon>
+        </v-btn>
+        
+        </nuxt-link
       >
       <v-avatar v-if="false">
         <img
@@ -23,7 +28,7 @@
       </v-avatar>
 
       <v-spacer></v-spacer>
-      <v-btn medium rounded outlined dark color="white" class="primary accent-2 white--text" href="https://opencollective.com/ospic" target="_blank">
+      <v-btn v-if="$vuetify.breakpoint.mdAndUp" medium rounded outlined dark color="white" class="primary accent-2 white--text" href="https://opencollective.com/ospic" target="_blank">
        <v-icon >mdi-heart-outline</v-icon>&nbsp;
        Sponsor</v-btn>&nbsp;&nbsp;
       <!--<iframe src="https://github.com/sponsors/ospic/button" title="Sponsor ospic" height="35" width="116" style="border: 0;"></iframe>-->
@@ -71,7 +76,7 @@
       ></v-app-bar-nav-icon>
           </v-app-bar>
         </v-col>
-        <v-col sm="1"></v-col>
+        <v-col sm="1" v-if="$vuetify.breakpoint.smAndUp"></v-col>
       </v-row>
     </v-app-bar>
 
@@ -88,6 +93,7 @@
       <h2 class="ml-2">Pages</h2>
       <v-pages :pages="pages"></v-pages>
       <template v-slot:append>
+       
         <h5>{{ $t("selectlanguage") }}</h5>
         <div class="text-center">
           <v-menu offset-y>
@@ -119,6 +125,9 @@
             </v-list>
           </v-menu>
         </div>
+         <v-btn medium rounded outlined dark color="white" class="primary accent-2 white--text" href="https://opencollective.com/ospic" target="_blank">
+       <v-icon >mdi-heart-outline</v-icon>&nbsp;
+       Sponsor</v-btn>
       </template>
     </v-navigation-drawer>
 
