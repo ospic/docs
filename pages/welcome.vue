@@ -130,28 +130,28 @@ export default {
           to: "/",
           title: "Patient Management",
           subtitle:
-            "We are not a company. We hate companies. Just imagine us like the guys from the Silicon Valley series. Hoping to make a world a better place.",
+            "Learn how to manage patients information in Ospic. How to register new patient, update, assign to medical services or personel etc.",
         },
         {
           icon: "store-cog-outline",
           to: "/inventory",
           title: "Inventory management",
           subtitle:
-            "We are not a company. We hate companies. Just imagine us like the guys from the Silicon Valley series. Hoping to make a world a better place.",
+            "Ospic Inventory management module help you to manage the medicine inventory in real time from medicines provided to patients",
         },
         {
           icon: "bank",
           to: "/finance",
           title: "Finance",
           subtitle:
-            "We are not a company. We hate companies. Just imagine us like the guys from the Silicon Valley series. Hoping to make a world a better place.",
+            "Manage revenue collection, bill payment, and financial record overview. View bills, service transactions, reverse or pay bills.",
         },
         {
           icon: "lock",
           to: "/security",
           title: "System security",
           subtitle:
-            "We are not a company. We hate companies. Just imagine us like the guys from the Silicon Valley series. Hoping to make a world a better place.",
+            "View users, create new users and manage their roles and permissions. Enable and disable selfservice accounts etc",
         },
       ],
     };
