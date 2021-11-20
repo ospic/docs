@@ -271,4 +271,25 @@ button.v-btn.v-btn--outlined span.v-btn__content.colored {
 .nuxt-content-container .nuxt-content ul code {
   background-color: transparent;
 }
+
+.v-list.v-sheet a.v-list-item.v-list-item--link .v-list-item__title {
+  text-decoration: none !important;
+  color: black;
+}
+
+.v-list.v-sheet a.v-list-item.v-list-item--link .v-list-item__title:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.v-list.v-sheet a.v-list-item.v-list-item--link:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #00a756;
+}
+
+.v-list.v-sheet a.v-list-item.v-list-item--link:active {
+  color: #ffffff;
+  background-color: #00a756;
+}
 /*# sourceMappingURL=styles.css.map */

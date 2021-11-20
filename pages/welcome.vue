@@ -8,14 +8,15 @@
       <v-spacer></v-spacer>
       <a class="links"  v-if="$vuetify.breakpoint.mdAndUp">Home</a>
       <v-menu offset-y  v-if="$vuetify.breakpoint.smAndUp">
-        <template v-slot:activator="{ on, attrs }">
+        <template v-slot:activator="{ on, attrs }" >
           <a class="links" v-on="on" v-bind="attrs"
             >Docs
             <v-icon medium color="green"> mdi-chevron-down</v-icon>
           </a>
         </template>
-        <v-list>
-          <v-list-item
+       
+            <v-list v-if="$vuetify.breakpoint.mdAndDown">
+          <v-list-item 
             v-for="(page, index) in pages"
             :key="index"
             :to="page.slug"
@@ -23,6 +24,44 @@
             <v-list-item-title>{{ page.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
+        
+      
+      </v-row>
+      <v-row v-else no-gutters class="white">
+        <v-col cols="12" sm="4">
+            <v-list>
+          <v-list-item
+            v-for="(page, index) in firstPart"
+            :key="index"
+            :to="page.slug"
+          >
+            <v-list-item-title>{{ page.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+        </v-col>
+         <v-col cols="12" sm="4">
+            <v-list>
+          <v-list-item
+            v-for="(page, index) in secondPart"
+            :key="index"
+            :to="page.slug"
+          >
+            <v-list-item-title >{{ page.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+        </v-col>
+         <v-col cols="12" sm="4">
+            <v-list>
+          <v-list-item
+            v-for="(page, index) in thirdPart"
+            :key="index"
+            :to="page.slug"
+          >
+            <v-list-item-title>{{ page.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+        </v-col>
+      </v-row>
       </v-menu>
       <a class="links" href="https://github.com/ospic" target="_blank"  v-if="$vuetify.breakpoint.mdAndUp"
         >Github</a
@@ -40,7 +79,7 @@
         <v-layout column align-center justify-center class="white--text">
           <h1
             class="
-              primary--text
+              black--text
               mb-2
               display-1
               d-flex
@@ -54,7 +93,7 @@
           </h1>
           <h3
             class="
-              primary--text
+              black--text
               subheading
               mb-3
               d-flex
@@ -62,12 +101,12 @@
               justify-end
               flex-column
             "
-            style="font-weight: 400;  #000000"
+            style="font-weight: 400;  #000000; opacity: 90%;"
           >
             Unlesh your creativity without limitations
           </h3>
           <v-btn
-            class="primary mt-5"
+            class="primary mt-5 font-weight-black headline"
             dark
             x-large
             style="text-decoration: none !important"
@@ -167,8 +206,13 @@ export default {
       .sortBy("createdAt", "asc")
       .fetch();
 
-    console.log(pages);
-    return { pages };
+    const threePartIndex = Math.ceil(pages.length / 3);
+
+    const thirdPart = pages.splice(-threePartIndex);
+    const secondPart = pages.splice(-threePartIndex);
+    const firstPart = pages;     
+
+    return { pages, firstPart,secondPart,thirdPart };
   },
 
   computed: {

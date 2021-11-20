@@ -1,0 +1,25 @@
+.v-list.v-sheet {
+    a {
+        &.v-list-item.v-list-item--link {
+                & .v-list-item__title {
+                    text-decoration: none !important;
+                    color: black;
+                   
+                    &:hover {
+                        text-decoration: none;
+                        color: $color_white;
+                    }
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: $color_white;
+                    background-color: $color_primary;
+                }
+                &:active{
+                    color: $color_white;
+                    background-color: $color_primary;
+                }
+            }
+        }
+    
+}
