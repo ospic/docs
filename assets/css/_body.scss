@@ -1,5 +1,5 @@
 body {
-    background-color: $color_primary !important;
+    background-color: $color_white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smooth: 12em;
@@ -12,5 +12,7 @@ body {
 
   }
   main{
-    background-color: $color_primary !important;
+    &.welcome{
+      background-color: $color_primary !important;
+    }
   }

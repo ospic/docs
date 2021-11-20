@@ -54,7 +54,7 @@ p > code {
 }
 
 body {
-  background-color: #00a756 !important;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: 12em;
@@ -67,7 +67,7 @@ body {
   padding-right: 5px;
 }
 
-main {
+main.welcome {
   background-color: #00a756 !important;
 }
 
