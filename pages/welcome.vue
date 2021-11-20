@@ -1,5 +1,5 @@
 <template>
-  <v-card style="background-color: white;"  flat rounded fluid class="ma-4 px-6">
+  <v-card style="background-color: white;"  flat rounded fluid class="ma-4 px-xs-0 ml-xs-1 px-md-6">
     <v-app-bar color="white" elevation="0" dark>
       <v-toolbar-title>
         <v-icon large color="green"> mdi-text-box-check-outline </v-icon
@@ -87,7 +87,7 @@
           Browse Your Topics
         </p>
         <v-row  justify-space-around class="my-6">
-          <v-col v-for="topic in topics" :key="topic.title"  xs="12" sm="12" md="3">
+          <v-col v-for="topic in topics" :key="topic.title"  xs="12"  md="12" lg="3">
             <v-card
               class="elevation-4 ma-2 pa-4"
               :to="topic.to"
