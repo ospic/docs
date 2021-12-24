@@ -13,7 +13,7 @@
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
-    "core-js": "^3.20.0",
+    "core-js": "^3.20.1",
     "nuxt": "^2.14.0",
     "nuxt-i18n": "^6.28.0"
   },
