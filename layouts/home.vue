@@ -103,7 +103,7 @@
             <v-parallax
               dark
               height="840"
-              src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG9zcGl0YWwlMjBiZWR8ZW58MHx8MHx8&w=1500&q=80"
+              src="https://static.vecteezy.com/system/resources/previews/002/783/382/non_2x/blur-hospital-background-free-photo.jpg"
             >
               <v-row align="center" justify="center">
                 <v-col class="text-center" cols="12">
