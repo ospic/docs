@@ -59,6 +59,11 @@
           </v-list>
         </v-menu>
       </div>
+       <a href="https://twitter.com/ospicapp" target="_blank">
+        <v-btn text fab x-small>
+          <v-icon color="primary">mdi-twitter</v-icon>
+        </v-btn></a
+      >
 
       <a href="https://github.com/ospic/docs" target="_blank">
         <v-btn text fab x-small target="_blank">
@@ -69,7 +74,17 @@
         <v-btn text fab x-small>
           <v-icon color="primary">mdi-web</v-icon>
         </v-btn></a
-      >
+      >  <v-btn
+            icon
+            text
+            to="/contacts/#form"
+            x-small color="white"
+            v-if="$vuetify.breakpoint.mdAndUp"
+          >
+            <v-icon 
+            color="green" small>mdi-phone-outline</v-icon>
+          </v-btn>
+      
       <v-app-bar-nav-icon
         v-if="!isMdAndUp"
         @click.stop="drawer = !drawer"

@@ -81,21 +81,31 @@
 
           <v-spacer></v-spacer>
 
-          <v-btn
-            class="ma-2 colored"
-            color="green"
-            v-if="$vuetify.breakpoint.mdAndUp"
+          <a href="https://twitter.com/ospicapp" target="_blank">
+            <v-btn text fab x-small>
+              <v-icon color="primary">mdi-twitter</v-icon>
+            </v-btn></a
           >
-            Changelogs
-          </v-btn>
+
+          <a href="https://github.com/ospic/docs" target="_blank">
+            <v-btn text fab x-small target="_blank">
+              <v-icon color="primary">mdi-github</v-icon>
+            </v-btn>
+          </a>
+          <a href="https://app.ospicx.com/" target="_blank">
+            <v-btn text fab x-small>
+              <v-icon color="primary">mdi-web</v-icon>
+            </v-btn></a
+          >
           <v-btn
-            class="ma-2"
-            outlined
-            color="green"
+            icon
+            text
             to="/contacts/#form"
+            x-small color="white"
             v-if="$vuetify.breakpoint.mdAndUp"
           >
-            Contacts
+            <v-icon 
+            color="green" small>mdi-phone-outline</v-icon>
           </v-btn>
         </v-app-bar>
         <v-container class="ma-0 pa-0" fluid>
