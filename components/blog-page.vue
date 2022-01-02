@@ -11,7 +11,7 @@
       <nuxt-link to="/">
         <v-toolbar-title
           v-if="$vuetify.breakpoint.mdAndUp"
-          class="mx-0 primary--text plain-link"
+          class="mx-0 black--text plain-link"
           >{{ $t("apptitle") }}</v-toolbar-title
         >
         <v-btn icon v-else>

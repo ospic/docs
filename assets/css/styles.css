@@ -70,12 +70,12 @@ main.welcome {
   background-color: #00a756 !important;
 }
 
-span.tag {
+p.tags span.tag {
   -webkit-box-shadow: -8px 15px 26px -14px #3dc21b;
           box-shadow: -8px 15px 26px -14px #3dc21b;
 }
 
-span.tag a {
+p.tags span.tag a {
   background-color: #00a756;
   border-radius: 4px;
   display: inline-block;
@@ -83,18 +83,18 @@ span.tag a {
   margin-left: 5px;
   font-size: 12px;
   padding: 1px 9px;
-  -webkit-text-decoration-color: #ffffff;
-          text-decoration-color: #ffffff;
+  -webkit-text-decoration-color: #ffffff !important;
+          text-decoration-color: #ffffff !important;
   color: white;
 }
 
-span.tag a.link {
-  color: #ffffff;
+p.tags span.tag a.link {
+  color: #ffffff !important;
   text-decoration: none;
 }
 
-span.tag a.link.nuxt-link-exact-active.nuxt-link-active {
-  color: #ffffff;
+p.tags span.tag a.link.nuxt-link-exact-active.nuxt-link-active {
+  color: #ffffff !important;
   text-decoration: none;
 }
 
@@ -125,7 +125,9 @@ span.tag a.link.nuxt-link-exact-active.nuxt-link-active {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #000000 !important;
+  font-size: medium;
 }
 
 a.v-card {
@@ -140,12 +142,20 @@ a:hover {
   text-decoration: underline;
 }
 
-a.links {
+a.nuxt-link-active {
   margin-left: 1%;
   margin-right: 1%;
   text-decoration: none !important;
-  font-weight: 400;
   color: #00a756 !important;
+  font-size: large;
+}
+
+a.nuxt-link-active.nuxt-link-exact-active {
+  font-size: medium;
+}
+
+li.ml-2 a {
+  font-size: small !important;
 }
 
 .icon.icon-link {

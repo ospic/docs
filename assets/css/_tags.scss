@@ -1,28 +1,28 @@
-span{
-  &.tag {
-    box-shadow: -8px 15px 26px -14px #3dc21b;
-    a {
-      background-color: $color_primary;
-      border-radius: 4px;
-      display: inline-block;
-      cursor: pointer;
-      margin-left: 5px;
-      font-size: 12px;
-      padding: 1px 9px;
-      text-decoration-color: #ffffff;
-      color: white;
-      &.link {
-        color: $color_white;
-        text-decoration: none;
-        &.nuxt-link-exact-active {
-          &.nuxt-link-active {
-            color: $color_white;
-            text-decoration: none;
-            
+p.tags{
+  span.tag {
+      box-shadow: -8px 15px 26px -14px #3dc21b;
+      a {
+        background-color: $color_primary;
+        border-radius: 4px;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 5px;
+        font-size: 12px;
+        padding: 1px 9px;
+        text-decoration-color: #ffffff !important;
+        color: white;
+        &.link {
+          color: $color_white !important;
+          text-decoration: none;
+          &.nuxt-link-exact-active {
+            &.nuxt-link-active {
+              color: $color_white !important;
+              text-decoration: none;
+              
+            }
           }
         }
       }
     }
-  }
-  
+    
 }
