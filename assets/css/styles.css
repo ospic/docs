@@ -154,6 +154,14 @@ a.nuxt-link-active.nuxt-link-exact-active {
   font-size: medium;
 }
 
+a.links {
+  margin-left: 1%;
+  margin-right: 1%;
+  text-decoration: none !important;
+  font-weight: 400;
+  color: #00a756 !important;
+}
+
 li.ml-2 a {
   font-size: small !important;
 }
