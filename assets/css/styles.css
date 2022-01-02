@@ -82,7 +82,7 @@ p.tags span.tag a {
   cursor: pointer;
   margin-left: 5px;
   font-size: 12px;
-  padding: 1px 9px;
+  padding: 5px 10px;
   -webkit-text-decoration-color: #ffffff !important;
           text-decoration-color: #ffffff !important;
   color: white;
