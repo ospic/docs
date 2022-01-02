@@ -8,7 +8,7 @@
           <v-app-bar class="white" flat>
                 
 
-      <nuxt-link to="/welcome">
+      <nuxt-link to="/">
         <v-toolbar-title
           v-if="$vuetify.breakpoint.mdAndUp"
           class="mx-0 primary--text plain-link"
