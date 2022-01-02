@@ -1,6 +1,9 @@
 <template>
- 
-        <v-container fill-height grid-list-md text-xs-center class="pb-8 pt-8">
+<section>
+       <v-container grid-list-xl fluid class="ma-0 pa-0">
+        <p class="headline font-weight-black ma-2 text-h4">
+         Contact Us
+        </p>
           <v-layout row wrap align-center>
             <v-flex shrink xs12 sm12 md5 order-md1 order-sm1>
               <address-component></address-component>
@@ -11,7 +14,7 @@
               <v-card tile>
                 <v-card-text color="white">
                   <v-container>
-                    <v-form ref="form" color="white" v-model="valid" :lazy-validation="lazy">
+                    <v-form ref="form" color="white" id="form" v-model="valid" :lazy-validation="lazy">
                       <v-text-field
                         v-model="subject"
                         :rules="subjectRules"
@@ -43,7 +46,7 @@
             </v-flex>
           </v-layout>
         </v-container>
-
+</section>
 </template>
 <script>
 import AddressComponent from "~/components/ContactAddress.vue";
