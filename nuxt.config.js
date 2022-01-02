@@ -89,6 +89,9 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
     '@nuxtjs/pwa',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-111588525-1'
+    }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
