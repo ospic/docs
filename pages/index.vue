@@ -1,58 +1,19 @@
 <template>
-  <v-card style="background-color: white;"  flat rounded fluid class="ma-0 px-xs-0 ml-xs-1 px-md-0">
-  <section>
-      <v-parallax :src="imageLink.sub_main" height="840">
-        <v-layout column align-center justify-center class="white--text">
-          <h1
-            class="
-              black--text
-              mb-2
-              display-1
-              d-flex
-              align-center
-              justify-end
-              flex-column
-            "
-            style="font-weight: 900;  #000000"
-          >
-            Hospital Management System documentation (Ospic HMS)
-          </h1>
-          <h3
-            class="
-              black--text
-              subheading
-              mb-3
-              d-flex
-              align-center
-              justify-end
-              flex-column
-            "
-            style="font-weight: 400;  #000000; opacity: 90%;"
-          >
-            Medical data's is our own data's
-          </h3>
-          <v-btn
-            class="primary mt-5 font-weight-black headline black--text"
-            dark
-            x-large
-            style="text-transform: none !important"
-            elevation="1" 
-            flat
-            to="/home"
-          >
-            Get started
-            <v-icon right dark> mdi-chevron-right </v-icon>
-          </v-btn>
-        </v-layout>
-      </v-parallax>
-    </section>
-    <section>
+ <section>
       <v-container grid-list-xl fluid class="ma-0 pa-0">
         <p class="headline font-weight-black ma-2 text-h4">
-          Browse Your Topics
+          Browse Your Topic
         </p>
-        <v-row  justify-space-around class="my-6">
-          <v-col v-for="topic in topics" :key="topic.title" cols="12"  xs="12" sm="6" md="3" lg="3">
+        <v-row justify-space-around class="my-6">
+          <v-col
+            v-for="topic in topics"
+            :key="topic.title"
+            cols="12"
+            xs="12"
+            sm="6"
+            md="3"
+            lg="3"
+          >
             <v-card
               class="elevation-4 ma-2 pa-4"
               :to="topic.to"
@@ -70,14 +31,13 @@
         </v-row>
       </v-container>
     </section>
-  </v-card>
 </template>
 
 <script>
 export default {
   name: "App",
   layout: "home",
- 
+
   data: function () {
     return {
       title: "Ospic",
@@ -137,9 +97,9 @@ export default {
 
     const thirdPart = pages.splice(-threePartIndex);
     const secondPart = pages.splice(-threePartIndex);
-    const firstPart = pages;     
+    const firstPart = pages;
 
-    return { pages, firstPart,secondPart,thirdPart };
+    return { pages, firstPart, secondPart, thirdPart };
   },
 
   computed: {
