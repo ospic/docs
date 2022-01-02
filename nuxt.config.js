@@ -90,7 +90,7 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxtjs/pwa',
     ['@nuxtjs/google-analytics', {
-      id: 'UA-111588525-1'
+      id: 'UA-111588525-4'
     }]
   ],
 
