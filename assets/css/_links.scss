@@ -1,22 +1,36 @@
-a { 
-     text-decoration: none;
-     &.v-card {
-          text-decoration: none;
-          &:hover{
+ a { 
+          text-decoration: none !important;
+          color: $color_accent !important;
+          font-size: medium;
+          
+          &.v-card {
+               text-decoration: none;
+               &:hover{
+                    text-decoration: underline;
+               }
+          }
+         &:hover{
                text-decoration: underline;
           }
+     
+          &.nuxt-link-active{
+               margin-left: 1%;
+               margin-right: 1%;
+               text-decoration: none !important;
+               color: $color_primary !important;
+               font-size: large;
+               &.nuxt-link-exact-active{
+                    font-size: medium;
+               }
+          
+          }
      }
-    &:hover{
-          text-decoration: underline;
-     }
-
-     &.links{
-          margin-left: 1%;
-          margin-right: 1%;
-          text-decoration: none !important;
-          font-weight: 400;
-          color: $color_primary !important;
-     }
+li{
+     &.ml-2{
+          a{
+           font-size: small !important;
+          }
+      }
 }
 
 .icon.icon-link {

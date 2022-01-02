@@ -103,19 +103,19 @@
             "
             style="font-weight: 400;  #000000; opacity: 90%;"
           >
-            Unlesh your creativity without limitations
+            Medical data's is our own data's
           </h3>
           <v-btn
-            class="primary mt-5 font-weight-black headline"
+            class="primary mt-5 font-weight-black headline black--text"
             dark
             x-large
-            style="text-decoration: none !important"
-            elevation="1"
+            style="text-transform: none !important"
+            elevation="1" 
             flat
             to="/home"
           >
-            Get Started
-            <v-icon right large dark> mdi-chevron-right </v-icon>
+            Get started
+            <v-icon right dark> mdi-chevron-right </v-icon>
           </v-btn>
         </v-layout>
       </v-parallax>
