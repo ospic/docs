@@ -88,7 +88,11 @@
       <v-app-bar-nav-icon
         v-if="!isMdAndUp"
         @click.stop="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+      >
+      <v-app-bar-nav-icon>
+          <v-icon>mdi-text</v-icon>
+        </v-app-bar-nav-icon> 
+      </v-app-bar-nav-icon>
           </v-app-bar>
         </v-col>
         <v-col sm="1" v-if="$vuetify.breakpoint.smAndUp"></v-col>
