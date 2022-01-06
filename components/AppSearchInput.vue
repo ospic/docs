@@ -34,7 +34,7 @@
             <v-icon small color="white">mdi-magnify</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>  <NuxtLink style="color:white"
+            <v-list-item-title>  <NuxtLink style="color:white" class="white--text text-body-2"
             :to=" article.slug">
             {{ article.title }}
           </NuxtLink></v-list-item-title>

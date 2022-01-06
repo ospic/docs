@@ -8,15 +8,13 @@
           <v-app-bar class="white" flat>
                 
 
-      <nuxt-link to="/">
+      <nuxt-link to="/" v-if="$vuetify.breakpoint.mdAndUp">
         <v-toolbar-title
-          v-if="$vuetify.breakpoint.mdAndUp"
+          
           class="mx-0 black--text plain-link"
-          >{{ $t("apptitle") }}</v-toolbar-title
+          > <v-icon left color="primary">mdi-home</v-icon>{{ $t("apptitle") }}</v-toolbar-title
         >
-        <v-btn icon v-else>
-          <v-icon left color="primary">mdi-home</v-icon>
-        </v-btn>
+       
         
         </nuxt-link
       >
@@ -26,13 +24,13 @@
           alt="Image"
         />
       </v-avatar>
-
+       <AppSearchInput />
       <v-spacer></v-spacer>
       <v-btn v-if="$vuetify.breakpoint.mdAndUp" medium rounded outlined dark color="white" class="primary accent-2 white--text" href="https://opencollective.com/ospic" target="_blank">
        <v-icon >mdi-heart-outline</v-icon>&nbsp;
        Sponsor</v-btn>&nbsp;&nbsp;
       <!--<iframe src="https://github.com/sponsors/ospic/button" title="Sponsor ospic" height="35" width="116" style="border: 0;"></iframe>-->
-      <AppSearchInput />
+     
       <h5 v-if="isMdAndUp" class="primary--text">Language:</h5>
       <div v-if="isMdAndUp" class="text-center">
         <v-menu offset-y>
