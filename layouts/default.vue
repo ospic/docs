@@ -17,13 +17,16 @@
             href="https://github.com/ospic"
             style="color: white"
             target="_blank"
+            class="text-caption"
             >Ospic
           </a>
           as official documentation for
-          <a
+          <a 
             style="color: blue; text-decoration: underline;"
             href="https://app.ospicx.com/"
             target="_blank"
+            class="text-caption"
+
             >Ospic HMS</a
           >
         </div>

@@ -167,8 +167,8 @@
                 <p v-if="post.description" class="excerpt">
                   {{ post.description }}
                 </p>
-                <div class="post-tags d-flex justify-space-between">
-                  <v-tags :tags="post.tags" />
+                <div  class="post-tags d-flex justify-space-between">
+                  <v-tags :tags="post.tags" v-if="$vuetify.breakpoint.mdAndUp" />
                   Last updated: {{ formatDate(post.updatedAt) }}
                 </div>
                 <hr/>
