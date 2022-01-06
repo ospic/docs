@@ -90,7 +90,7 @@
         @click.stop="drawer = !drawer"
       >
       <v-app-bar-nav-icon>
-          <v-icon>mdi-text</v-icon>
+          <v-icon>mdi-text  mdi-rotate-180</v-icon>
         </v-app-bar-nav-icon> 
       </v-app-bar-nav-icon>
           </v-app-bar>
