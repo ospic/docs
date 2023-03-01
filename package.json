@@ -15,7 +15,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.23.5",
-    "nuxt": "^2.14.0",
+    "nuxt": "^3.2.3",
     "nuxt-i18n": "^6.28.0"
   },
   "devDependencies": {
