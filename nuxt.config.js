@@ -47,7 +47,7 @@ export default {
      { name: "apple-mobile-web-app-status-bar-style", content: "#00A756" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
      /**   { hid: 'description', name: 'description', content: 'Hospital Management System documentation' },
-      { hid: 'og:image', property: 'og:image', content: "https://docs.ospicx.com/preview.png" || '' },
+      { hid: 'og:image', property: 'og:image', content: "https://docs.ospic.app/preview.png" || '' },
       { property: "og:site_name", content: "Ospic documentation" },
       { hid: "og:type", property: "og:type", content: "website" },
       { hid: "og:url", property: "og:url", content: "https://docs.ospicx.com", },
@@ -186,8 +186,8 @@ export default {
       ogSiteName: "OspicDoc",
       ogTitle: "Ospic Documentation",
       ogDescription: "Ospic Hospital management system documentation",
-      ogHost: "https://docs.ospicx.com/",
-      ogImage: "https://docs.ospicx.com/preview.png",
+      ogHost: "https://docs.ospic.app/",
+      ogImage: "https://docs.ospic.app/preview.png",
       ogUrl: "",
       twitterCard: "Ospic",
       twitterSite: "ospicapp",
@@ -200,7 +200,7 @@ export default {
   },
   /**Sitemap file */
   sitemap: {
-    hostname: 'https://docs.ospicx.com',
+    hostname: 'https://docs.ospic.app',
     gzip: false,
   
     /** 
