@@ -68,7 +68,7 @@
           <v-icon color="primary">mdi-github</v-icon>
         </v-btn>
       </a>
-      <a href="https://app.ospicx.com/" target="_blank">
+      <a href="https://app.ospic.app/" target="_blank">
         <v-btn text fab x-small>
           <v-icon color="primary">mdi-web</v-icon>
         </v-btn></a

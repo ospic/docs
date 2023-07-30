@@ -23,7 +23,7 @@
           as official documentation for
           <a 
             style="color: blue; text-decoration: underline;"
-            href="https://app.ospicx.com/"
+            href="https://app.ospic.app/"
             target="_blank"
             class="text-caption"
 

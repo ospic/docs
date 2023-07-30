@@ -20,7 +20,7 @@ author:
 
 To access the system information one need to login using their username and password.  The logged-in user authentication information are valid for 24hrs or as long as user is not logged out. <icon icon="power"></icon>.  For authentication the login screen will appears as below.
 <c-image src="authentication_screen.png" alt="Index"></c-image>
-For demonstration purpose you can try to login into our [Demo server](https://app.ospicx.com/) with
+For demonstration purpose you can try to login into our [Demo server](https://app.ospic.app/) with
  - `Username: demo`
  - `Password: password`. 
 

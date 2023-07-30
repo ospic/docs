@@ -47,7 +47,7 @@ Ospic is a web based open source Hospital Management system. By the time of writ
 
 ## You can't wait to see it ?
 
-NOTE: Each user differ from one another in terms of [roles and authorities](/security) , i.e a user can only and only do what they are allowed to-do. Users who are not assigned to any department are also limited to operation.  The user role need to have particular authority to perform required operation. You can now login in our [demo servers](https://app.ospicx.com/#/finance)
+NOTE: Each user differ from one another in terms of [roles and authorities](/security) , i.e a user can only and only do what they are allowed to-do. Users who are not assigned to any department are also limited to operation.  The user role need to have particular authority to perform required operation. You can now login in our [demo servers](https://app.ospic.app/#/finance)
 
 - `Username: demo`
 - `Password: password`
