@@ -1,17 +1,17 @@
 ---
-title: Page d'accueil et tableau de bord
-description: Learning how to ospic authentication works to access the system informations
+title: Панель приборов
+description: Изучение того, как работает аутентификация ospic для доступа к системной информации
 img: first-blog-post.jpg
 alt: my first blog post
 createdAt: '2020-12-13'
 author: Eli
 tags:
-  - documentation
-  - homepage
-  - dashboard
+  - документация
+  - домашняя страница
+  - Панель приборов
 ---
 
-#### HomePage
+#### Страница панели инструментов
 Ospic deals with human confidential information. With this understanding we have implemented strict Authorization and Authentication methods just to make sure that the one using the system is exactly who is pretending to be and is allowed to perform what operation is trying to perfom. Soon after installation the database comes with default user for testing `username = demo` and `password=password`. The system admin can navigate to [Settings and configurations](/a/#settings-and-configurations) to create a new user, assign them roles then login.
 
 #### Dashboard

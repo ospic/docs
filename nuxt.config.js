@@ -137,9 +137,9 @@ export default {
       },
 
       {
-        code: 'fr',
-        iso: 'fr-fr',
-        name: 'Français',
+        code: 'ru',
+        iso: 'ru-ru',
+        name: 'Русский',
       }
 
     ],
